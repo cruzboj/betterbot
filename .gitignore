@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# weights and checkpoints
+*.ckpt
+hf_cache/

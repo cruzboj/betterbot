@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.git/
+focus/
+
+# weights and checkpoints
+*.ckpt
+hf_cache/

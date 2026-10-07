@@ -1,3 +1,9 @@
+# Project - BetterBot
+docker compose up -d
+
+for virtual mechine users or none graphics cards user use...
+http://127.0.0.1:8888/tree
+
 Remove-Item -Recurse -Force .venv
 
 uv venv
@@ -23,3 +29,5 @@ uv add nltk
 
 # delete models
 huggingface-cli delete-cache
+
+

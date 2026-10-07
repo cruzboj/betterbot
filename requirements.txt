@@ -1,0 +1,13 @@
+accelerate
+graphviz
+ipykernel
+nltk
+protobuf
+pydot
+sentencepiece
+torch
+torchaudio
+torchvision
+transformers
+jupyter
+matplotlib

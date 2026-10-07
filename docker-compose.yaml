@@ -1,0 +1,23 @@
+services:
+  betterbot:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: betterbot_container
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HF_HOME=/app/hf_cache # Set the HuggingFace weights and checkpoints directory to a local folder
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root 
+
+    # Support NVIDIA cards for GPU acceleration
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
