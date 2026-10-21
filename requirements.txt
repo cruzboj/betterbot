@@ -11,3 +11,7 @@ torchvision
 transformers
 jupyter
 matplotlib
+pandas
+numpy
+IPython
+sklearn
