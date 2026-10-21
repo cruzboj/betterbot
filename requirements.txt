@@ -14,4 +14,4 @@ matplotlib
 pandas
 numpy
 IPython
-sklearn
+scikit-learn
