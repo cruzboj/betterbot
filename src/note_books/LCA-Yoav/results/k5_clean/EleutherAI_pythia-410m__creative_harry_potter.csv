@@ -1,0 +1,56 @@
+word_idx,char,word,pos,lca_height,lca,candidates,cand_mass,actual_word_prob
+0,25,number,n,6,entity.n.01,course west london south east,0.053736272267997265,4.88772893731948e-05
+1,143,people,n,7,entity.n.01,one people couple person family,0.18917203322052956,0.04674476012587547
+2,156,expect,v,3,<ROOT>,expect want see call think,0.6333737610839307,0.2760038673877716
+3,169,involved,v,3,<ROOT>,marry live go look bear,0.059736042749136686,0.0009276140481233597
+4,238,hold,v,3,<ROOT>,know fit seem look want,0.38747815042734146,0.0006194210727699101
+5,253,nonsense,n,4,abstraction.n.06,thing nonsense extreme idea detail,0.16659909579902887,0.013162362389266491
+6,283,director,n,8,entity.n.01,son kind man father owner,0.09945584461092949,0.0034881816245615482
+7,297,firm,n,7,entity.n.01,company school department business number,0.0890716495923698,0.0078019630163908005
+8,302,called,v,3,<ROOT>,call deal engage devote name,0.06536962278187275,0.0446760468184948
+9,331,drills,n,8,entity.n.01,furniture thing shoe car custom,0.01590333052445203,9.542534098727629e-05
+10,359,man,n,2,male.n.02,man fellow guy chap gentleman,0.7138440040871501,0.5337995290756226
+11,379,neck,n,8,entity.n.01,clothes hair leg body line,0.3130128029733896,0.01813678815960884
+12,419,mustache,n,4,body_part.n.01,head chest mouth jaw nose,0.29161064699292183,0.0029268614016473293
+13,455,blonde,n,8,entity.n.01,light blonde slight sort kind,0.022117145359516144,0.004604535177350044
+14,493,amount,n,3,property.n.02,number amount height size age,0.48555648513138294,0.10642654448747635
+15,503,neck,n,5,whole.n.02,hair tooth weight body skin,0.43624009378254414,0.0055109309032559395
+16,515,came,v,6,<ROOT>,give seem mean look include,0.04854318220168352,0.0029909235890954733
+17,542,spent,v,2,<ROOT>,work carry use keep wear,0.046510443557053804,0.002925920533016324
+18,563,time,n,4,psychological_feature.n.01,life time,0.0001317975802521687,0.6830611228942871
+19,581,garden,n,8,entity.n.01,mr people thing window table,0.09088073205202818,0.00016097520710900426
+20,588,fences,n,6,object.n.01,wall bed furniture border plot,0.48853689432144165,0.00627289479598403
+21,596,spying,v,4,<ROOT>,look try watch talk make,0.17903914721682668,0.0006528188241645694
+22,610,neighbors,n,5,entity.n.01,neighbor neighbour people boy child,0.14233127236366272,0.043239109218120575
+23,646,son,n,6,object.n.01,house garden kitchen farm home,0.24894961528480053,0.007291417568922043
+24,650,called,v,3,<ROOT>,call name live know bear,0.22947472851956263,0.12045551091432571
+25,677,opinion,n,7,entity.n.01,house marriage family youth home,0.19855951517820358,0.022707952186465263
+26,704,boy,n,5,entity.n.01,family man person boy place,0.38071189261972904,0.03811967745423317
+27,751,wanted,v,4,<ROOT>,want need desire ask wish,0.7848880344536155,0.4686318635940552
+28,806,fear,n,6,abstraction.n.06,fear treasure desire ambition joy,0.2840210385620594,0.16241806745529175
+29,820,somebody,n,8,entity.n.01,mr someone somebody people nobody,0.13657773472368717,0.017619026824831963
+30,835,discover,v,2,<ROOT>,find discover come try steal,0.606253370642662,0.1458432525396347
+31,860,think,v,5,<ROOT>,want know care trust think,0.4481512978672981,0.0220760777592659
+32,877,bear,v,5,<ROOT>,live handle hide tell trust,0.2932264916598797,0.014557376503944397
+33,895,found,v,2,<ROOT>,find know discover try tell,0.4258496002294123,0.29199644923210144
+34,915,Potters,n,7,abstraction.n.06,fact existence thing secret mystery,0.08209415199235082,8.199256990337744e-05
+35,955,sister,n,6,physical_entity.n.01,sister mother secretary cousin maid,0.3296644277870655,0.13589613139629364
+36,995,years,n,4,abstraction.n.06,year month week generation day,0.9686471167951822,0.871955156326294
+37,1005,fact,n,8,entity.n.01,fact addition mr spite order,0.8293398699024692,0.817463755607605
+39,1052,sister,n,7,entity.n.01,sister brother family clue daughter,0.8376015927642584,0.7431507110595703
+40,1072,sister,n,5,relative.n.01,sister mother husband brother father,0.5460623325780034,0.17078980803489685
+41,1096,nothing,n,0,nothing.n.01,nothing nada,0.00042249418947903905,0.9479023814201355
+42,1104,husband,n,3,person.n.01,husband boyfriend,0.0004458888797671534,0.26573652029037476
+44,1185,think,v,3,<ROOT>,think hear know find see,0.865429475903511,0.7806009650230408
+45,1200,neighbors,n,7,entity.n.01,potter neighbor rest family future,0.21139721758663654,0.056624140590429306
+46,1235,arrived,v,1,<ROOT>,find discover come know learn,0.3621909888461232,0.0007014598813839257
+47,1250,street,n,0,vicinity.n.01,neighborhood neighbourhood,0.002211357874330133,0.003042360534891486
+48,1271,knew,v,3,<ROOT>,know think feel hop live,0.0899000596255064,0.03482414782047272
+49,1305,son,n,7,entity.n.01,house son family farm army,0.16363576985895634,0.0241236612200737
+50,1339,seen,v,4,<ROOT>,meet see hear think speak,0.7653678543865681,0.17467062175273895
+51,1354,boy,n,8,entity.n.01,fact son boy mr child,0.09264304395765066,0.014628586359322071
+52,1375,reason,n,5,entity.n.01,thing reason friend boy trait,0.2612886428833008,0.09031540155410767
+53,1386,keeping,v,2,<ROOT>,keep live want stay hide,0.046922256238758564,0.01939348876476288
+54,1424,want,v,5,<ROOT>,want know think trust dare,0.8058806974440813,0.7039574980735779
+55,1436,mixing,v,1,<ROOT>,find discover get come see,0.0460464246571064,9.12668983801268e-05
+56,1450,child,n,5,entity.n.01,lot boy crowd bunch gang,0.35193077102303505,0.008843149058520794
