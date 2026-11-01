@@ -16,10 +16,13 @@
 #     # LLM measurement (loads torch/transformers on first use)
 #     LCAMeter,
 #     # input texts
-#     load_texts, fetch_wiki, fetch_jokes, clean_pdf_text, hp_excerpt,
+#     load_texts, fetch_wiki, fetch_jokes, fetch_gutenberg, gutenberg_excerpt, clean_pdf_text, hp_excerpt,
 #     # results + stats
 #     kind, slug, load_results, summarize, curve_features, CURVE_FEATURE_NAMES,
-#     windows, feature_table,
+#     windows, feature_table, pos_normalize,
+#     # embedding spread (alternative to WordNet LCA)
+#     load_token_embeddings, embedding_distance, embedding_spread, add_embedding_spread,
+#     load_glove, glove_distance, glove_spread, glove_log_rank, add_glove_spread,
 # )
 # -------------------------------------------------------------------------------------
 # (From the repo root itself, plain `from lca_core import ...` is enough.)
@@ -29,10 +32,14 @@ Sections
     2. Pairwise helpers     get_synset, distance_to_lca, build_lca_graph, draw_lca_graph
     3. Measurement points   base_lemma, candidate_lemma, tag_to_pos, content_words
     4. LLM measurement      LCAMeter (needs torch + transformers, imported on first use)
-    5. Input texts          fetch_wiki, fetch_jokes, clean_pdf_text, hp_excerpt, load_texts
-    6. Results + stats      kind, slug, load_results, summarize, curve_features, windows, feature_table
+    5. Input texts          fetch_wiki, fetch_jokes, fetch_gutenberg, gutenberg_excerpt, clean_pdf_text,
+                            hp_excerpt, load_texts
+    6. Results + stats      kind, slug, load_results, summarize, curve_features, windows, feature_table,
+                            pos_normalize
+    7. Embedding spread     load_token_embeddings, embedding_distance, embedding_spread, add_embedding_spread,
+                            load_glove, glove_distance, glove_spread, glove_log_rank, add_glove_spread
 
-Heavy libraries (torch, transformers, networkx, pypdf) are imported only inside the
+Heavy libraries (torch, transformers, safetensors, networkx, pypdf) are imported only inside the
 functions that need them, so `import lca_core` is fast and works without a GPU.
 """
 from __future__ import annotations
@@ -60,9 +67,11 @@ __all__ = [
     "get_synset", "distance_to_lca", "build_lca_graph", "draw_lca_graph",
     "base_lemma", "candidate_lemma", "tag_to_pos", "content_words",
     "LCAMeter",
-    "fetch_wiki", "fetch_jokes", "first_words", "clean_pdf_text", "hp_excerpt", "load_texts",
+    "fetch_wiki", "fetch_jokes", "fetch_gutenberg", "gutenberg_excerpt", "first_words", "clean_pdf_text", "hp_excerpt", "load_texts",
     "kind", "slug", "load_results", "summarize", "curve_features", "CURVE_FEATURE_NAMES", "windows",
-    "feature_table",
+    "feature_table", "pos_normalize",
+    "unslug", "load_token_embeddings", "word_vector", "embedding_distance", "embedding_spread",
+    "add_embedding_spread", "load_glove", "glove_distance", "glove_spread", "glove_log_rank", "add_glove_spread",
 ]
 
 
@@ -459,6 +468,28 @@ def fetch_jokes(fractions=(1 / 3, 2 / 3), n=N_WORDS):
     return [first_words("\n\n".join(paras[int(len(paras) * f):][:40]), n) for f in fractions]
 
 
+def fetch_gutenberg(book_id):
+    """(title, body) of a Project Gutenberg book: plain text between the START/END markers."""
+    raw = _get(f"https://www.gutenberg.org/cache/epub/{book_id}/pg{book_id}.txt")
+    title = re.search(r"Title:\s*(.+)", raw)
+    body = raw.split("*** START OF", 1)[1].split("\n", 1)[1].split("*** END OF", 1)[0]
+    return (title.group(1).strip() if title else str(book_id)), body
+
+
+def gutenberg_excerpt(body, frac=0.5, n=N_WORDS):
+    """~n words starting at the first sentence after `frac` of the book (0.5 = middle), with illustration
+    tags, footnote marks and line wrapping removed; ends on a full sentence."""
+    text = re.sub(r"\[(Illustration|Footnote)[^\]]*\]", " ", body)
+    text = re.sub(r"\[\d+\]", "", text)
+    text = re.sub(r"_([^_]+)_", r"\1", text)  # _italics_
+    text = " ".join(text.split())
+    start = int(len(text) * frac)
+    first = re.compile(r"(?<=[.!?]) (?=[A-Z])").search(text, start)
+    words = text[first.end() if first else start:].split()[:n]
+    cut = " ".join(words)
+    return cut[:cut.rfind(". ") + 1] or cut
+
+
 def clean_pdf_text(t):
     """Fix the Harry Potter PDF text layer: tabs, U+FFFD quotes, hyphenated line breaks, page numbers."""
     t = t.replace("\t", " ")
@@ -536,6 +567,21 @@ def windows(h, win=40, step=20):
         yield s, h[s:s + win]
 
 
+def pos_normalize(data, col="lca_height", new_col=None):
+    """Z-score `col` within each part of speech, per model, over all its texts.
+
+    Verbs sit ~3 levels lower in WordNet than nouns, so raw heights partly count verbs. After this, each
+    point says how high it is *for its POS* (0 = typical noun/verb). Returns a new {model: {text: df}}.
+    """
+    new_col = new_col or col
+    out = {}
+    for model, per_text in data.items():
+        stats = pd.concat(per_text.values()).groupby("pos")[col].agg(["mean", "std"])
+        out[model] = {t: df.assign(**{new_col: (df[col] - df["pos"].map(stats["mean"])) / df["pos"].map(stats["std"])})
+                      for t, df in per_text.items()}
+    return out
+
+
 def feature_table(data, pos=None, col="lca_height", extra=True):
     """One row per (model, text): model, text, kind + curve_features of its LCA curve.
 
@@ -555,6 +601,137 @@ def feature_table(data, pos=None, col="lca_height", extra=True):
                 row["cand_mass"] = sub["cand_mass"].mean()
             rows.append(row)
     return pd.DataFrame(rows)
+
+
+# =====================================================================================
+# 7. Embedding spread (an alternative to WordNet LCA)
+# =====================================================================================
+_EMB_KEYS = ("wte.weight", "embed_in.weight", "embed_tokens.weight")  # gpt2 / pythia / qwen
+
+
+def unslug(model_slug):
+    """'Qwen_Qwen2.5-1.5B' -> 'Qwen/Qwen2.5-1.5B' (inverse of slug for these model names)."""
+    return model_slug.replace("_", "/", 1)
+
+
+@lru_cache(maxsize=4)
+def load_token_embeddings(model_name, center=True):
+    """(tokenizer, E): the model's input word embeddings, read straight from the cached weights file
+    (no full model load, works offline). Rows are unit length; with center=True the mean vector is
+    removed first, because LLM embeddings all lean in one shared direction, which makes every pair
+    look similar."""
+    import torch
+    from huggingface_hub import hf_hub_download
+    from safetensors import safe_open
+    from transformers import AutoTokenizer
+
+    path = hf_hub_download(model_name, "model.safetensors")
+    with safe_open(path, "pt") as f:
+        key = next(k for k in f.keys() if k.endswith(_EMB_KEYS))
+        E = f.get_tensor(key).float()
+    if center:
+        E = E - E.mean(0)
+    E = torch.nn.functional.normalize(E, dim=1)
+    return AutoTokenizer.from_pretrained(model_name), E
+
+
+def word_vector(word, tok, E):
+    """Unit vector of ' word' (average of its token vectors if it splits into pieces)."""
+    import torch
+
+    ids = tok.encode(" " + word, add_special_tokens=False)
+    return torch.nn.functional.normalize(E[ids].mean(0), dim=0)
+
+
+def embedding_distance(a, b, tok, E):
+    """Cosine distance between two words: 0 = same direction, 1 = unrelated, up to 2 = opposite."""
+    return 1 - float(word_vector(a, tok, E) @ word_vector(b, tok, E))
+
+
+def embedding_spread(words, tok, E):
+    """(mean, max) cosine distance over all pairs of `words`: how far apart a set of guesses is in meaning."""
+    import torch
+
+    V = torch.stack([word_vector(w, tok, E) for w in words])
+    iu = torch.triu_indices(len(words), len(words), 1)
+    d = 1 - (V @ V.T)[iu[0], iu[1]]
+    return d.mean().item(), d.max().item()
+
+
+def add_embedding_spread(data):
+    """Add `emb_mean` and `emb_max` columns to every result table, computed from its saved `candidates`
+    with that model's own embeddings. Returns a new {model: {text: df}} (inputs are not modified)."""
+    out = {}
+    for model, per_text in data.items():
+        tok, E = load_token_embeddings(unslug(model))
+        out[model] = {}
+        for text, df in per_text.items():
+            sp = [embedding_spread(c.split(), tok, E) for c in df["candidates"]]
+            out[model][text] = df.assign(emb_mean=[s[0] for s in sp], emb_max=[s[1] for s in sp])
+    return out
+
+
+GLOVE_REPO = "sentence-transformers/average_word_embeddings_glove.6B.300d"
+
+
+@lru_cache(maxsize=1)
+def load_glove():
+    """(index, E): GloVe 6B 300-d word vectors (400k lowercase words, trained on Wikipedia + news).
+    index maps word -> row of E; rows are unit length. First call downloads ~485 MB into the HF cache."""
+    import torch
+    from huggingface_hub import hf_hub_download
+    from safetensors import safe_open
+
+    vocab = json.load(open(hf_hub_download(GLOVE_REPO, "0_WordEmbeddings/whitespacetokenizer_config.json"),
+                           encoding="utf-8"))["vocab"]
+    with safe_open(hf_hub_download(GLOVE_REPO, "0_WordEmbeddings/model.safetensors"), "pt") as f:
+        E = f.get_tensor("emb_layer.weight").float()
+    E = torch.nn.functional.normalize(E, dim=1)
+    return {w: i for i, w in enumerate(vocab)}, E
+
+
+def glove_distance(a, b):
+    """Cosine distance between two words in GloVe (None if a word is missing)."""
+    index, E = load_glove()
+    if a.lower() not in index or b.lower() not in index:
+        return None
+    return 1 - float(E[index[a.lower()]] @ E[index[b.lower()]])
+
+
+def glove_spread(words):
+    """(mean, max) GloVe cosine distance over all pairs of `words`; words GloVe doesn't know are skipped.
+    (nan, nan) if fewer than 2 words are known."""
+    import torch
+
+    index, E = load_glove()
+    ids = [index[w.lower()] for w in words if w.lower() in index]
+    if len(ids) < 2:
+        return float("nan"), float("nan")
+    V = E[ids]
+    iu = torch.triu_indices(len(ids), len(ids), 1)
+    d = 1 - (V @ V.T)[iu[0], iu[1]]
+    return d.mean().item(), d.max().item()
+
+
+def glove_log_rank(words):
+    """Average log frequency-rank of `words` in GloVe's word list (which is sorted from most to least common):
+    a measure of how rare the words are. Higher = rarer."""
+    index, _ = load_glove()
+    ranks = [np.log(index[w.lower()]) for w in words if w.lower() in index]
+    return float(np.mean(ranks)) if ranks else float("nan")
+
+
+def add_glove_spread(data):
+    """Add `glove_mean`, `glove_max` (GloVe spread of each row's saved `candidates`) and `glove_logrank`
+    (how rare those guesses are). Returns a new {model: {text: df}}."""
+    out = {}
+    for model, per_text in data.items():
+        out[model] = {}
+        for text, df in per_text.items():
+            sp = [glove_spread(c.split()) for c in df["candidates"]]
+            out[model][text] = df.assign(glove_mean=[s[0] for s in sp], glove_max=[s[1] for s in sp],
+                                         glove_logrank=[glove_log_rank(c.split()) for c in df["candidates"]])
+    return out
 
 
 if __name__ == "__main__":
