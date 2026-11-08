@@ -1,0 +1,25 @@
+signal,name,family,time axis,best setup,correct,texts,share correct,factual correct,creative correct,chance median,chance 99th percentile,chance p,leave-one-out worst,leave-one-out median,window worst,failed test,robust
+lca_top1,"LCA height, top 1 vs real word",guess meaning,word,"shape only, DTW, k-medoids",21,25,0.84,10,11,16.0,20.0,0.0065,,,,strong,False
+lca_top3,"LCA height, top 3 guesses",guess meaning,word,"raw, DTW, DTW-KMeans",23,25,0.92,11,12,16.0,20.0,0.0,0.5833333333333334,0.5833333333333334,0.6,leave one out,False
+lca_top5,"LCA height, top 5 guesses",guess meaning,word,"raw, DTW, DTW-KMeans",23,25,0.92,11,12,16.0,20.0,0.0005,0.5416666666666666,0.8333333333333334,0.52,leave one out,False
+lca_likely,"LCA height, likely guesses",guess meaning,word,"shape only, DTW, k-medoids",22,25,0.88,9,13,17.0,20.0,0.0005,,,,strong,False
+glove_top1,"GloVe distance, top 1 vs real word",guess meaning,word,"raw, DTW, DTW-KMeans",22,25,0.88,11,11,16.0,20.0,0.0005,,,,strong,False
+glove_top3,"GloVe distance, top 3 guesses",guess meaning,word,"raw, DTW, k-medoids",22,25,0.88,12,10,16.0,20.0,0.0,,,,strong,False
+glove_top5,"GloVe distance, top 5 guesses",guess meaning,word,"raw, DTW, k-medoids",23,25,0.92,10,13,16.0,20.0,0.0,0.9166666666666666,0.9166666666666666,0.92,,True
+glove_likely,"GloVe distance, likely guesses",guess meaning,word,"raw, DTW, k-medoids",22,25,0.88,9,13,16.0,20.0,0.0005,,,,strong,False
+emb_top1,"Qwen-embedding distance, top 1 vs real word",guess meaning,word,"raw, DTW, k-medoids",21,25,0.84,10,11,16.0,20.0,0.007,,,,strong,False
+emb_top3,"Qwen-embedding distance, top 3 guesses",guess meaning,word,"raw, DTW, k-medoids",18,25,0.72,9,9,16.0,20.0,0.2285,,,,strong,False
+emb_top5,"Qwen-embedding distance, top 5 guesses",guess meaning,word,"raw, DTW, DTW-KMeans",20,25,0.8,8,12,16.0,20.0,0.013,,,,strong,False
+emb_likely,"Qwen-embedding distance, likely guesses",guess meaning,word,"raw, DTW, k-medoids",22,25,0.88,9,13,16.0,20.0,0.0,,,,strong,False
+surprisal_per_word,surprisal per word,model confidence,word,"shape only, DTW, k-medoids",24,25,0.96,12,12,16.0,20.0,0.0,0.75,0.9583333333333334,0.92,leave one out,False
+max_prob_per_word,max probability per word,model confidence,word,"raw, Euclidean, k-medoids",22,25,0.88,10,12,16.0,20.0,0.0,,,,strong,False
+entropy_per_word,entropy per word,model confidence,word,"raw, DTW, DTW-KMeans",21,25,0.84,10,11,16.0,20.0,0.0055,,,,strong,False
+self_certainty_per_word,self-certainty per word,model confidence,word,"raw, DTW, k-medoids",20,25,0.8,8,12,16.0,20.0,0.0135,,,,strong,False
+renyi_per_word,Rényi divergence per word,model confidence,word,"shape only, DTW, k-medoids",19,25,0.76,9,10,16.0,20.0,0.059,,,,strong,False
+fisher_rao_per_word,Fisher-Rao distance per word,model confidence,word,"raw, Euclidean, k-medoids",18,25,0.72,10,8,16.0,20.0,0.187,,,,strong,False
+surprisal_per_token,surprisal per token,model confidence,token,"raw, Euclidean, k-medoids",19,25,0.76,9,10,16.0,19.0,0.028,,,,strong,False
+max_prob_per_token,max probability per token,model confidence,token,"raw, Euclidean, KMeans",22,25,0.88,10,12,16.0,20.0,0.001,,,,strong,False
+entropy_per_token,entropy per token,model confidence,token,"raw, DTW, k-medoids",21,25,0.84,10,11,16.0,20.0,0.004,,,,strong,False
+self_certainty_per_token,self-certainty per token,model confidence,token,"raw, Euclidean, KMeans",21,25,0.84,9,12,16.0,19.00999999999999,0.0025,,,,strong,False
+renyi_per_token,Rényi divergence per token,model confidence,token,"raw, DTW, k-medoids",17,25,0.68,6,11,16.0,19.0,0.276,,,,strong,False
+fisher_rao_per_token,Fisher-Rao distance per token,model confidence,token,"raw, Euclidean, KMeans",20,25,0.8,8,12,16.0,20.0,0.017,,,,strong,False

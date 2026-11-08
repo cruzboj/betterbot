@@ -73,7 +73,7 @@ __all__ = [
     "senses", "lca", "lca_height", "name_of", "weighted_pair_height", "sanity_check",
     "get_synset", "distance_to_lca", "build_lca_graph", "draw_lca_graph",
     "base_lemma", "candidate_lemma", "tag_to_pos", "content_words",
-    "LCAMeter",
+    "LCAMeter", "TOKEN_STAT_COLUMNS",
     "fetch_wiki", "fetch_jokes", "fetch_gutenberg", "gutenberg_excerpt", "first_words", "clean_pdf_text",
     "hp_excerpt", "load_texts",
     "kind", "slug", "load_results", "summarize", "curve_features", "CURVE_FEATURE_NAMES", "windows",
@@ -127,7 +127,10 @@ def _up_distances(synset):
             roots.append(ancestor)
 
     # one extra level above the closest root joins all trees (verbs have many separate roots)
-    closest_root_distance = min(dist[r] for r in roots)
+    closest_root_distance = None
+    for root in roots:
+        if closest_root_distance is None or dist[root] < closest_root_distance:
+            closest_root_distance = dist[root]
     dist[VIRTUAL_ROOT] = closest_root_distance + 1
     return dist
 
@@ -171,12 +174,16 @@ def lca(words, pos="n", max_senses=2):
     # pick the shared ancestor whose farthest word is closest; on a tie prefer a real synset over VIRTUAL_ROOT
     best, best_key = None, None
     for ancestor in common:
-        farthest = max(d[ancestor] for d in dists)
+        farthest = 0
+        for d in dists:
+            farthest = max(farthest, d[ancestor])
         key = (farthest, ancestor == VIRTUAL_ROOT)
         if best_key is None or key < best_key:
             best, best_key = ancestor, key
 
-    height = max(d[best] for d in dists)
+    height = 0
+    for d in dists:
+        height = max(height, d[best])
     return height, best
 
 
@@ -320,7 +327,10 @@ def base_lemma(word, pos):
     if not forms:
         return None
     # prefer a form that differs from the word itself (the word may be an inflection, e.g. 'saw' -> 'see')
-    other_forms = [f for f in forms if f != word]
+    other_forms = []
+    for form in forms:
+        if form != word:
+            other_forms.append(form)
     if other_forms:
         options = other_forms
     else:
@@ -414,39 +424,55 @@ WORD_START_MARKERS = ("Ġ", "▁")      # how GPT-2/Pythia (Ġ) and SentencePiec
 NEWLINE_MARKER = "Ċ"                 # GPT-2-style newline token
 
 
+TOKEN_STAT_COLUMNS = ["surprisal", "max_prob", "entropy", "self_certainty", "renyi", "fisher_rao"]
+
+
 class LCAMeter:
     """Run a causal LM over a text and score the LCA of its top-k guesses at each content word.
 
-        meter = LCAMeter("gpt2-medium")
+        meter = LCAMeter("gpt2-medium")                   # loads the model itself
+        meter = LCAMeter(model=model, tokenizer=tok)      # or use an already-loaded model (e.g. 4-bit)
         df = meter.run(text, k=5)      # one row per measurement point
+        tokens = meter.last_tokens     # one row per token of the same text (uncertainty values)
         meter.free()
+
+    Besides the LCA of the guesses, every token gets LM-Polygraph's token-level uncertainty values
+    (TOKEN_STAT_COLUMNS, higher = more uncertain), computed from the same single pass over the text.
     """
 
-    def __init__(self, model_name, device=None):
+    def __init__(self, model_name=None, device=None, model=None, tokenizer=None, chunk_size=256):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
         self.torch = torch
-        if device is None:
-            if torch.cuda.is_available():
-                device = "cuda"
-            else:
-                device = "cpu"
-        self.device = device
-
-        self.tok = AutoTokenizer.from_pretrained(model_name)
-        if self.device == "cuda":
-            dtype = torch.float16
+        self.chunk_size = chunk_size   # positions turned into full-vocabulary probabilities at once (memory)
+        if model is not None:
+            # already loaded (e.g. by src/model/load_model.py, possibly in 4-bit): use it as it is
+            self.model = model.eval()
+            self.tok = tokenizer
+            self.device = str(model.device)
         else:
-            dtype = torch.float32
-        model = AutoModelForCausalLM.from_pretrained(model_name, dtype=dtype)
-        self.model = model.to(self.device).eval()
+            if device is None:
+                if torch.cuda.is_available():
+                    device = "cuda"
+                else:
+                    device = "cpu"
+            self.device = device
+
+            self.tok = AutoTokenizer.from_pretrained(model_name)
+            if self.device == "cuda":
+                dtype = torch.float16
+            else:
+                dtype = torch.float32
+            loaded = AutoModelForCausalLM.from_pretrained(model_name, dtype=dtype)
+            self.model = loaded.to(self.device).eval()
 
         # how many tokens the model reads at once (its maximum, capped at 2048 to save memory)
         max_positions = getattr(self.model.config, "max_position_embeddings", None)
         if not max_positions:
             max_positions = 1024
         self.window = min(max_positions, 2048)
+        self.last_tokens = None
         self._build_vocab_tables()
 
     def _build_vocab_tables(self):
@@ -492,19 +518,76 @@ class LCAMeter:
             prob_word_ends = next_token_probs[:, self.boundary].sum(dim=-1)
             return (prob_word_ends >= 0.5).tolist()
 
-    def _predictions(self, seq, top_n):
-        """For every position j>=1: top_n (probs, ids) of P(token_j | seq[:j]) and P(actual token).
+    def _token_stats(self, log_probs, true_ids):
+        """LM-Polygraph's token-level uncertainty values for a block of positions (higher = more uncertain).
 
-        Long texts are read in overlapping windows; each new window keeps at least half a window
-        of earlier text as context.
+        log_probs: (positions, vocabulary) log-probabilities of the next token; true_ids: the real next tokens.
+        Formulas follow lm_polygraph 0.7.0 (estimators/ and stat_calculators/entropy.py):
+          surprisal      = -log p(real token)                      MaximumTokenProbability
+          entropy        = -sum_v p_v log p_v                       TokenEntropy (EntropyCalculator)
+          self_certainty = mean_v(log p_v) + log V                  per-token term of SelfCertainty (sign as the estimator)
+          renyi          = Renyi divergence to uniform, alpha=0.5, T=2   per-token term of RenyiNeg
+          fisher_rao     = Fisher-Rao distance to uniform, T=2      per-token term of FisherRao
         """
         torch = self.torch
+        vocab_size = log_probs.shape[-1]
+        log_vocab = torch.log(torch.tensor(float(vocab_size), device=log_probs.device))
+        probs = log_probs.exp()
+        rows = torch.arange(len(true_ids), device=log_probs.device)
+
+        stats = {}
+        stats["surprisal"] = -log_probs[rows, true_ids]
+        stats["max_prob"] = probs.max(dim=-1).values
+        stats["entropy"] = -(probs * log_probs).sum(dim=-1)
+        stats["self_certainty"] = log_probs.mean(dim=-1) + log_vocab
+
+        temperature, alpha = 2.0, 0.5
+        q = torch.softmax(log_probs / temperature, dim=-1)       # flattened distribution used by RenyiNeg / FisherRao
+        stats["renyi"] = (torch.log((q ** alpha).sum(dim=-1)) - (alpha - 1) * log_vocab) / (alpha - 1)
+        overlap_with_uniform = q.sqrt().sum(dim=-1) * torch.sqrt(1 / torch.tensor(float(vocab_size)))
+        stats["fisher_rao"] = 2 / torch.pi * torch.arccos(overlap_with_uniform.clamp(max=1.0))
+        return stats
+
+    def _scores_float32(self, hidden, output_layer, vocab_slice=16384):
+        """The output layer (hidden state -> one score per vocabulary token) computed in 32-bit precision.
+
+        Half-precision scores are rounded coarsely (bfloat16 steps are 0.125 for scores around 20), which
+        visibly shifts probabilities. Converting the whole output layer to 32 bits would need ~2 GB for
+        Qwen, so it is done one slice of the vocabulary at a time.
+        """
+        torch = self.torch
+        hidden = hidden.float()
+        weight = output_layer.weight          # (vocabulary, hidden size)
+        bias = output_layer.bias
+        slices = []
+        for first in range(0, weight.shape[0], vocab_slice):
+            last = min(first + vocab_slice, weight.shape[0])
+            scores = hidden @ weight[first:last].float().T
+            if bias is not None:
+                scores = scores + bias[first:last].float()
+            slices.append(scores)
+        return torch.cat(slices, dim=-1)
+
+    def _predictions(self, seq, top_n):
+        """For every position j>=1: top_n (probs, ids) of P(token_j | seq[:j]), P(actual token), and the
+        token-level uncertainty values (see _token_stats) of that prediction.
+
+        Long texts are read in overlapping windows; each new window keeps at least half a window
+        of earlier text as context. Within a window, full-vocabulary probabilities are computed
+        chunk_size positions at a time, so large vocabularies (Qwen: 152k) fit in GPU memory.
+        """
+        torch = self.torch
+        base_model = self.model.base_model                 # the model without its output layer
+        output_layer = self.model.get_output_embeddings()  # hidden state -> one score per vocabulary token
         with torch.no_grad():
             n = len(seq)
             stride = self.window // 2
             top_p = torch.full((n, top_n), float("nan"))
             top_i = torch.zeros((n, top_n), dtype=torch.long)
             actual = torch.full((n,), float("nan"))
+            token_stats = {}
+            for name in TOKEN_STAT_COLUMNS:
+                token_stats[name] = torch.full((n,), float("nan"))
 
             done = 1  # positions [1, done) already have predictions (position 0 has no context)
             while done < n:
@@ -515,20 +598,30 @@ class LCAMeter:
                 start = max(0, end - self.window)
 
                 window_ids = torch.tensor([seq[start:end]], device=self.device)
-                logits = self.model(window_ids).logits[0]
+                hidden = base_model(window_ids).last_hidden_state[0]
+
                 # the prediction for position p is made at position p - 1 (in window coordinates: p - 1 - start)
-                needed = logits[done - 1 - start:end - 1 - start].float()
-                probs = torch.softmax(needed, dim=-1)
+                for block_start in range(done, end, self.chunk_size):
+                    block_end = min(block_start + self.chunk_size, end)
+                    block_hidden = hidden[block_start - 1 - start:block_end - 1 - start]
+                    logits = self._scores_float32(block_hidden, output_layer)
+                    log_probs = torch.log_softmax(logits, dim=-1)
+                    probs = log_probs.exp()
 
-                best_probs, best_ids = probs.topk(top_n, dim=-1)
-                top_p[done:end] = best_probs.cpu()
-                top_i[done:end] = best_ids.cpu()
+                    best_probs, best_ids = probs.topk(top_n, dim=-1)
+                    top_p[block_start:block_end] = best_probs.cpu()
+                    top_i[block_start:block_end] = best_ids.cpu()
 
-                true_ids = torch.tensor(seq[done:end], device=self.device)
-                rows = torch.arange(len(true_ids), device=self.device)
-                actual[done:end] = probs[rows, true_ids].cpu()  # probability the model gave the real token
+                    true_ids = torch.tensor(seq[block_start:block_end], device=log_probs.device)
+                    rows = torch.arange(len(true_ids), device=log_probs.device)
+                    actual[block_start:block_end] = probs[rows, true_ids].cpu()  # probability of the real token
+
+                    block_stats = self._token_stats(log_probs, true_ids)
+                    for name in TOKEN_STAT_COLUMNS:
+                        token_stats[name][block_start:block_end] = block_stats[name].cpu()
+                    del logits, log_probs, probs
                 done = end
-            return top_p, top_i, actual
+            return top_p, top_i, actual, token_stats
 
     def _candidates(self, seq, j, top_p, top_i, pos, k, complete_words):
         """Top-k guesses at position j as {lemma: summed probability}, in rank order."""
@@ -567,7 +660,11 @@ class LCAMeter:
 
     def run(self, text, k=5, top_n=300, use_adj=False, max_senses=2, complete_words=True, weighted=False):
         """One row per measurement point: word_idx, char, word, pos, lca_height, lca, candidates,
-        cand_mass, actual_word_prob (+ lca_weighted if weighted=True)."""
+        cand_mass, actual_word_prob, the token uncertainty values at that word (TOKEN_STAT_COLUMNS)
+        (+ lca_weighted if weighted=True).
+
+        Also sets self.last_tokens: one row per token of the text (token_idx, token, char_start,
+        char_end and TOKEN_STAT_COLUMNS), i.e. the full per-token time series."""
         encoding = self.tok(text, return_offsets_mapping=True, add_special_tokens=False)
         ids = encoding["input_ids"]
         offsets = encoding["offset_mapping"]  # (char start, char end) of each token
@@ -576,8 +673,18 @@ class LCAMeter:
         else:
             prefix = []
         seq = prefix + ids
-        top_p, top_i, actual = self._predictions(seq, top_n)
+        top_p, top_i, actual, token_stats = self._predictions(seq, top_n)
         token_ends = np.array([end for _start, end in offsets])
+
+        token_rows = []
+        for t in range(len(ids)):
+            j = t + len(prefix)          # position of this token in seq
+            token_row = {"token_idx": t, "token": self.tok.decode([ids[t]]),
+                         "char_start": offsets[t][0], "char_end": offsets[t][1]}
+            for name in TOKEN_STAT_COLUMNS:
+                token_row[name] = token_stats[name][j].item()
+            token_rows.append(token_row)
+        self.last_tokens = pd.DataFrame(token_rows)
 
         rows = []
         for idx, (char_start, word, pos) in enumerate(content_words(text, use_adj)):
@@ -597,7 +704,11 @@ class LCAMeter:
             row = {"word_idx": idx, "char": char_start, "word": word, "pos": pos,
                    "lca_height": height, "lca": name_of(ancestor),
                    "candidates": " ".join(cands), "cand_mass": sum(cands.values()),
+                   # each guess's own probability, in the same order as `candidates`
+                   "candidate_probs": " ".join(f"{p:.6g}" for p in cands.values()),
                    "actual_word_prob": actual[j].item()}
+            for name in TOKEN_STAT_COLUMNS:
+                row[name] = token_stats[name][j].item()
             if weighted:
                 row["lca_weighted"] = weighted_pair_height(cands, pos, max_senses)
             rows.append(row)
@@ -904,10 +1015,24 @@ def load_token_embeddings(model_name, center=True):
     removed first, because LLM embeddings all lean in one shared direction, which makes every pair
     look similar."""
     from huggingface_hub import hf_hub_download
+    from huggingface_hub.utils import EntryNotFoundError
     from safetensors import safe_open
     from transformers import AutoTokenizer
 
-    path = hf_hub_download(model_name, "model.safetensors")
+    try:
+        path = hf_hub_download(model_name, "model.safetensors")   # small models: one weights file
+    except (EntryNotFoundError, FileNotFoundError, OSError):
+        # large models (e.g. Qwen2.5-7B) split the weights over several files; the index says which file
+        # holds which tensor, so only the one with the embedding table is opened
+        index_path = hf_hub_download(model_name, "model.safetensors.index.json")
+        with open(index_path, encoding="utf-8") as f:
+            file_of_tensor = json.load(f)["weight_map"]
+        shard = None
+        for tensor_name, file_name in file_of_tensor.items():
+            if tensor_name.endswith(_EMBEDDING_KEYS):
+                shard = file_name
+                break
+        path = hf_hub_download(model_name, shard)
     with safe_open(path, "pt") as weights:
         embedding_key = None
         for key in weights.keys():

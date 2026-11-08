@@ -1,0 +1,289 @@
+signal,setup,correct,texts,share correct,factual correct,factual texts,creative correct,creative texts
+lca_top1,"raw, DTW, k-medoids",20,25,0.8,8,12,12,13
+lca_top1,"raw, DTW, DBSCAN",13,25,0.52,0,12,13,13
+lca_top1,"raw, Euclidean, k-medoids",15,25,0.6,5,12,10,13
+lca_top1,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_top1,"raw, DTW, DTW-KMeans",14,25,0.56,12,12,2,13
+lca_top1,"raw, Euclidean, KMeans",16,25,0.64,7,12,9,13
+lca_top1,"shape only, DTW, k-medoids",21,25,0.84,10,12,11,13
+lca_top1,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+lca_top1,"shape only, Euclidean, k-medoids",14,25,0.56,9,12,5,13
+lca_top1,"shape only, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_top1,"shape only, DTW, DTW-KMeans",17,25,0.68,11,12,6,13
+lca_top1,"shape only, Euclidean, KMeans",15,25,0.6,8,12,7,13
+lca_top3,"raw, DTW, k-medoids",14,25,0.56,1,12,13,13
+lca_top3,"raw, DTW, DBSCAN",13,25,0.52,0,12,13,13
+lca_top3,"raw, Euclidean, k-medoids",14,25,0.56,1,12,13,13
+lca_top3,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_top3,"raw, DTW, DTW-KMeans",23,25,0.92,11,12,12,13
+lca_top3,"raw, Euclidean, KMeans",14,25,0.56,1,12,13,13
+lca_top3,"shape only, DTW, k-medoids",22,25,0.88,10,12,12,13
+lca_top3,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+lca_top3,"shape only, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+lca_top3,"shape only, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_top3,"shape only, DTW, DTW-KMeans",19,25,0.76,10,12,9,13
+lca_top3,"shape only, Euclidean, KMeans",14,25,0.56,5,12,9,13
+lca_top5,"raw, DTW, k-medoids",16,25,0.64,3,12,13,13
+lca_top5,"raw, DTW, DBSCAN",13,25,0.52,0,12,13,13
+lca_top5,"raw, Euclidean, k-medoids",14,25,0.56,1,12,13,13
+lca_top5,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_top5,"raw, DTW, DTW-KMeans",23,25,0.92,11,12,12,13
+lca_top5,"raw, Euclidean, KMeans",22,25,0.88,11,12,11,13
+lca_top5,"shape only, DTW, k-medoids",22,25,0.88,9,12,13,13
+lca_top5,"shape only, DTW, DBSCAN",11,25,0.44,0,12,11,13
+lca_top5,"shape only, Euclidean, k-medoids",14,25,0.56,7,12,7,13
+lca_top5,"shape only, Euclidean, DBSCAN",15,25,0.6,5,12,10,13
+lca_top5,"shape only, DTW, DTW-KMeans",22,25,0.88,10,12,12,13
+lca_top5,"shape only, Euclidean, KMeans",17,25,0.68,5,12,12,13
+lca_likely,"raw, DTW, k-medoids",21,25,0.84,8,12,13,13
+lca_likely,"raw, DTW, DBSCAN",13,25,0.52,0,12,13,13
+lca_likely,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+lca_likely,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_likely,"raw, DTW, DTW-KMeans",15,25,0.6,10,12,5,13
+lca_likely,"raw, Euclidean, KMeans",17,25,0.68,5,12,12,13
+lca_likely,"shape only, DTW, k-medoids",22,25,0.88,9,12,13,13
+lca_likely,"shape only, DTW, DBSCAN",9,25,0.36,0,12,9,13
+lca_likely,"shape only, Euclidean, k-medoids",16,25,0.64,7,12,9,13
+lca_likely,"shape only, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+lca_likely,"shape only, DTW, DTW-KMeans",18,25,0.72,10,12,8,13
+lca_likely,"shape only, Euclidean, KMeans",14,25,0.56,8,12,6,13
+glove_top1,"raw, DTW, k-medoids",21,25,0.84,10,12,11,13
+glove_top1,"raw, DTW, DBSCAN",15,25,0.6,6,12,9,13
+glove_top1,"raw, Euclidean, k-medoids",15,25,0.6,8,12,7,13
+glove_top1,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+glove_top1,"raw, DTW, DTW-KMeans",22,25,0.88,11,12,11,13
+glove_top1,"raw, Euclidean, KMeans",20,25,0.8,9,12,11,13
+glove_top1,"shape only, DTW, k-medoids",21,25,0.84,10,12,11,13
+glove_top1,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+glove_top1,"shape only, Euclidean, k-medoids",17,25,0.68,8,12,9,13
+glove_top1,"shape only, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+glove_top1,"shape only, DTW, DTW-KMeans",21,25,0.84,10,12,11,13
+glove_top1,"shape only, Euclidean, KMeans",14,25,0.56,4,12,10,13
+glove_top3,"raw, DTW, k-medoids",22,25,0.88,12,12,10,13
+glove_top3,"raw, DTW, DBSCAN",12,25,0.48,12,12,0,13
+glove_top3,"raw, Euclidean, k-medoids",19,25,0.76,6,12,13,13
+glove_top3,"raw, Euclidean, DBSCAN",11,25,0.44,11,12,0,13
+glove_top3,"raw, DTW, DTW-KMeans",22,25,0.88,11,12,11,13
+glove_top3,"raw, Euclidean, KMeans",22,25,0.88,11,12,11,13
+glove_top3,"shape only, DTW, k-medoids",14,25,0.56,1,12,13,13
+glove_top3,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+glove_top3,"shape only, Euclidean, k-medoids",14,25,0.56,4,12,10,13
+glove_top3,"shape only, Euclidean, DBSCAN",9,25,0.36,0,12,9,13
+glove_top3,"shape only, DTW, DTW-KMeans",17,25,0.68,7,12,10,13
+glove_top3,"shape only, Euclidean, KMeans",16,25,0.64,6,12,10,13
+glove_top5,"raw, DTW, k-medoids",23,25,0.92,10,12,13,13
+glove_top5,"raw, DTW, DBSCAN",10,25,0.4,10,12,0,13
+glove_top5,"raw, Euclidean, k-medoids",21,25,0.84,9,12,12,13
+glove_top5,"raw, Euclidean, DBSCAN",10,25,0.4,10,12,0,13
+glove_top5,"raw, DTW, DTW-KMeans",23,25,0.92,10,12,13,13
+glove_top5,"raw, Euclidean, KMeans",22,25,0.88,11,12,11,13
+glove_top5,"shape only, DTW, k-medoids",14,25,0.56,1,12,13,13
+glove_top5,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+glove_top5,"shape only, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+glove_top5,"shape only, Euclidean, DBSCAN",9,25,0.36,0,12,9,13
+glove_top5,"shape only, DTW, DTW-KMeans",14,25,0.56,4,12,10,13
+glove_top5,"shape only, Euclidean, KMeans",14,25,0.56,8,12,6,13
+glove_likely,"raw, DTW, k-medoids",22,25,0.88,9,12,13,13
+glove_likely,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+glove_likely,"raw, Euclidean, k-medoids",14,25,0.56,2,12,12,13
+glove_likely,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+glove_likely,"raw, DTW, DTW-KMeans",22,25,0.88,9,12,13,13
+glove_likely,"raw, Euclidean, KMeans",17,25,0.68,5,12,12,13
+glove_likely,"shape only, DTW, k-medoids",22,25,0.88,9,12,13,13
+glove_likely,"shape only, DTW, DBSCAN",11,25,0.44,0,12,11,13
+glove_likely,"shape only, Euclidean, k-medoids",16,25,0.64,5,12,11,13
+glove_likely,"shape only, Euclidean, DBSCAN",12,25,0.48,3,12,9,13
+glove_likely,"shape only, DTW, DTW-KMeans",22,25,0.88,10,12,12,13
+glove_likely,"shape only, Euclidean, KMeans",16,25,0.64,8,12,8,13
+emb_top1,"raw, DTW, k-medoids",21,25,0.84,10,12,11,13
+emb_top1,"raw, DTW, DBSCAN",13,25,0.52,0,12,13,13
+emb_top1,"raw, Euclidean, k-medoids",18,25,0.72,6,12,12,13
+emb_top1,"raw, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+emb_top1,"raw, DTW, DTW-KMeans",21,25,0.84,10,12,11,13
+emb_top1,"raw, Euclidean, KMeans",19,25,0.76,7,12,12,13
+emb_top1,"shape only, DTW, k-medoids",21,25,0.84,11,12,10,13
+emb_top1,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+emb_top1,"shape only, Euclidean, k-medoids",17,25,0.68,9,12,8,13
+emb_top1,"shape only, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+emb_top1,"shape only, DTW, DTW-KMeans",20,25,0.8,10,12,10,13
+emb_top1,"shape only, Euclidean, KMeans",14,25,0.56,6,12,8,13
+emb_top3,"raw, DTW, k-medoids",18,25,0.72,9,12,9,13
+emb_top3,"raw, DTW, DBSCAN",10,25,0.4,0,12,10,13
+emb_top3,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+emb_top3,"raw, Euclidean, DBSCAN",12,25,0.48,12,12,0,13
+emb_top3,"raw, DTW, DTW-KMeans",16,25,0.64,9,12,7,13
+emb_top3,"raw, Euclidean, KMeans",17,25,0.68,6,12,11,13
+emb_top3,"shape only, DTW, k-medoids",14,25,0.56,1,12,13,13
+emb_top3,"shape only, DTW, DBSCAN",13,25,0.52,0,12,13,13
+emb_top3,"shape only, Euclidean, k-medoids",15,25,0.6,7,12,8,13
+emb_top3,"shape only, Euclidean, DBSCAN",13,25,0.52,0,12,13,13
+emb_top3,"shape only, DTW, DTW-KMeans",14,25,0.56,11,12,3,13
+emb_top3,"shape only, Euclidean, KMeans",15,25,0.6,6,12,9,13
+emb_top5,"raw, DTW, k-medoids",16,25,0.64,7,12,9,13
+emb_top5,"raw, DTW, DBSCAN",11,25,0.44,11,12,0,13
+emb_top5,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+emb_top5,"raw, Euclidean, DBSCAN",12,25,0.48,12,12,0,13
+emb_top5,"raw, DTW, DTW-KMeans",20,25,0.8,8,12,12,13
+emb_top5,"raw, Euclidean, KMeans",16,25,0.64,10,12,6,13
+emb_top5,"shape only, DTW, k-medoids",14,25,0.56,1,12,13,13
+emb_top5,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+emb_top5,"shape only, Euclidean, k-medoids",17,25,0.68,7,12,10,13
+emb_top5,"shape only, Euclidean, DBSCAN",8,25,0.32,0,12,8,13
+emb_top5,"shape only, DTW, DTW-KMeans",15,25,0.6,12,12,3,13
+emb_top5,"shape only, Euclidean, KMeans",17,25,0.68,7,12,10,13
+emb_likely,"raw, DTW, k-medoids",22,25,0.88,9,12,13,13
+emb_likely,"raw, DTW, DBSCAN",22,25,0.88,9,12,13,13
+emb_likely,"raw, Euclidean, k-medoids",16,25,0.64,4,12,12,13
+emb_likely,"raw, Euclidean, DBSCAN",4,25,0.16,0,12,4,13
+emb_likely,"raw, DTW, DTW-KMeans",22,25,0.88,9,12,13,13
+emb_likely,"raw, Euclidean, KMeans",21,25,0.84,10,12,11,13
+emb_likely,"shape only, DTW, k-medoids",22,25,0.88,10,12,12,13
+emb_likely,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+emb_likely,"shape only, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+emb_likely,"shape only, Euclidean, DBSCAN",11,25,0.44,0,12,11,13
+emb_likely,"shape only, DTW, DTW-KMeans",22,25,0.88,10,12,12,13
+emb_likely,"shape only, Euclidean, KMeans",13,25,0.52,0,12,13,13
+surprisal_per_word,"raw, DTW, k-medoids",22,25,0.88,11,12,11,13
+surprisal_per_word,"raw, DTW, DBSCAN",11,25,0.44,0,12,11,13
+surprisal_per_word,"raw, Euclidean, k-medoids",21,25,0.84,10,12,11,13
+surprisal_per_word,"raw, Euclidean, DBSCAN",6,25,0.24,6,12,0,13
+surprisal_per_word,"raw, DTW, DTW-KMeans",14,25,0.56,11,12,3,13
+surprisal_per_word,"raw, Euclidean, KMeans",21,25,0.84,10,12,11,13
+surprisal_per_word,"shape only, DTW, k-medoids",24,25,0.96,12,12,12,13
+surprisal_per_word,"shape only, DTW, DBSCAN",7,25,0.28,0,12,7,13
+surprisal_per_word,"shape only, Euclidean, k-medoids",16,25,0.64,8,12,8,13
+surprisal_per_word,"shape only, Euclidean, DBSCAN",15,25,0.6,4,12,11,13
+surprisal_per_word,"shape only, DTW, DTW-KMeans",17,25,0.68,12,12,5,13
+surprisal_per_word,"shape only, Euclidean, KMeans",17,25,0.68,7,12,10,13
+max_prob_per_word,"raw, DTW, k-medoids",20,25,0.8,7,12,13,13
+max_prob_per_word,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+max_prob_per_word,"raw, Euclidean, k-medoids",22,25,0.88,10,12,12,13
+max_prob_per_word,"raw, Euclidean, DBSCAN",11,25,0.44,0,12,11,13
+max_prob_per_word,"raw, DTW, DTW-KMeans",21,25,0.84,9,12,12,13
+max_prob_per_word,"raw, Euclidean, KMeans",22,25,0.88,10,12,12,13
+max_prob_per_word,"shape only, DTW, k-medoids",19,25,0.76,10,12,9,13
+max_prob_per_word,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+max_prob_per_word,"shape only, Euclidean, k-medoids",15,25,0.6,8,12,7,13
+max_prob_per_word,"shape only, Euclidean, DBSCAN",11,25,0.44,0,12,11,13
+max_prob_per_word,"shape only, DTW, DTW-KMeans",20,25,0.8,10,12,10,13
+max_prob_per_word,"shape only, Euclidean, KMeans",15,25,0.6,6,12,9,13
+entropy_per_word,"raw, DTW, k-medoids",15,25,0.6,11,12,4,13
+entropy_per_word,"raw, DTW, DBSCAN",10,25,0.4,0,12,10,13
+entropy_per_word,"raw, Euclidean, k-medoids",20,25,0.8,10,12,10,13
+entropy_per_word,"raw, Euclidean, DBSCAN",11,25,0.44,11,12,0,13
+entropy_per_word,"raw, DTW, DTW-KMeans",21,25,0.84,10,12,11,13
+entropy_per_word,"raw, Euclidean, KMeans",21,25,0.84,10,12,11,13
+entropy_per_word,"shape only, DTW, k-medoids",17,25,0.68,7,12,10,13
+entropy_per_word,"shape only, DTW, DBSCAN",13,25,0.52,0,12,13,13
+entropy_per_word,"shape only, Euclidean, k-medoids",16,25,0.64,8,12,8,13
+entropy_per_word,"shape only, Euclidean, DBSCAN",8,25,0.32,0,12,8,13
+entropy_per_word,"shape only, DTW, DTW-KMeans",16,25,0.64,7,12,9,13
+entropy_per_word,"shape only, Euclidean, KMeans",17,25,0.68,5,12,12,13
+self_certainty_per_word,"raw, DTW, k-medoids",20,25,0.8,8,12,12,13
+self_certainty_per_word,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+self_certainty_per_word,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+self_certainty_per_word,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+self_certainty_per_word,"raw, DTW, DTW-KMeans",20,25,0.8,8,12,12,13
+self_certainty_per_word,"raw, Euclidean, KMeans",20,25,0.8,8,12,12,13
+self_certainty_per_word,"shape only, DTW, k-medoids",14,25,0.56,7,12,7,13
+self_certainty_per_word,"shape only, DTW, DBSCAN",13,25,0.52,0,12,13,13
+self_certainty_per_word,"shape only, Euclidean, k-medoids",14,25,0.56,7,12,7,13
+self_certainty_per_word,"shape only, Euclidean, DBSCAN",10,25,0.4,0,12,10,13
+self_certainty_per_word,"shape only, DTW, DTW-KMeans",18,25,0.72,6,12,12,13
+self_certainty_per_word,"shape only, Euclidean, KMeans",14,25,0.56,6,12,8,13
+renyi_per_word,"raw, DTW, k-medoids",15,25,0.6,3,12,12,13
+renyi_per_word,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+renyi_per_word,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+renyi_per_word,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+renyi_per_word,"raw, DTW, DTW-KMeans",15,25,0.6,3,12,12,13
+renyi_per_word,"raw, Euclidean, KMeans",13,25,0.52,0,12,13,13
+renyi_per_word,"shape only, DTW, k-medoids",19,25,0.76,9,12,10,13
+renyi_per_word,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+renyi_per_word,"shape only, Euclidean, k-medoids",16,25,0.64,9,12,7,13
+renyi_per_word,"shape only, Euclidean, DBSCAN",11,25,0.44,0,12,11,13
+renyi_per_word,"shape only, DTW, DTW-KMeans",14,25,0.56,8,12,6,13
+renyi_per_word,"shape only, Euclidean, KMeans",13,25,0.52,0,12,13,13
+fisher_rao_per_word,"raw, DTW, k-medoids",16,25,0.64,4,12,12,13
+fisher_rao_per_word,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+fisher_rao_per_word,"raw, Euclidean, k-medoids",18,25,0.72,10,12,8,13
+fisher_rao_per_word,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+fisher_rao_per_word,"raw, DTW, DTW-KMeans",17,25,0.68,5,12,12,13
+fisher_rao_per_word,"raw, Euclidean, KMeans",13,25,0.52,0,12,13,13
+fisher_rao_per_word,"shape only, DTW, k-medoids",15,25,0.6,9,12,6,13
+fisher_rao_per_word,"shape only, DTW, DBSCAN",12,25,0.48,0,12,12,13
+fisher_rao_per_word,"shape only, Euclidean, k-medoids",15,25,0.6,8,12,7,13
+fisher_rao_per_word,"shape only, Euclidean, DBSCAN",10,25,0.4,0,12,10,13
+fisher_rao_per_word,"shape only, DTW, DTW-KMeans",17,25,0.68,7,12,10,13
+fisher_rao_per_word,"shape only, Euclidean, KMeans",13,25,0.52,0,12,13,13
+surprisal_per_token,"raw, DTW, k-medoids",14,25,0.56,6,12,8,13
+surprisal_per_token,"raw, DTW, DBSCAN",10,25,0.4,10,12,0,13
+surprisal_per_token,"raw, Euclidean, k-medoids",19,25,0.76,9,12,10,13
+surprisal_per_token,"raw, Euclidean, DBSCAN",11,25,0.44,11,12,0,13
+surprisal_per_token,"raw, DTW, DTW-KMeans",15,25,0.6,3,12,12,13
+surprisal_per_token,"raw, Euclidean, KMeans",13,25,0.52,0,12,13,13
+surprisal_per_token,"shape only, DTW, k-medoids",17,25,0.68,4,12,13,13
+surprisal_per_token,"shape only, DTW, DBSCAN",12,25,0.48,12,12,0,13
+surprisal_per_token,"shape only, Euclidean, k-medoids",14,25,0.56,4,12,10,13
+surprisal_per_token,"shape only, Euclidean, DBSCAN",8,25,0.32,0,12,8,13
+surprisal_per_token,"shape only, DTW, DTW-KMeans",15,25,0.6,3,12,12,13
+surprisal_per_token,"shape only, Euclidean, KMeans",15,25,0.6,2,12,13,13
+max_prob_per_token,"raw, DTW, k-medoids",21,25,0.84,10,12,11,13
+max_prob_per_token,"raw, DTW, DBSCAN",7,25,0.28,7,12,0,13
+max_prob_per_token,"raw, Euclidean, k-medoids",20,25,0.8,9,12,11,13
+max_prob_per_token,"raw, Euclidean, DBSCAN",12,25,0.48,4,12,8,13
+max_prob_per_token,"raw, DTW, DTW-KMeans",19,25,0.76,7,12,12,13
+max_prob_per_token,"raw, Euclidean, KMeans",22,25,0.88,10,12,12,13
+max_prob_per_token,"shape only, DTW, k-medoids",18,25,0.72,6,12,12,13
+max_prob_per_token,"shape only, DTW, DBSCAN",12,25,0.48,12,12,0,13
+max_prob_per_token,"shape only, Euclidean, k-medoids",14,25,0.56,7,12,7,13
+max_prob_per_token,"shape only, Euclidean, DBSCAN",9,25,0.36,0,12,9,13
+max_prob_per_token,"shape only, DTW, DTW-KMeans",22,25,0.88,10,12,12,13
+max_prob_per_token,"shape only, Euclidean, KMeans",13,25,0.52,0,12,13,13
+entropy_per_token,"raw, DTW, k-medoids",21,25,0.84,10,12,11,13
+entropy_per_token,"raw, DTW, DBSCAN",5,25,0.2,5,12,0,13
+entropy_per_token,"raw, Euclidean, k-medoids",18,25,0.72,6,12,12,13
+entropy_per_token,"raw, Euclidean, DBSCAN",9,25,0.36,9,12,0,13
+entropy_per_token,"raw, DTW, DTW-KMeans",20,25,0.8,10,12,10,13
+entropy_per_token,"raw, Euclidean, KMeans",20,25,0.8,10,12,10,13
+entropy_per_token,"shape only, DTW, k-medoids",17,25,0.68,5,12,12,13
+entropy_per_token,"shape only, DTW, DBSCAN",6,25,0.24,6,12,0,13
+entropy_per_token,"shape only, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+entropy_per_token,"shape only, Euclidean, DBSCAN",4,25,0.16,0,12,4,13
+entropy_per_token,"shape only, DTW, DTW-KMeans",18,25,0.72,8,12,10,13
+entropy_per_token,"shape only, Euclidean, KMeans",14,25,0.56,3,12,11,13
+self_certainty_per_token,"raw, DTW, k-medoids",17,25,0.68,5,12,12,13
+self_certainty_per_token,"raw, DTW, DBSCAN",11,25,0.44,0,12,11,13
+self_certainty_per_token,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+self_certainty_per_token,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+self_certainty_per_token,"raw, DTW, DTW-KMeans",19,25,0.76,7,12,12,13
+self_certainty_per_token,"raw, Euclidean, KMeans",21,25,0.84,9,12,12,13
+self_certainty_per_token,"shape only, DTW, k-medoids",14,25,0.56,9,12,5,13
+self_certainty_per_token,"shape only, DTW, DBSCAN",11,25,0.44,0,12,11,13
+self_certainty_per_token,"shape only, Euclidean, k-medoids",15,25,0.6,7,12,8,13
+self_certainty_per_token,"shape only, Euclidean, DBSCAN",10,25,0.4,0,12,10,13
+self_certainty_per_token,"shape only, DTW, DTW-KMeans",13,25,0.52,0,12,13,13
+self_certainty_per_token,"shape only, Euclidean, KMeans",16,25,0.64,5,12,11,13
+renyi_per_token,"raw, DTW, k-medoids",17,25,0.68,6,12,11,13
+renyi_per_token,"raw, DTW, DBSCAN",11,25,0.44,0,12,11,13
+renyi_per_token,"raw, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+renyi_per_token,"raw, Euclidean, DBSCAN",11,25,0.44,0,12,11,13
+renyi_per_token,"raw, DTW, DTW-KMeans",17,25,0.68,6,12,11,13
+renyi_per_token,"raw, Euclidean, KMeans",14,25,0.56,2,12,12,13
+renyi_per_token,"shape only, DTW, k-medoids",13,25,0.52,0,12,13,13
+renyi_per_token,"shape only, DTW, DBSCAN",14,25,0.56,9,12,5,13
+renyi_per_token,"shape only, Euclidean, k-medoids",13,25,0.52,0,12,13,13
+renyi_per_token,"shape only, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+renyi_per_token,"shape only, DTW, DTW-KMeans",16,25,0.64,10,12,6,13
+renyi_per_token,"shape only, Euclidean, KMeans",14,25,0.56,1,12,13,13
+fisher_rao_per_token,"raw, DTW, k-medoids",16,25,0.64,4,12,12,13
+fisher_rao_per_token,"raw, DTW, DBSCAN",12,25,0.48,0,12,12,13
+fisher_rao_per_token,"raw, Euclidean, k-medoids",18,25,0.72,12,12,6,13
+fisher_rao_per_token,"raw, Euclidean, DBSCAN",12,25,0.48,0,12,12,13
+fisher_rao_per_token,"raw, DTW, DTW-KMeans",18,25,0.72,6,12,12,13
+fisher_rao_per_token,"raw, Euclidean, KMeans",20,25,0.8,8,12,12,13
+fisher_rao_per_token,"shape only, DTW, k-medoids",14,25,0.56,6,12,8,13
+fisher_rao_per_token,"shape only, DTW, DBSCAN",7,25,0.28,0,12,7,13
+fisher_rao_per_token,"shape only, Euclidean, k-medoids",15,25,0.6,7,12,8,13
+fisher_rao_per_token,"shape only, Euclidean, DBSCAN",8,25,0.32,0,12,8,13
+fisher_rao_per_token,"shape only, DTW, DTW-KMeans",13,25,0.52,0,12,13,13
+fisher_rao_per_token,"shape only, Euclidean, KMeans",15,25,0.6,7,12,8,13

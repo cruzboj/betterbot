@@ -1,0 +1,26 @@
+text,measured words,tokens,seconds
+creative_gut_alice,156,896,331
+creative_gut_grimm,183,828,246
+creative_gut_oz,129,814,256
+creative_gut_sherlock,172,813,191
+creative_hp1,187,921,208
+creative_hp2,195,944,212
+creative_hp3,173,918,196
+creative_hp4,170,908,189
+creative_hp5,140,904,157
+creative_hp6,180,921,198
+creative_hp7,156,921,175
+creative_jokes_2,128,849,148
+creative_jokes_for_all_occasions,205,885,222
+factual_gut_candle,193,789,210
+factual_gut_origin_species,174,873,206
+factual_gut_outline_science,214,889,235
+factual_gut_relativity,216,778,239
+factual_wiki_black_hole,233,876,264
+factual_wiki_copper,243,926,285
+factual_wiki_mitochondrion,250,1036,288
+factual_wiki_photosynthesis,259,962,302
+factual_wiki_plate_tectonics,245,958,290
+factual_wiki_vaccine,240,898,269
+factual_wiki_volcano,223,945,251
+factual_wiki_wordnet,209,917,228
