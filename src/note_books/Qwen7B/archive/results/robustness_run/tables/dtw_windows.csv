@@ -1,0 +1,13 @@
+window,correct,texts,share correct,signal
+0.05,15,25,0.6,lca_top3
+0.1,23,25,0.92,lca_top3
+0.2,23,25,0.92,lca_top3
+0.05,13,25,0.52,lca_top5
+0.1,23,25,0.92,lca_top5
+0.2,13,25,0.52,lca_top5
+0.05,23,25,0.92,glove_top5
+0.1,23,25,0.92,glove_top5
+0.2,23,25,0.92,glove_top5
+0.05,23,25,0.92,surprisal_per_word
+0.1,24,25,0.96,surprisal_per_word
+0.2,23,25,0.92,surprisal_per_word

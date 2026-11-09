@@ -1,0 +1,2701 @@
+axis,metric,scaling,distance,method,text,cluster
+measured word,LCA height,raw,DTW,DBSCAN,creative_gut_alice,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_gut_grimm,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_gut_oz,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp1,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp2,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp3,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp4,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp5,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp6,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_hp7,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_jokes_2,0
+measured word,LCA height,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_gut_candle,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,LCA height,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_copper,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,LCA height,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,LCA height,raw,DTW,k-medoids,creative_gut_alice,0
+measured word,LCA height,raw,DTW,k-medoids,creative_gut_grimm,0
+measured word,LCA height,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,LCA height,raw,DTW,k-medoids,creative_gut_sherlock,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp1,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp2,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp3,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp4,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp5,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp6,0
+measured word,LCA height,raw,DTW,k-medoids,creative_hp7,0
+measured word,LCA height,raw,DTW,k-medoids,creative_jokes_2,0
+measured word,LCA height,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,LCA height,raw,DTW,k-medoids,factual_gut_candle,0
+measured word,LCA height,raw,DTW,k-medoids,factual_gut_origin_species,0
+measured word,LCA height,raw,DTW,k-medoids,factual_gut_outline_science,0
+measured word,LCA height,raw,DTW,k-medoids,factual_gut_relativity,0
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_copper,0
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_volcano,0
+measured word,LCA height,raw,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_gut_sherlock,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp1,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp2,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp3,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp4,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp5,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp6,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_hp7,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_jokes_2,1
+measured word,LCA height,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_gut_origin_species,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_copper,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_vaccine,0
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,LCA height,raw,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp1,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp2,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp3,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp4,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp5,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp6,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_hp7,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,LCA height,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_gut_origin_species,-1
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_gut_outline_science,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,LCA height,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,LCA height,raw,Euclidean,k-medoids,creative_gut_alice,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_gut_oz,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp1,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp2,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp3,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp4,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp5,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp6,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_hp7,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_jokes_2,1
+measured word,LCA height,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_gut_candle,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_vaccine,0
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,LCA height,raw,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,LCA height,raw,Euclidean,KMeans,creative_gut_alice,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_gut_oz,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp1,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp2,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp3,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp4,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp5,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp6,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_hp7,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,LCA height,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_gut_candle,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_gut_relativity,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_copper,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,LCA height,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,LCA height,standardised,DTW,DBSCAN,creative_gut_alice,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_gut_grimm,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp1,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp2,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp3,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp6,-1
+measured word,LCA height,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,LCA height,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_gut_candle,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,LCA height,standardised,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_gut_relativity,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+measured word,LCA height,standardised,DTW,DBSCAN,factual_wiki_wordnet,-1
+measured word,LCA height,standardised,DTW,k-medoids,creative_gut_alice,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_gut_grimm,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp1,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp2,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp3,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp4,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp5,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp6,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_hp7,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,LCA height,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,LCA height,standardised,DTW,k-medoids,factual_gut_candle,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_gut_origin_species,0
+measured word,LCA height,standardised,DTW,k-medoids,factual_gut_outline_science,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_gut_relativity,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_copper,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_vaccine,0
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_volcano,1
+measured word,LCA height,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_gut_sherlock,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp1,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp2,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp3,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp4,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp5,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp6,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_hp7,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_jokes_2,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_volcano,0
+measured word,LCA height,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_gut_alice,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_gut_oz,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp1,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp2,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp3,-1
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp4,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp5,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp6,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_hp7,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_gut_candle,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_gut_origin_species,-1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_gut_outline_science,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_gut_relativity,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_copper,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,LCA height,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_gut_alice,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_gut_oz,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_gut_sherlock,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp1,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp2,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp3,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp4,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp5,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp6,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_hp7,0
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_jokes_2,1
+measured word,LCA height,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,0
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_gut_candle,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,LCA height,standardised,Euclidean,k-medoids,factual_wiki_wordnet,0
+measured word,LCA height,standardised,Euclidean,KMeans,creative_gut_alice,0
+measured word,LCA height,standardised,Euclidean,KMeans,creative_gut_grimm,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_gut_oz,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp1,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp2,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp3,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp4,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp5,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp6,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_hp7,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_jokes_2,1
+measured word,LCA height,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_gut_candle,0
+measured word,LCA height,standardised,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_gut_relativity,0
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_black_hole,0
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_copper,0
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,LCA height,standardised,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_gut_alice,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_gut_grimm,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_gut_oz,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_gut_sherlock,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp1,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp2,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp3,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp4,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp5,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp6,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_hp7,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_jokes_2,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_gut_candle,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_copper,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_mitochondrion,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_photosynthesis,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,GloVe spread,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_gut_alice,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_gut_grimm,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_gut_sherlock,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp1,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp2,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp3,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp4,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp5,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp6,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_hp7,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_jokes_2,0
+measured word,GloVe spread,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,raw,DTW,k-medoids,factual_gut_candle,0
+measured word,GloVe spread,raw,DTW,k-medoids,factual_gut_origin_species,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_gut_outline_science,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_gut_relativity,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_copper,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_vaccine,0
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_volcano,1
+measured word,GloVe spread,raw,DTW,k-medoids,factual_wiki_wordnet,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_gut_alice,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_gut_grimm,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp1,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp2,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp3,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp4,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp5,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp6,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_hp7,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_gut_outline_science,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_vaccine,0
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,GloVe spread,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_gut_alice,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_gut_grimm,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_gut_oz,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_gut_sherlock,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp1,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp2,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp3,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp4,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp5,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp6,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_hp7,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_gut_candle,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_gut_origin_species,-1
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_gut_outline_science,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,GloVe spread,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_gut_alice,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_gut_oz,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_gut_sherlock,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp1,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp2,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp3,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp4,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp5,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp6,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_hp7,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_jokes_2,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_gut_candle,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_gut_origin_species,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_volcano,0
+measured word,GloVe spread,raw,Euclidean,k-medoids,factual_wiki_wordnet,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_gut_alice,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_gut_oz,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp1,1
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp2,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp3,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp4,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp5,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp6,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_hp7,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,GloVe spread,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_gut_candle,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_gut_relativity,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_copper,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_vaccine,0
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,GloVe spread,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_gut_alice,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_gut_grimm,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp1,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp2,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp3,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp6,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_gut_candle,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_gut_relativity,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+measured word,GloVe spread,standardised,DTW,DBSCAN,factual_wiki_wordnet,-1
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_gut_alice,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_gut_grimm,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp1,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp2,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp3,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp4,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp5,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp6,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_hp7,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,GloVe spread,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_gut_candle,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_gut_origin_species,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_gut_outline_science,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_gut_relativity,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_copper,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_mitochondrion,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_vaccine,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_volcano,0
+measured word,GloVe spread,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_gut_alice,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp1,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp2,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp3,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp4,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp5,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp6,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_hp7,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_gut_outline_science,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_volcano,0
+measured word,GloVe spread,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_gut_alice,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp1,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp2,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp3,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp4,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp5,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp6,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_hp7,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,GloVe spread,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_gut_alice,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_gut_oz,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp1,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp2,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp3,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp4,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp5,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp6,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_hp7,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_jokes_2,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_gut_candle,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_black_hole,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,0
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,GloVe spread,standardised,Euclidean,k-medoids,factual_wiki_wordnet,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_gut_alice,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_gut_grimm,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_gut_oz,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_gut_sherlock,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp1,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp2,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp3,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp4,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp5,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp6,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_hp7,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_jokes_2,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_gut_candle,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_gut_relativity,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_copper,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,GloVe spread,standardised,Euclidean,KMeans,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_gut_alice,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_gut_grimm,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_gut_oz,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp1,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp2,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp3,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp4,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp5,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp6,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_hp7,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_jokes_2,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_gut_candle,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_copper,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_vaccine,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_gut_alice,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_gut_grimm,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp1,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp2,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp3,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp4,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp5,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp6,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_hp7,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_jokes_2,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_gut_candle,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_gut_relativity,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_copper,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,raw,DTW,k-medoids,factual_wiki_wordnet,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp1,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp2,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp3,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp4,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp5,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp6,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_hp7,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_jokes_2,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_gut_candle,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_gut_outline_science,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_copper,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_gut_alice,-1
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp1,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp2,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp3,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp4,-1
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp5,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp6,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_hp7,-1
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_gut_alice,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_gut_oz,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp1,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp2,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp3,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp4,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp5,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp6,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_hp7,0
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_jokes_2,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_gut_candle,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,Qwen-embedding spread,raw,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_gut_alice,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_gut_oz,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp1,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp2,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp3,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp4,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp5,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp6,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_hp7,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_gut_candle,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_gut_relativity,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_copper,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_vaccine,0
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,Qwen-embedding spread,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_gut_alice,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_gut_grimm,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp1,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp2,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp6,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_gut_candle,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_gut_relativity,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,standardised,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_gut_alice,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_gut_grimm,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp1,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp2,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp4,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp6,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_hp7,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_gut_candle,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_gut_relativity,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_copper,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_vaccine,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_gut_grimm,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp1,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp2,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp4,1
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp6,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_hp7,1
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_gut_alice,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_gut_oz,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_gut_sherlock,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp1,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp2,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp4,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp6,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_hp7,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_gut_relativity,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_copper,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_gut_alice,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_gut_oz,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp1,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp2,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp4,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp6,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_hp7,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_jokes_2,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_gut_candle,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,Qwen-embedding spread,standardised,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_gut_alice,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_gut_grimm,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_gut_oz,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp1,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp2,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp3,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp4,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp5,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp6,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_hp7,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_jokes_2,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_gut_candle,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_gut_origin_species,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_gut_relativity,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_copper,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+measured word,Qwen-embedding spread,standardised,Euclidean,KMeans,factual_wiki_wordnet,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_gut_alice,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_gut_grimm,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_gut_oz,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp1,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp2,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp3,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp4,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp5,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp6,-1
+measured word,surprisal,raw,DTW,DBSCAN,creative_hp7,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_jokes_2,0
+measured word,surprisal,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,surprisal,raw,DTW,DBSCAN,factual_gut_candle,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,surprisal,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_copper,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_mitochondrion,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_photosynthesis,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_vaccine,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,surprisal,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,surprisal,raw,DTW,k-medoids,creative_gut_alice,0
+measured word,surprisal,raw,DTW,k-medoids,creative_gut_grimm,0
+measured word,surprisal,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,surprisal,raw,DTW,k-medoids,creative_gut_sherlock,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp1,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp2,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp3,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp4,1
+measured word,surprisal,raw,DTW,k-medoids,creative_hp5,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp6,0
+measured word,surprisal,raw,DTW,k-medoids,creative_hp7,0
+measured word,surprisal,raw,DTW,k-medoids,creative_jokes_2,0
+measured word,surprisal,raw,DTW,k-medoids,creative_jokes_for_all_occasions,1
+measured word,surprisal,raw,DTW,k-medoids,factual_gut_candle,1
+measured word,surprisal,raw,DTW,k-medoids,factual_gut_origin_species,1
+measured word,surprisal,raw,DTW,k-medoids,factual_gut_outline_science,0
+measured word,surprisal,raw,DTW,k-medoids,factual_gut_relativity,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_copper,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_volcano,1
+measured word,surprisal,raw,DTW,k-medoids,factual_wiki_wordnet,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_gut_sherlock,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp1,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp2,0
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp3,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp4,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp5,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp6,0
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_hp7,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_jokes_2,1
+measured word,surprisal,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_gut_candle,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,surprisal,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_gut_grimm,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_gut_oz,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_gut_sherlock,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp1,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp2,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp3,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp4,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp5,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp6,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_hp7,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_gut_candle,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_gut_origin_species,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_gut_relativity,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_volcano,-1
+measured word,surprisal,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,surprisal,raw,Euclidean,k-medoids,creative_gut_alice,0
+measured word,surprisal,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_gut_oz,0
+measured word,surprisal,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp1,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp2,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp3,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp4,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp5,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp6,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_hp7,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_jokes_2,1
+measured word,surprisal,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,surprisal,raw,Euclidean,k-medoids,factual_gut_candle,1
+measured word,surprisal,raw,Euclidean,k-medoids,factual_gut_origin_species,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+measured word,surprisal,raw,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_vaccine,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_volcano,0
+measured word,surprisal,raw,Euclidean,k-medoids,factual_wiki_wordnet,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_gut_alice,1
+measured word,surprisal,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_gut_oz,1
+measured word,surprisal,raw,Euclidean,KMeans,creative_gut_sherlock,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp1,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp2,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp3,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp4,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp5,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp6,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_hp7,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,surprisal,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,surprisal,raw,Euclidean,KMeans,factual_gut_candle,0
+measured word,surprisal,raw,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_gut_outline_science,0
+measured word,surprisal,raw,Euclidean,KMeans,factual_gut_relativity,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_copper,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,surprisal,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_gut_alice,-1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_gut_grimm,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp1,-1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp2,-1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp3,-1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp6,-1
+measured word,surprisal,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,surprisal,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_gut_candle,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_gut_origin_species,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_gut_relativity,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+measured word,surprisal,standardised,DTW,DBSCAN,factual_wiki_wordnet,-1
+measured word,surprisal,standardised,DTW,k-medoids,creative_gut_alice,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_gut_grimm,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp1,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp2,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp3,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp4,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp5,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp6,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_hp7,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,surprisal,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_gut_candle,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_gut_origin_species,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_gut_outline_science,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_gut_relativity,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_copper,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_volcano,1
+measured word,surprisal,standardised,DTW,k-medoids,factual_wiki_wordnet,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_gut_grimm,0
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp1,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp2,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp3,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp4,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp5,0
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp6,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_hp7,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,surprisal,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_gut_candle,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_gut_outline_science,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp1,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp2,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp3,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp4,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp5,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp6,2
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_hp7,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_gut_candle,2
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_gut_outline_science,2
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_gut_relativity,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_copper,2
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_volcano,1
+measured word,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,2
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_gut_alice,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_gut_oz,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp1,0
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp2,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp3,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp4,0
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp5,0
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp6,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_hp7,0
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_jokes_2,1
+measured word,surprisal,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_gut_candle,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_vaccine,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_volcano,0
+measured word,surprisal,standardised,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_gut_alice,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_gut_grimm,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_gut_oz,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp1,0
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp2,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp3,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp4,0
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp5,0
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp6,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_hp7,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_jokes_2,1
+measured word,surprisal,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_gut_candle,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_gut_outline_science,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_gut_relativity,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_copper,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+measured word,surprisal,standardised,Euclidean,KMeans,factual_wiki_wordnet,0
+measured word,entropy,raw,DTW,DBSCAN,creative_gut_alice,0
+measured word,entropy,raw,DTW,DBSCAN,creative_gut_grimm,0
+measured word,entropy,raw,DTW,DBSCAN,creative_gut_oz,0
+measured word,entropy,raw,DTW,DBSCAN,creative_gut_sherlock,-1
+measured word,entropy,raw,DTW,DBSCAN,creative_hp1,0
+measured word,entropy,raw,DTW,DBSCAN,creative_hp2,-1
+measured word,entropy,raw,DTW,DBSCAN,creative_hp3,0
+measured word,entropy,raw,DTW,DBSCAN,creative_hp4,0
+measured word,entropy,raw,DTW,DBSCAN,creative_hp5,0
+measured word,entropy,raw,DTW,DBSCAN,creative_hp6,0
+measured word,entropy,raw,DTW,DBSCAN,creative_hp7,0
+measured word,entropy,raw,DTW,DBSCAN,creative_jokes_2,0
+measured word,entropy,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,entropy,raw,DTW,DBSCAN,factual_gut_candle,0
+measured word,entropy,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,entropy,raw,DTW,DBSCAN,factual_gut_outline_science,-1
+measured word,entropy,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_mitochondrion,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_photosynthesis,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_vaccine,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,entropy,raw,DTW,DBSCAN,factual_wiki_wordnet,-1
+measured word,entropy,raw,DTW,k-medoids,creative_gut_alice,0
+measured word,entropy,raw,DTW,k-medoids,creative_gut_grimm,0
+measured word,entropy,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,entropy,raw,DTW,k-medoids,creative_gut_sherlock,0
+measured word,entropy,raw,DTW,k-medoids,creative_hp1,0
+measured word,entropy,raw,DTW,k-medoids,creative_hp2,1
+measured word,entropy,raw,DTW,k-medoids,creative_hp3,0
+measured word,entropy,raw,DTW,k-medoids,creative_hp4,0
+measured word,entropy,raw,DTW,k-medoids,creative_hp5,0
+measured word,entropy,raw,DTW,k-medoids,creative_hp6,1
+measured word,entropy,raw,DTW,k-medoids,creative_hp7,0
+measured word,entropy,raw,DTW,k-medoids,creative_jokes_2,1
+measured word,entropy,raw,DTW,k-medoids,creative_jokes_for_all_occasions,1
+measured word,entropy,raw,DTW,k-medoids,factual_gut_candle,0
+measured word,entropy,raw,DTW,k-medoids,factual_gut_origin_species,0
+measured word,entropy,raw,DTW,k-medoids,factual_gut_outline_science,1
+measured word,entropy,raw,DTW,k-medoids,factual_gut_relativity,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_copper,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_mitochondrion,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_photosynthesis,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_vaccine,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_volcano,0
+measured word,entropy,raw,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,entropy,raw,DTW,DTW-KMeans,creative_gut_grimm,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_gut_oz,1
+measured word,entropy,raw,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp1,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp2,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp3,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp4,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp5,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp6,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_hp7,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,entropy,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,entropy,raw,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,entropy,raw,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,entropy,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,entropy,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,entropy,raw,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp1,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp2,-1
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp3,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp4,-1
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp5,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp6,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_hp7,0
+measured word,entropy,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+measured word,entropy,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,entropy,raw,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,entropy,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,entropy,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_gut_alice,1
+measured word,entropy,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,entropy,raw,Euclidean,k-medoids,creative_gut_oz,1
+measured word,entropy,raw,Euclidean,k-medoids,creative_gut_sherlock,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp1,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp2,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp3,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp4,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp5,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp6,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_hp7,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_jokes_2,0
+measured word,entropy,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,0
+measured word,entropy,raw,Euclidean,k-medoids,factual_gut_candle,0
+measured word,entropy,raw,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,entropy,raw,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,entropy,raw,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,entropy,raw,Euclidean,KMeans,creative_gut_alice,1
+measured word,entropy,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,entropy,raw,Euclidean,KMeans,creative_gut_oz,1
+measured word,entropy,raw,Euclidean,KMeans,creative_gut_sherlock,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp1,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp2,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp3,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp4,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp5,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp6,0
+measured word,entropy,raw,Euclidean,KMeans,creative_hp7,0
+measured word,entropy,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,entropy,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,entropy,raw,Euclidean,KMeans,factual_gut_candle,0
+measured word,entropy,raw,Euclidean,KMeans,factual_gut_origin_species,1
+measured word,entropy,raw,Euclidean,KMeans,factual_gut_outline_science,0
+measured word,entropy,raw,Euclidean,KMeans,factual_gut_relativity,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_copper,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_volcano,1
+measured word,entropy,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,entropy,standardised,DTW,DBSCAN,creative_gut_alice,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_gut_grimm,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp1,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp2,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp3,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp6,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,entropy,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_gut_candle,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_gut_relativity,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_black_hole,-1
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_vaccine,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_volcano,0
+measured word,entropy,standardised,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,entropy,standardised,DTW,k-medoids,creative_gut_alice,1
+measured word,entropy,standardised,DTW,k-medoids,creative_gut_grimm,1
+measured word,entropy,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,entropy,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp1,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp2,1
+measured word,entropy,standardised,DTW,k-medoids,creative_hp3,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp4,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp5,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp6,0
+measured word,entropy,standardised,DTW,k-medoids,creative_hp7,0
+measured word,entropy,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,entropy,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,entropy,standardised,DTW,k-medoids,factual_gut_candle,0
+measured word,entropy,standardised,DTW,k-medoids,factual_gut_origin_species,1
+measured word,entropy,standardised,DTW,k-medoids,factual_gut_outline_science,1
+measured word,entropy,standardised,DTW,k-medoids,factual_gut_relativity,0
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_copper,0
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_volcano,0
+measured word,entropy,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp1,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp2,1
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp3,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp4,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp5,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp6,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_hp7,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,entropy,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,entropy,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp1,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp2,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp3,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp4,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp5,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp6,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_hp7,0
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_jokes_2,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_gut_candle,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_copper,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_volcano,-1
+measured word,entropy,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_gut_alice,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_gut_oz,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp1,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp2,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp3,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp4,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp5,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp6,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_hp7,1
+measured word,entropy,standardised,Euclidean,k-medoids,creative_jokes_2,0
+measured word,entropy,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,entropy,standardised,Euclidean,k-medoids,factual_gut_candle,1
+measured word,entropy,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_gut_outline_science,1
+measured word,entropy,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_vaccine,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_volcano,0
+measured word,entropy,standardised,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,entropy,standardised,Euclidean,KMeans,creative_gut_alice,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_gut_grimm,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_gut_oz,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_gut_sherlock,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp1,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp2,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp3,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp4,1
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp5,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp6,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_hp7,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_jokes_2,0
+measured word,entropy,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_gut_candle,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_gut_origin_species,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_gut_outline_science,1
+measured word,entropy,standardised,Euclidean,KMeans,factual_gut_relativity,1
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_black_hole,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_copper,1
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_vaccine,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+measured word,entropy,standardised,Euclidean,KMeans,factual_wiki_wordnet,1
+measured word,Rényi,raw,DTW,DBSCAN,creative_gut_alice,-1
+measured word,Rényi,raw,DTW,DBSCAN,creative_gut_grimm,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_gut_oz,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp1,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp2,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp3,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp4,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp5,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp6,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_hp7,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_jokes_2,0
+measured word,Rényi,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_gut_candle,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_gut_relativity,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_photosynthesis,0
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_volcano,-1
+measured word,Rényi,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+measured word,Rényi,raw,DTW,k-medoids,creative_gut_alice,1
+measured word,Rényi,raw,DTW,k-medoids,creative_gut_grimm,0
+measured word,Rényi,raw,DTW,k-medoids,creative_gut_oz,0
+measured word,Rényi,raw,DTW,k-medoids,creative_gut_sherlock,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp1,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp2,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp3,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp4,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp5,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp6,0
+measured word,Rényi,raw,DTW,k-medoids,creative_hp7,0
+measured word,Rényi,raw,DTW,k-medoids,creative_jokes_2,0
+measured word,Rényi,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,Rényi,raw,DTW,k-medoids,factual_gut_candle,0
+measured word,Rényi,raw,DTW,k-medoids,factual_gut_origin_species,0
+measured word,Rényi,raw,DTW,k-medoids,factual_gut_outline_science,0
+measured word,Rényi,raw,DTW,k-medoids,factual_gut_relativity,0
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_black_hole,0
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_copper,1
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_photosynthesis,0
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_plate_tectonics,0
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_volcano,0
+measured word,Rényi,raw,DTW,k-medoids,factual_wiki_wordnet,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_gut_grimm,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp1,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp2,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp3,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp4,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp5,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp6,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_hp7,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_jokes_2,0
+measured word,Rényi,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_gut_origin_species,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_gut_relativity,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_black_hole,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_vaccine,1
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_volcano,0
+measured word,Rényi,raw,DTW,DTW-KMeans,factual_wiki_wordnet,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_gut_alice,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp1,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp2,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp3,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp4,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp5,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp6,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_hp7,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,Rényi,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_gut_outline_science,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_copper,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_volcano,-1
+measured word,Rényi,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+measured word,Rényi,raw,Euclidean,k-medoids,creative_gut_alice,0
+measured word,Rényi,raw,Euclidean,k-medoids,creative_gut_grimm,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_gut_oz,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp1,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp2,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp3,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp4,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp5,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp6,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_hp7,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_jokes_2,1
+measured word,Rényi,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_gut_candle,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_gut_origin_species,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_copper,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,Rényi,raw,Euclidean,k-medoids,factual_wiki_wordnet,1
+measured word,Rényi,raw,Euclidean,KMeans,creative_gut_alice,1
+measured word,Rényi,raw,Euclidean,KMeans,creative_gut_grimm,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_gut_oz,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_gut_sherlock,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp1,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp2,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp3,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp4,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp5,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp6,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_hp7,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_jokes_2,0
+measured word,Rényi,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_gut_candle,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_gut_origin_species,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_gut_outline_science,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_gut_relativity,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_black_hole,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_copper,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_photosynthesis,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_vaccine,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_volcano,0
+measured word,Rényi,raw,Euclidean,KMeans,factual_wiki_wordnet,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_gut_alice,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_gut_grimm,-1
+measured word,Rényi,standardised,DTW,DBSCAN,creative_gut_oz,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp1,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp2,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp3,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp4,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp5,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp6,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_hp7,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_jokes_2,0
+measured word,Rényi,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Rényi,standardised,DTW,DBSCAN,factual_gut_candle,0
+measured word,Rényi,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+measured word,Rényi,standardised,DTW,DBSCAN,factual_gut_outline_science,0
+measured word,Rényi,standardised,DTW,DBSCAN,factual_gut_relativity,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_black_hole,0
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_copper,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_vaccine,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+measured word,Rényi,standardised,DTW,DBSCAN,factual_wiki_wordnet,-1
+measured word,Rényi,standardised,DTW,k-medoids,creative_gut_alice,1
+measured word,Rényi,standardised,DTW,k-medoids,creative_gut_grimm,1
+measured word,Rényi,standardised,DTW,k-medoids,creative_gut_oz,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_gut_sherlock,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp1,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp2,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp3,1
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp4,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp5,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp6,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_hp7,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_jokes_2,0
+measured word,Rényi,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+measured word,Rényi,standardised,DTW,k-medoids,factual_gut_candle,0
+measured word,Rényi,standardised,DTW,k-medoids,factual_gut_origin_species,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_gut_outline_science,0
+measured word,Rényi,standardised,DTW,k-medoids,factual_gut_relativity,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_copper,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_volcano,0
+measured word,Rényi,standardised,DTW,k-medoids,factual_wiki_wordnet,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_gut_alice,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_gut_oz,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp1,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp2,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp3,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp4,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp5,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp6,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_hp7,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_jokes_2,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_gut_candle,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_gut_outline_science,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_gut_relativity,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_copper,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_volcano,1
+measured word,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,1
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_gut_alice,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_gut_oz,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_gut_sherlock,-1
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp1,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp2,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp3,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp4,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp5,-1
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp6,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_hp7,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_gut_candle,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_gut_relativity,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_copper,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+measured word,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,-1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_gut_alice,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_gut_oz,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_gut_sherlock,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp1,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp2,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp3,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp4,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp5,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp6,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_hp7,1
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_jokes_2,0
+measured word,Rényi,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_gut_candle,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_gut_relativity,1
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_copper,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_vaccine,0
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_volcano,1
+measured word,Rényi,standardised,Euclidean,k-medoids,factual_wiki_wordnet,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_gut_alice,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_gut_grimm,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_gut_oz,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp1,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp2,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp3,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp4,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp5,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp6,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_hp7,0
+measured word,Rényi,standardised,Euclidean,KMeans,creative_jokes_2,1
+measured word,Rényi,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_gut_candle,1
+measured word,Rényi,standardised,Euclidean,KMeans,factual_gut_origin_species,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_gut_outline_science,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_gut_relativity,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_black_hole,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_copper,1
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+measured word,Rényi,standardised,Euclidean,KMeans,factual_wiki_wordnet,1
+token,surprisal,raw,DTW,DBSCAN,creative_gut_alice,0
+token,surprisal,raw,DTW,DBSCAN,creative_gut_grimm,0
+token,surprisal,raw,DTW,DBSCAN,creative_gut_oz,0
+token,surprisal,raw,DTW,DBSCAN,creative_gut_sherlock,0
+token,surprisal,raw,DTW,DBSCAN,creative_hp1,0
+token,surprisal,raw,DTW,DBSCAN,creative_hp2,-1
+token,surprisal,raw,DTW,DBSCAN,creative_hp3,0
+token,surprisal,raw,DTW,DBSCAN,creative_hp4,-1
+token,surprisal,raw,DTW,DBSCAN,creative_hp5,-1
+token,surprisal,raw,DTW,DBSCAN,creative_hp6,-1
+token,surprisal,raw,DTW,DBSCAN,creative_hp7,-1
+token,surprisal,raw,DTW,DBSCAN,creative_jokes_2,-1
+token,surprisal,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+token,surprisal,raw,DTW,DBSCAN,factual_gut_candle,0
+token,surprisal,raw,DTW,DBSCAN,factual_gut_origin_species,0
+token,surprisal,raw,DTW,DBSCAN,factual_gut_outline_science,-1
+token,surprisal,raw,DTW,DBSCAN,factual_gut_relativity,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_copper,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_mitochondrion,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_vaccine,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_volcano,0
+token,surprisal,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+token,surprisal,raw,DTW,k-medoids,creative_gut_alice,0
+token,surprisal,raw,DTW,k-medoids,creative_gut_grimm,0
+token,surprisal,raw,DTW,k-medoids,creative_gut_oz,0
+token,surprisal,raw,DTW,k-medoids,creative_gut_sherlock,0
+token,surprisal,raw,DTW,k-medoids,creative_hp1,0
+token,surprisal,raw,DTW,k-medoids,creative_hp2,1
+token,surprisal,raw,DTW,k-medoids,creative_hp3,1
+token,surprisal,raw,DTW,k-medoids,creative_hp4,1
+token,surprisal,raw,DTW,k-medoids,creative_hp5,1
+token,surprisal,raw,DTW,k-medoids,creative_hp6,1
+token,surprisal,raw,DTW,k-medoids,creative_hp7,1
+token,surprisal,raw,DTW,k-medoids,creative_jokes_2,1
+token,surprisal,raw,DTW,k-medoids,creative_jokes_for_all_occasions,1
+token,surprisal,raw,DTW,k-medoids,factual_gut_candle,0
+token,surprisal,raw,DTW,k-medoids,factual_gut_origin_species,1
+token,surprisal,raw,DTW,k-medoids,factual_gut_outline_science,1
+token,surprisal,raw,DTW,k-medoids,factual_gut_relativity,0
+token,surprisal,raw,DTW,k-medoids,factual_wiki_black_hole,0
+token,surprisal,raw,DTW,k-medoids,factual_wiki_copper,0
+token,surprisal,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,surprisal,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+token,surprisal,raw,DTW,k-medoids,factual_wiki_plate_tectonics,0
+token,surprisal,raw,DTW,k-medoids,factual_wiki_vaccine,0
+token,surprisal,raw,DTW,k-medoids,factual_wiki_volcano,1
+token,surprisal,raw,DTW,k-medoids,factual_wiki_wordnet,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_gut_alice,0
+token,surprisal,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_gut_oz,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_gut_sherlock,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp1,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp2,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp3,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp4,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp5,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp6,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_hp7,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_jokes_2,1
+token,surprisal,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_gut_candle,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_gut_origin_species,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_gut_outline_science,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_copper,0
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_vaccine,0
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+token,surprisal,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+token,surprisal,raw,Euclidean,DBSCAN,creative_gut_alice,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_gut_oz,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp1,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp2,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp3,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp4,-1
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp5,0
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp6,-1
+token,surprisal,raw,Euclidean,DBSCAN,creative_hp7,-1
+token,surprisal,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+token,surprisal,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+token,surprisal,raw,Euclidean,DBSCAN,factual_gut_candle,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_gut_origin_species,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_gut_outline_science,-1
+token,surprisal,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+token,surprisal,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+token,surprisal,raw,Euclidean,k-medoids,creative_gut_alice,0
+token,surprisal,raw,Euclidean,k-medoids,creative_gut_grimm,1
+token,surprisal,raw,Euclidean,k-medoids,creative_gut_oz,0
+token,surprisal,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp1,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp2,0
+token,surprisal,raw,Euclidean,k-medoids,creative_hp3,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp4,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp5,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp6,1
+token,surprisal,raw,Euclidean,k-medoids,creative_hp7,1
+token,surprisal,raw,Euclidean,k-medoids,creative_jokes_2,1
+token,surprisal,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+token,surprisal,raw,Euclidean,k-medoids,factual_gut_candle,1
+token,surprisal,raw,Euclidean,k-medoids,factual_gut_origin_species,0
+token,surprisal,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+token,surprisal,raw,Euclidean,k-medoids,factual_gut_relativity,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_black_hole,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_copper,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_vaccine,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_volcano,0
+token,surprisal,raw,Euclidean,k-medoids,factual_wiki_wordnet,0
+token,surprisal,raw,Euclidean,KMeans,creative_gut_alice,1
+token,surprisal,raw,Euclidean,KMeans,creative_gut_grimm,1
+token,surprisal,raw,Euclidean,KMeans,creative_gut_oz,1
+token,surprisal,raw,Euclidean,KMeans,creative_gut_sherlock,1
+token,surprisal,raw,Euclidean,KMeans,creative_hp1,1
+token,surprisal,raw,Euclidean,KMeans,creative_hp2,1
+token,surprisal,raw,Euclidean,KMeans,creative_hp3,1
+token,surprisal,raw,Euclidean,KMeans,creative_hp4,0
+token,surprisal,raw,Euclidean,KMeans,creative_hp5,1
+token,surprisal,raw,Euclidean,KMeans,creative_hp6,0
+token,surprisal,raw,Euclidean,KMeans,creative_hp7,1
+token,surprisal,raw,Euclidean,KMeans,creative_jokes_2,1
+token,surprisal,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+token,surprisal,raw,Euclidean,KMeans,factual_gut_candle,1
+token,surprisal,raw,Euclidean,KMeans,factual_gut_origin_species,1
+token,surprisal,raw,Euclidean,KMeans,factual_gut_outline_science,0
+token,surprisal,raw,Euclidean,KMeans,factual_gut_relativity,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_copper,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_vaccine,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_volcano,1
+token,surprisal,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+token,surprisal,standardised,DTW,DBSCAN,creative_gut_alice,-1
+token,surprisal,standardised,DTW,DBSCAN,creative_gut_grimm,0
+token,surprisal,standardised,DTW,DBSCAN,creative_gut_oz,0
+token,surprisal,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp1,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp2,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp3,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp4,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp5,-1
+token,surprisal,standardised,DTW,DBSCAN,creative_hp6,0
+token,surprisal,standardised,DTW,DBSCAN,creative_hp7,0
+token,surprisal,standardised,DTW,DBSCAN,creative_jokes_2,0
+token,surprisal,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+token,surprisal,standardised,DTW,DBSCAN,factual_gut_candle,0
+token,surprisal,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+token,surprisal,standardised,DTW,DBSCAN,factual_gut_outline_science,0
+token,surprisal,standardised,DTW,DBSCAN,factual_gut_relativity,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_black_hole,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_copper,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_vaccine,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_volcano,0
+token,surprisal,standardised,DTW,DBSCAN,factual_wiki_wordnet,0
+token,surprisal,standardised,DTW,k-medoids,creative_gut_alice,0
+token,surprisal,standardised,DTW,k-medoids,creative_gut_grimm,0
+token,surprisal,standardised,DTW,k-medoids,creative_gut_oz,0
+token,surprisal,standardised,DTW,k-medoids,creative_gut_sherlock,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp1,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp2,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp3,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp4,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp5,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp6,0
+token,surprisal,standardised,DTW,k-medoids,creative_hp7,0
+token,surprisal,standardised,DTW,k-medoids,creative_jokes_2,0
+token,surprisal,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+token,surprisal,standardised,DTW,k-medoids,factual_gut_candle,0
+token,surprisal,standardised,DTW,k-medoids,factual_gut_origin_species,0
+token,surprisal,standardised,DTW,k-medoids,factual_gut_outline_science,0
+token,surprisal,standardised,DTW,k-medoids,factual_gut_relativity,0
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_black_hole,0
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_copper,1
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,0
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_volcano,0
+token,surprisal,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+token,surprisal,standardised,DTW,DTW-KMeans,creative_gut_alice,0
+token,surprisal,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_gut_oz,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_gut_sherlock,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp1,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp2,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp3,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp4,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp5,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp6,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_hp7,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_jokes_2,1
+token,surprisal,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_gut_candle,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_gut_outline_science,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_gut_relativity,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_volcano,1
+token,surprisal,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_gut_alice,-1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_gut_oz,-1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp1,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp2,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp3,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp4,-1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp5,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp6,-1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_hp7,-1
+token,surprisal,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+token,surprisal,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_gut_candle,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_gut_outline_science,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_gut_relativity,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_copper,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+token,surprisal,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+token,surprisal,standardised,Euclidean,k-medoids,creative_gut_alice,0
+token,surprisal,standardised,Euclidean,k-medoids,creative_gut_grimm,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_gut_oz,0
+token,surprisal,standardised,Euclidean,k-medoids,creative_gut_sherlock,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp1,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp2,0
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp3,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp4,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp5,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp6,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_hp7,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_jokes_2,1
+token,surprisal,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_gut_candle,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+token,surprisal,standardised,Euclidean,k-medoids,factual_gut_outline_science,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_gut_relativity,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_black_hole,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_copper,0
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,0
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_vaccine,1
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_volcano,0
+token,surprisal,standardised,Euclidean,k-medoids,factual_wiki_wordnet,1
+token,surprisal,standardised,Euclidean,KMeans,creative_gut_alice,0
+token,surprisal,standardised,Euclidean,KMeans,creative_gut_grimm,0
+token,surprisal,standardised,Euclidean,KMeans,creative_gut_oz,0
+token,surprisal,standardised,Euclidean,KMeans,creative_gut_sherlock,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp1,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp2,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp3,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp4,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp5,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp6,0
+token,surprisal,standardised,Euclidean,KMeans,creative_hp7,0
+token,surprisal,standardised,Euclidean,KMeans,creative_jokes_2,0
+token,surprisal,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+token,surprisal,standardised,Euclidean,KMeans,factual_gut_candle,0
+token,surprisal,standardised,Euclidean,KMeans,factual_gut_origin_species,0
+token,surprisal,standardised,Euclidean,KMeans,factual_gut_outline_science,0
+token,surprisal,standardised,Euclidean,KMeans,factual_gut_relativity,1
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_black_hole,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_copper,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_vaccine,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+token,surprisal,standardised,Euclidean,KMeans,factual_wiki_wordnet,0
+token,entropy,raw,DTW,DBSCAN,creative_gut_alice,0
+token,entropy,raw,DTW,DBSCAN,creative_gut_grimm,-1
+token,entropy,raw,DTW,DBSCAN,creative_gut_oz,0
+token,entropy,raw,DTW,DBSCAN,creative_gut_sherlock,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp1,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp2,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp3,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp4,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp5,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp6,-1
+token,entropy,raw,DTW,DBSCAN,creative_hp7,-1
+token,entropy,raw,DTW,DBSCAN,creative_jokes_2,-1
+token,entropy,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+token,entropy,raw,DTW,DBSCAN,factual_gut_candle,-1
+token,entropy,raw,DTW,DBSCAN,factual_gut_origin_species,-1
+token,entropy,raw,DTW,DBSCAN,factual_gut_outline_science,-1
+token,entropy,raw,DTW,DBSCAN,factual_gut_relativity,0
+token,entropy,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+token,entropy,raw,DTW,DBSCAN,factual_wiki_copper,0
+token,entropy,raw,DTW,DBSCAN,factual_wiki_mitochondrion,0
+token,entropy,raw,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+token,entropy,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+token,entropy,raw,DTW,DBSCAN,factual_wiki_vaccine,0
+token,entropy,raw,DTW,DBSCAN,factual_wiki_volcano,-1
+token,entropy,raw,DTW,DBSCAN,factual_wiki_wordnet,-1
+token,entropy,raw,DTW,k-medoids,creative_gut_alice,1
+token,entropy,raw,DTW,k-medoids,creative_gut_grimm,0
+token,entropy,raw,DTW,k-medoids,creative_gut_oz,1
+token,entropy,raw,DTW,k-medoids,creative_gut_sherlock,0
+token,entropy,raw,DTW,k-medoids,creative_hp1,0
+token,entropy,raw,DTW,k-medoids,creative_hp2,0
+token,entropy,raw,DTW,k-medoids,creative_hp3,0
+token,entropy,raw,DTW,k-medoids,creative_hp4,0
+token,entropy,raw,DTW,k-medoids,creative_hp5,0
+token,entropy,raw,DTW,k-medoids,creative_hp6,0
+token,entropy,raw,DTW,k-medoids,creative_hp7,0
+token,entropy,raw,DTW,k-medoids,creative_jokes_2,0
+token,entropy,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+token,entropy,raw,DTW,k-medoids,factual_gut_candle,0
+token,entropy,raw,DTW,k-medoids,factual_gut_origin_species,1
+token,entropy,raw,DTW,k-medoids,factual_gut_outline_science,0
+token,entropy,raw,DTW,k-medoids,factual_gut_relativity,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_black_hole,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_copper,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_photosynthesis,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_plate_tectonics,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_vaccine,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_volcano,1
+token,entropy,raw,DTW,k-medoids,factual_wiki_wordnet,1
+token,entropy,raw,DTW,DTW-KMeans,creative_gut_alice,1
+token,entropy,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+token,entropy,raw,DTW,DTW-KMeans,creative_gut_oz,1
+token,entropy,raw,DTW,DTW-KMeans,creative_gut_sherlock,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp1,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp2,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp3,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp4,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp5,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp6,0
+token,entropy,raw,DTW,DTW-KMeans,creative_hp7,0
+token,entropy,raw,DTW,DTW-KMeans,creative_jokes_2,0
+token,entropy,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+token,entropy,raw,DTW,DTW-KMeans,factual_gut_candle,0
+token,entropy,raw,DTW,DTW-KMeans,factual_gut_origin_species,1
+token,entropy,raw,DTW,DTW-KMeans,factual_gut_outline_science,0
+token,entropy,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_copper,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_vaccine,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_volcano,1
+token,entropy,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+token,entropy,raw,Euclidean,DBSCAN,creative_gut_alice,0
+token,entropy,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+token,entropy,raw,Euclidean,DBSCAN,creative_gut_oz,0
+token,entropy,raw,Euclidean,DBSCAN,creative_gut_sherlock,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_hp1,0
+token,entropy,raw,Euclidean,DBSCAN,creative_hp2,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_hp3,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_hp4,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_hp5,0
+token,entropy,raw,Euclidean,DBSCAN,creative_hp6,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_hp7,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_jokes_2,-1
+token,entropy,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+token,entropy,raw,Euclidean,DBSCAN,factual_gut_candle,-1
+token,entropy,raw,Euclidean,DBSCAN,factual_gut_origin_species,0
+token,entropy,raw,Euclidean,DBSCAN,factual_gut_outline_science,-1
+token,entropy,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_copper,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_vaccine,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_volcano,0
+token,entropy,raw,Euclidean,DBSCAN,factual_wiki_wordnet,-1
+token,entropy,raw,Euclidean,k-medoids,creative_gut_alice,1
+token,entropy,raw,Euclidean,k-medoids,creative_gut_grimm,0
+token,entropy,raw,Euclidean,k-medoids,creative_gut_oz,0
+token,entropy,raw,Euclidean,k-medoids,creative_gut_sherlock,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp1,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp2,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp3,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp4,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp5,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp6,0
+token,entropy,raw,Euclidean,k-medoids,creative_hp7,0
+token,entropy,raw,Euclidean,k-medoids,creative_jokes_2,0
+token,entropy,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,0
+token,entropy,raw,Euclidean,k-medoids,factual_gut_candle,0
+token,entropy,raw,Euclidean,k-medoids,factual_gut_origin_species,0
+token,entropy,raw,Euclidean,k-medoids,factual_gut_outline_science,0
+token,entropy,raw,Euclidean,k-medoids,factual_gut_relativity,0
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_copper,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+token,entropy,raw,Euclidean,k-medoids,factual_wiki_wordnet,0
+token,entropy,raw,Euclidean,KMeans,creative_gut_alice,1
+token,entropy,raw,Euclidean,KMeans,creative_gut_grimm,0
+token,entropy,raw,Euclidean,KMeans,creative_gut_oz,1
+token,entropy,raw,Euclidean,KMeans,creative_gut_sherlock,0
+token,entropy,raw,Euclidean,KMeans,creative_hp1,0
+token,entropy,raw,Euclidean,KMeans,creative_hp2,0
+token,entropy,raw,Euclidean,KMeans,creative_hp3,1
+token,entropy,raw,Euclidean,KMeans,creative_hp4,0
+token,entropy,raw,Euclidean,KMeans,creative_hp5,0
+token,entropy,raw,Euclidean,KMeans,creative_hp6,0
+token,entropy,raw,Euclidean,KMeans,creative_hp7,0
+token,entropy,raw,Euclidean,KMeans,creative_jokes_2,0
+token,entropy,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,0
+token,entropy,raw,Euclidean,KMeans,factual_gut_candle,0
+token,entropy,raw,Euclidean,KMeans,factual_gut_origin_species,1
+token,entropy,raw,Euclidean,KMeans,factual_gut_outline_science,0
+token,entropy,raw,Euclidean,KMeans,factual_gut_relativity,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_copper,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_vaccine,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_volcano,1
+token,entropy,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+token,entropy,standardised,DTW,DBSCAN,creative_gut_alice,-1
+token,entropy,standardised,DTW,DBSCAN,creative_gut_grimm,0
+token,entropy,standardised,DTW,DBSCAN,creative_gut_oz,0
+token,entropy,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+token,entropy,standardised,DTW,DBSCAN,creative_hp1,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp2,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp3,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp4,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp5,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp6,-1
+token,entropy,standardised,DTW,DBSCAN,creative_hp7,-1
+token,entropy,standardised,DTW,DBSCAN,creative_jokes_2,-1
+token,entropy,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,-1
+token,entropy,standardised,DTW,DBSCAN,factual_gut_candle,0
+token,entropy,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+token,entropy,standardised,DTW,DBSCAN,factual_gut_outline_science,-1
+token,entropy,standardised,DTW,DBSCAN,factual_gut_relativity,0
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_black_hole,0
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_copper,0
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_vaccine,0
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+token,entropy,standardised,DTW,DBSCAN,factual_wiki_wordnet,-1
+token,entropy,standardised,DTW,k-medoids,creative_gut_alice,1
+token,entropy,standardised,DTW,k-medoids,creative_gut_grimm,0
+token,entropy,standardised,DTW,k-medoids,creative_gut_oz,0
+token,entropy,standardised,DTW,k-medoids,creative_gut_sherlock,0
+token,entropy,standardised,DTW,k-medoids,creative_hp1,0
+token,entropy,standardised,DTW,k-medoids,creative_hp2,0
+token,entropy,standardised,DTW,k-medoids,creative_hp3,0
+token,entropy,standardised,DTW,k-medoids,creative_hp4,0
+token,entropy,standardised,DTW,k-medoids,creative_hp5,0
+token,entropy,standardised,DTW,k-medoids,creative_hp6,0
+token,entropy,standardised,DTW,k-medoids,creative_hp7,0
+token,entropy,standardised,DTW,k-medoids,creative_jokes_2,0
+token,entropy,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,0
+token,entropy,standardised,DTW,k-medoids,factual_gut_candle,0
+token,entropy,standardised,DTW,k-medoids,factual_gut_origin_species,0
+token,entropy,standardised,DTW,k-medoids,factual_gut_outline_science,0
+token,entropy,standardised,DTW,k-medoids,factual_gut_relativity,0
+token,entropy,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+token,entropy,standardised,DTW,k-medoids,factual_wiki_copper,1
+token,entropy,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,entropy,standardised,DTW,k-medoids,factual_wiki_photosynthesis,0
+token,entropy,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,0
+token,entropy,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+token,entropy,standardised,DTW,k-medoids,factual_wiki_volcano,1
+token,entropy,standardised,DTW,k-medoids,factual_wiki_wordnet,0
+token,entropy,standardised,DTW,DTW-KMeans,creative_gut_alice,0
+token,entropy,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_gut_oz,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_gut_sherlock,0
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp1,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp2,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp3,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp4,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp5,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp6,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_hp7,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_jokes_2,1
+token,entropy,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_gut_candle,1
+token,entropy,standardised,DTW,DTW-KMeans,factual_gut_origin_species,1
+token,entropy,standardised,DTW,DTW-KMeans,factual_gut_outline_science,1
+token,entropy,standardised,DTW,DTW-KMeans,factual_gut_relativity,1
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_volcano,0
+token,entropy,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+token,entropy,standardised,Euclidean,DBSCAN,creative_gut_alice,0
+token,entropy,standardised,Euclidean,DBSCAN,creative_gut_grimm,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_gut_oz,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp1,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp2,0
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp3,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp4,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp5,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp6,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_hp7,-1
+token,entropy,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+token,entropy,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_gut_candle,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+token,entropy,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_gut_relativity,0
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_copper,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_volcano,-1
+token,entropy,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,-1
+token,entropy,standardised,Euclidean,k-medoids,creative_gut_alice,0
+token,entropy,standardised,Euclidean,k-medoids,creative_gut_grimm,1
+token,entropy,standardised,Euclidean,k-medoids,creative_gut_oz,1
+token,entropy,standardised,Euclidean,k-medoids,creative_gut_sherlock,0
+token,entropy,standardised,Euclidean,k-medoids,creative_hp1,1
+token,entropy,standardised,Euclidean,k-medoids,creative_hp2,0
+token,entropy,standardised,Euclidean,k-medoids,creative_hp3,0
+token,entropy,standardised,Euclidean,k-medoids,creative_hp4,0
+token,entropy,standardised,Euclidean,k-medoids,creative_hp5,1
+token,entropy,standardised,Euclidean,k-medoids,creative_hp6,1
+token,entropy,standardised,Euclidean,k-medoids,creative_hp7,1
+token,entropy,standardised,Euclidean,k-medoids,creative_jokes_2,1
+token,entropy,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,0
+token,entropy,standardised,Euclidean,k-medoids,factual_gut_candle,1
+token,entropy,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+token,entropy,standardised,Euclidean,k-medoids,factual_gut_outline_science,1
+token,entropy,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_black_hole,0
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_copper,1
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_vaccine,1
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_volcano,0
+token,entropy,standardised,Euclidean,k-medoids,factual_wiki_wordnet,0
+token,entropy,standardised,Euclidean,KMeans,creative_gut_alice,1
+token,entropy,standardised,Euclidean,KMeans,creative_gut_grimm,1
+token,entropy,standardised,Euclidean,KMeans,creative_gut_oz,1
+token,entropy,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp1,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp2,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp3,0
+token,entropy,standardised,Euclidean,KMeans,creative_hp4,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp5,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp6,1
+token,entropy,standardised,Euclidean,KMeans,creative_hp7,0
+token,entropy,standardised,Euclidean,KMeans,creative_jokes_2,1
+token,entropy,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+token,entropy,standardised,Euclidean,KMeans,factual_gut_candle,1
+token,entropy,standardised,Euclidean,KMeans,factual_gut_origin_species,1
+token,entropy,standardised,Euclidean,KMeans,factual_gut_outline_science,1
+token,entropy,standardised,Euclidean,KMeans,factual_gut_relativity,1
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_black_hole,0
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_copper,0
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,1
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_volcano,0
+token,entropy,standardised,Euclidean,KMeans,factual_wiki_wordnet,1
+token,Rényi,raw,DTW,DBSCAN,creative_gut_alice,-1
+token,Rényi,raw,DTW,DBSCAN,creative_gut_grimm,0
+token,Rényi,raw,DTW,DBSCAN,creative_gut_oz,0
+token,Rényi,raw,DTW,DBSCAN,creative_gut_sherlock,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp1,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp2,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp3,-1
+token,Rényi,raw,DTW,DBSCAN,creative_hp4,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp5,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp6,0
+token,Rényi,raw,DTW,DBSCAN,creative_hp7,0
+token,Rényi,raw,DTW,DBSCAN,creative_jokes_2,0
+token,Rényi,raw,DTW,DBSCAN,creative_jokes_for_all_occasions,0
+token,Rényi,raw,DTW,DBSCAN,factual_gut_candle,0
+token,Rényi,raw,DTW,DBSCAN,factual_gut_origin_species,-1
+token,Rényi,raw,DTW,DBSCAN,factual_gut_outline_science,0
+token,Rényi,raw,DTW,DBSCAN,factual_gut_relativity,0
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_black_hole,0
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_copper,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_mitochondrion,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_photosynthesis,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_plate_tectonics,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_vaccine,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_volcano,-1
+token,Rényi,raw,DTW,DBSCAN,factual_wiki_wordnet,0
+token,Rényi,raw,DTW,k-medoids,creative_gut_alice,1
+token,Rényi,raw,DTW,k-medoids,creative_gut_grimm,0
+token,Rényi,raw,DTW,k-medoids,creative_gut_oz,0
+token,Rényi,raw,DTW,k-medoids,creative_gut_sherlock,0
+token,Rényi,raw,DTW,k-medoids,creative_hp1,0
+token,Rényi,raw,DTW,k-medoids,creative_hp2,0
+token,Rényi,raw,DTW,k-medoids,creative_hp3,1
+token,Rényi,raw,DTW,k-medoids,creative_hp4,0
+token,Rényi,raw,DTW,k-medoids,creative_hp5,0
+token,Rényi,raw,DTW,k-medoids,creative_hp6,0
+token,Rényi,raw,DTW,k-medoids,creative_hp7,0
+token,Rényi,raw,DTW,k-medoids,creative_jokes_2,0
+token,Rényi,raw,DTW,k-medoids,creative_jokes_for_all_occasions,0
+token,Rényi,raw,DTW,k-medoids,factual_gut_candle,0
+token,Rényi,raw,DTW,k-medoids,factual_gut_origin_species,1
+token,Rényi,raw,DTW,k-medoids,factual_gut_outline_science,0
+token,Rényi,raw,DTW,k-medoids,factual_gut_relativity,0
+token,Rényi,raw,DTW,k-medoids,factual_wiki_black_hole,0
+token,Rényi,raw,DTW,k-medoids,factual_wiki_copper,1
+token,Rényi,raw,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,Rényi,raw,DTW,k-medoids,factual_wiki_photosynthesis,0
+token,Rényi,raw,DTW,k-medoids,factual_wiki_plate_tectonics,1
+token,Rényi,raw,DTW,k-medoids,factual_wiki_vaccine,1
+token,Rényi,raw,DTW,k-medoids,factual_wiki_volcano,1
+token,Rényi,raw,DTW,k-medoids,factual_wiki_wordnet,0
+token,Rényi,raw,DTW,DTW-KMeans,creative_gut_alice,0
+token,Rényi,raw,DTW,DTW-KMeans,creative_gut_grimm,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_gut_oz,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_gut_sherlock,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp1,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp2,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp3,0
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp4,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp5,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp6,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_hp7,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_jokes_2,1
+token,Rényi,raw,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_gut_candle,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_gut_origin_species,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_gut_outline_science,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_gut_relativity,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_black_hole,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_copper,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_photosynthesis,1
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_vaccine,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_volcano,0
+token,Rényi,raw,DTW,DTW-KMeans,factual_wiki_wordnet,1
+token,Rényi,raw,Euclidean,DBSCAN,creative_gut_alice,-1
+token,Rényi,raw,Euclidean,DBSCAN,creative_gut_grimm,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_gut_oz,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_gut_sherlock,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp1,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp2,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp3,-1
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp4,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp5,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp6,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_hp7,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_jokes_2,0
+token,Rényi,raw,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+token,Rényi,raw,Euclidean,DBSCAN,factual_gut_candle,0
+token,Rényi,raw,Euclidean,DBSCAN,factual_gut_origin_species,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_gut_outline_science,0
+token,Rényi,raw,Euclidean,DBSCAN,factual_gut_relativity,0
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_black_hole,0
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_copper,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_mitochondrion,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_photosynthesis,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_plate_tectonics,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_vaccine,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_volcano,-1
+token,Rényi,raw,Euclidean,DBSCAN,factual_wiki_wordnet,0
+token,Rényi,raw,Euclidean,k-medoids,creative_gut_alice,0
+token,Rényi,raw,Euclidean,k-medoids,creative_gut_grimm,1
+token,Rényi,raw,Euclidean,k-medoids,creative_gut_oz,1
+token,Rényi,raw,Euclidean,k-medoids,creative_gut_sherlock,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp1,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp2,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp3,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp4,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp5,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp6,1
+token,Rényi,raw,Euclidean,k-medoids,creative_hp7,1
+token,Rényi,raw,Euclidean,k-medoids,creative_jokes_2,1
+token,Rényi,raw,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+token,Rényi,raw,Euclidean,k-medoids,factual_gut_candle,1
+token,Rényi,raw,Euclidean,k-medoids,factual_gut_origin_species,1
+token,Rényi,raw,Euclidean,k-medoids,factual_gut_outline_science,1
+token,Rényi,raw,Euclidean,k-medoids,factual_gut_relativity,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_black_hole,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_copper,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_photosynthesis,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_vaccine,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_volcano,1
+token,Rényi,raw,Euclidean,k-medoids,factual_wiki_wordnet,1
+token,Rényi,raw,Euclidean,KMeans,creative_gut_alice,0
+token,Rényi,raw,Euclidean,KMeans,creative_gut_grimm,1
+token,Rényi,raw,Euclidean,KMeans,creative_gut_oz,1
+token,Rényi,raw,Euclidean,KMeans,creative_gut_sherlock,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp1,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp2,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp3,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp4,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp5,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp6,1
+token,Rényi,raw,Euclidean,KMeans,creative_hp7,1
+token,Rényi,raw,Euclidean,KMeans,creative_jokes_2,1
+token,Rényi,raw,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+token,Rényi,raw,Euclidean,KMeans,factual_gut_candle,1
+token,Rényi,raw,Euclidean,KMeans,factual_gut_origin_species,1
+token,Rényi,raw,Euclidean,KMeans,factual_gut_outline_science,1
+token,Rényi,raw,Euclidean,KMeans,factual_gut_relativity,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_black_hole,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_copper,0
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_mitochondrion,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_photosynthesis,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_vaccine,0
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_volcano,1
+token,Rényi,raw,Euclidean,KMeans,factual_wiki_wordnet,1
+token,Rényi,standardised,DTW,DBSCAN,creative_gut_alice,-1
+token,Rényi,standardised,DTW,DBSCAN,creative_gut_grimm,0
+token,Rényi,standardised,DTW,DBSCAN,creative_gut_oz,1
+token,Rényi,standardised,DTW,DBSCAN,creative_gut_sherlock,0
+token,Rényi,standardised,DTW,DBSCAN,creative_hp1,-1
+token,Rényi,standardised,DTW,DBSCAN,creative_hp2,0
+token,Rényi,standardised,DTW,DBSCAN,creative_hp3,0
+token,Rényi,standardised,DTW,DBSCAN,creative_hp4,2
+token,Rényi,standardised,DTW,DBSCAN,creative_hp5,-1
+token,Rényi,standardised,DTW,DBSCAN,creative_hp6,-1
+token,Rényi,standardised,DTW,DBSCAN,creative_hp7,2
+token,Rényi,standardised,DTW,DBSCAN,creative_jokes_2,1
+token,Rényi,standardised,DTW,DBSCAN,creative_jokes_for_all_occasions,2
+token,Rényi,standardised,DTW,DBSCAN,factual_gut_candle,1
+token,Rényi,standardised,DTW,DBSCAN,factual_gut_origin_species,0
+token,Rényi,standardised,DTW,DBSCAN,factual_gut_outline_science,-1
+token,Rényi,standardised,DTW,DBSCAN,factual_gut_relativity,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_black_hole,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_copper,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_mitochondrion,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_photosynthesis,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_plate_tectonics,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_vaccine,0
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_volcano,-1
+token,Rényi,standardised,DTW,DBSCAN,factual_wiki_wordnet,0
+token,Rényi,standardised,DTW,k-medoids,creative_gut_alice,0
+token,Rényi,standardised,DTW,k-medoids,creative_gut_grimm,1
+token,Rényi,standardised,DTW,k-medoids,creative_gut_oz,0
+token,Rényi,standardised,DTW,k-medoids,creative_gut_sherlock,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp1,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp2,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp3,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp4,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp5,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp6,1
+token,Rényi,standardised,DTW,k-medoids,creative_hp7,1
+token,Rényi,standardised,DTW,k-medoids,creative_jokes_2,0
+token,Rényi,standardised,DTW,k-medoids,creative_jokes_for_all_occasions,1
+token,Rényi,standardised,DTW,k-medoids,factual_gut_candle,0
+token,Rényi,standardised,DTW,k-medoids,factual_gut_origin_species,1
+token,Rényi,standardised,DTW,k-medoids,factual_gut_outline_science,0
+token,Rényi,standardised,DTW,k-medoids,factual_gut_relativity,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_black_hole,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_copper,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_mitochondrion,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_photosynthesis,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_plate_tectonics,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_vaccine,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_volcano,1
+token,Rényi,standardised,DTW,k-medoids,factual_wiki_wordnet,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_gut_alice,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_gut_grimm,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_gut_oz,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_gut_sherlock,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp1,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp2,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp3,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp4,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp5,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp6,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_hp7,1
+token,Rényi,standardised,DTW,DTW-KMeans,creative_jokes_2,0
+token,Rényi,standardised,DTW,DTW-KMeans,creative_jokes_for_all_occasions,1
+token,Rényi,standardised,DTW,DTW-KMeans,factual_gut_candle,1
+token,Rényi,standardised,DTW,DTW-KMeans,factual_gut_origin_species,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_gut_outline_science,1
+token,Rényi,standardised,DTW,DTW-KMeans,factual_gut_relativity,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_black_hole,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_copper,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_mitochondrion,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_photosynthesis,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_plate_tectonics,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_vaccine,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_volcano,0
+token,Rényi,standardised,DTW,DTW-KMeans,factual_wiki_wordnet,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_gut_alice,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_gut_grimm,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_gut_oz,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_gut_sherlock,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp1,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp2,-1
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp3,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp4,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp5,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp6,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_hp7,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_jokes_2,0
+token,Rényi,standardised,Euclidean,DBSCAN,creative_jokes_for_all_occasions,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_gut_candle,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_gut_origin_species,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_gut_outline_science,-1
+token,Rényi,standardised,Euclidean,DBSCAN,factual_gut_relativity,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_black_hole,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_copper,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_mitochondrion,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_photosynthesis,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_plate_tectonics,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_vaccine,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_volcano,0
+token,Rényi,standardised,Euclidean,DBSCAN,factual_wiki_wordnet,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_gut_alice,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_gut_grimm,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_gut_oz,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_gut_sherlock,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp1,1
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp2,1
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp3,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp4,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp5,1
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp6,1
+token,Rényi,standardised,Euclidean,k-medoids,creative_hp7,1
+token,Rényi,standardised,Euclidean,k-medoids,creative_jokes_2,0
+token,Rényi,standardised,Euclidean,k-medoids,creative_jokes_for_all_occasions,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_gut_candle,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_gut_origin_species,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_gut_outline_science,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_gut_relativity,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_black_hole,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_copper,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_mitochondrion,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_photosynthesis,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_plate_tectonics,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_vaccine,0
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_volcano,1
+token,Rényi,standardised,Euclidean,k-medoids,factual_wiki_wordnet,0
+token,Rényi,standardised,Euclidean,KMeans,creative_gut_alice,1
+token,Rényi,standardised,Euclidean,KMeans,creative_gut_grimm,1
+token,Rényi,standardised,Euclidean,KMeans,creative_gut_oz,1
+token,Rényi,standardised,Euclidean,KMeans,creative_gut_sherlock,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp1,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp2,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp3,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp4,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp5,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp6,1
+token,Rényi,standardised,Euclidean,KMeans,creative_hp7,1
+token,Rényi,standardised,Euclidean,KMeans,creative_jokes_2,1
+token,Rényi,standardised,Euclidean,KMeans,creative_jokes_for_all_occasions,1
+token,Rényi,standardised,Euclidean,KMeans,factual_gut_candle,1
+token,Rényi,standardised,Euclidean,KMeans,factual_gut_origin_species,1
+token,Rényi,standardised,Euclidean,KMeans,factual_gut_outline_science,0
+token,Rényi,standardised,Euclidean,KMeans,factual_gut_relativity,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_black_hole,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_copper,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_mitochondrion,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_photosynthesis,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_plate_tectonics,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_vaccine,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_volcano,1
+token,Rényi,standardised,Euclidean,KMeans,factual_wiki_wordnet,1

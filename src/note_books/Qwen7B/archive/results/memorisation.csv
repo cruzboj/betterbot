@@ -1,0 +1,26 @@
+text,match score,best passage,passage 1,passage 2,passage 3,passage 4,passage 5,memorised
+creative_gut_alice,0.15200000000000002,0.42,0.14,0.42,0.06,0.0,0.14,False
+factual_wiki_copper,0.152,0.38,0.38,0.1,0.14,0.1,0.04,False
+factual_wiki_volcano,0.11200000000000002,0.48,0.48,0.02,0.0,0.06,0.0,False
+factual_wiki_wordnet,0.10400000000000001,0.3,0.0,0.12,0.08,0.3,0.02,False
+factual_wiki_vaccine,0.064,0.12,0.08,0.12,0.04,0.08,0.0,False
+creative_gut_oz,0.06,0.16,0.04,0.0,0.16,0.06,0.04,False
+creative_jokes_2,0.06,0.16,0.06,0.0,0.16,0.08,0.0,False
+factual_wiki_black_hole,0.052000000000000005,0.12,0.0,0.02,0.12,0.06,0.06,False
+factual_wiki_mitochondrion,0.052000000000000005,0.16,0.0,0.04,0.16,0.04,0.02,False
+creative_hp4,0.048,0.12,0.08,0.04,0.0,0.12,0.0,False
+factual_gut_relativity,0.048,0.14,0.14,0.02,0.0,0.06,0.02,False
+factual_wiki_photosynthesis,0.044000000000000004,0.14,0.02,0.0,0.02,0.14,0.04,False
+creative_hp7,0.044,0.08,0.08,0.0,0.04,0.08,0.02,False
+creative_gut_grimm,0.036000000000000004,0.06,0.06,0.04,0.02,0.02,0.04,False
+creative_hp6,0.036,0.1,0.1,0.0,0.02,0.04,0.02,False
+factual_wiki_plate_tectonics,0.036,0.08,0.02,0.06,0.02,0.0,0.08,False
+creative_gut_sherlock,0.032,0.08,0.08,0.0,0.02,0.04,0.02,False
+creative_jokes_for_all_occasions,0.032,0.06,0.02,0.04,0.02,0.02,0.06,False
+factual_gut_candle,0.024,0.08,0.0,0.02,0.08,0.02,0.0,False
+creative_hp3,0.024,0.06,0.0,0.02,0.06,0.0,0.04,False
+creative_hp1,0.02,0.02,0.02,0.02,0.02,0.02,0.02,False
+factual_gut_outline_science,0.02,0.04,0.02,0.0,0.04,0.0,0.04,False
+creative_hp2,0.02,0.04,0.04,0.02,0.0,0.0,0.04,False
+factual_gut_origin_species,0.02,0.04,0.04,0.02,0.0,0.04,0.0,False
+creative_hp5,0.016,0.04,0.04,0.0,0.04,0.0,0.0,False

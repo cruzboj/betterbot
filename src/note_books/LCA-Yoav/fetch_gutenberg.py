@@ -8,8 +8,12 @@ site and a similar era (1850-1930), so factual vs creative is no longer the same
 import sys
 from pathlib import Path
 
-ROOT = next(p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parents]
-            if (p / "lca_core.py").exists())
+# walk up from this script's folder until we find the repo root (the folder holding lca_core.py)
+ROOT = Path(__file__).resolve().parent
+while not (ROOT / "lca_core.py").exists():
+    if ROOT == ROOT.parent:
+        raise FileNotFoundError("lca_core.py not found in this folder or any parent folder")
+    ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT))
 from lca_core import fetch_gutenberg, gutenberg_excerpt  # noqa: E402
 
