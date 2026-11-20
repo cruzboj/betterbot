@@ -1,0 +1,5 @@
+# make this folder's qwen_config.py and analysis/ importable when pytest runs from Qwen7B
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))

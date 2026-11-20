@@ -1,185 +1,166 @@
-# Can a language model tell factual from creative text by how it reads?
+# Does one hallucination in a normal text show in how a language model reads it?
 
 ## 1. What was checked
+Earlier work (notebooks 01–02) found two signals whose curves sort the 25 real texts by kind (factual vs creative):
+**GloVe distance of the top 5 guesses** and **LCA height of the likely guesses, at most 3 (10%)**. Each puts 23 of
+25 texts in the cluster of their own kind (`results/tables/clusters.csv`). A third signal is added here:
+**surprisal per word**, how unexpected each real word was to Qwen.
 
-**Hypothesis:** as Qwen2.5-7B-Instruct reads a text word by word, texts of the same kind (factual or creative) produce similar patterns over time. So a clustering algorithm that only sees those patterns, not the labels, should put factual texts with factual texts and creative with creative.
+The question here: take a normal text and make it hallucinate for a few sentences (wrong facts, a change of
+subject) by raising the temperature of the model writing it. Does the text's curve move away from the normal text
+there, and can the curve, followed word by word, point at the hallucination?
 
-**Data:** 25 English excerpts of 520–700 words each.
-
-| kind | texts |
-|---|---|
-| factual (12) | 8 Wikipedia articles (black hole, copper, mitochondrion, photosynthesis, plate tectonics, vaccine, volcano, WordNet); 4 classic science books from Project Gutenberg (Faraday's *Chemical History of a Candle*, Darwin's *Origin of Species*, Thomson's *Outline of Science*, Einstein's *Relativity*) |
-| creative (13) | one excerpt from each of the 7 Harry Potter books; *Alice in Wonderland*, *Grimm's Fairy Tales*, *The Wizard of Oz*, *Sherlock Holmes*; 2 joke books |
-
----
+| texts | how many | made by |
+|---|---|---|
+| clean texts | 3 encyclopedia articles (Paris, Apollo 11, vaccines), 3 stories (magic school, fairy tale, detective) | Qwen2.5-7B-Instruct at temperature 0.7 |
+| burst texts | one per clean text | the clean text, one hot stretch, then normal again |
 
 ## 2. How the data was collected and calculated
 
-### 2.1 The model reads each text
-The model reads each text once (4-bit weights on an 8 GB GPU). At every token it gives a probability for every possible next token, using only the text *before* that token. So it never sees the word it is predicting.
-### 2.2 Where values are taken
-- **Per word:** at every noun and verb of the text (about 195 per text). The model's **5 best guesses** there are its most likely next words of the same part of speech, reduced to dictionary form.
-- **Per token:** at every token of the text (about 895 per text).
+### 2.1 The hot burst
+A burst text is its clean original word for word up to a random point (25–75% of its tokens), then 120 tokens (a
+few sentences) at temperature 3.0, then back to 0.7 until it is as long as the clean original. All parts keep only
+tokens with at least 10% of the top token's probability (`min_p` = 0.1).
 
-Example, *Alice*, at "sat": the guesses are `sit, walk, march, jump, dance`.
+3.0 is the highest temperature at which the burst still reads as English. Cooler bursts hardly made anything up
+(2.2 and 2.6: the correct text before the burst keeps the model on track); at 3.5 and above the burst turns into
+word salad, at 5.0 into mixed scripts and code (all in `archive/burst_trials`).
 
-### 2.3 The 24 signals
+What the bursts contain, read by hand (the marked words are in `texts_hallucinated/burst/marks.csv`):
 
-**12 guess-meaning signals: how different are the model's guesses?** One of three measures, applied to one of four guess sets.
-
-| measure | how a set of words is scored |
+| text | burst |
 |---|---|
-| GloVe distance | average cosine distance between the words' GloVe vectors (1 − cosine similarity; 0 = same meaning) |
-| Qwen-embedding distance | the same, using Qwen's own word vectors |
-| LCA height | WordNet levels climbed until the words share a category (dog, cat → 2) |
+| Paris | invented places: streets "Sainte-Marie-des-Fosses and Jandes", Haussmann's "Hautes Citées" neighbourhoods |
+| Apollo | invented instruments ("heat-activated-emission transceivers", a "low-gravity cross-channel propagation monitor"), then a muddle about heroes and school grades |
+| Vaccines | correct |
+| magic | Ella, the magic student, is called "the great detective" |
+| fairy | the king's task changes from filling the wine cellar to laying bedrock across his lands |
+| detective | a witness speaks "through his eye socket"; the paragraph stops making sense |
 
-| guess set | words scored |
+### 2.2 Reading
+Qwen reads every clean and burst text exactly like the real texts (notebook 01): at each noun and verb it keeps its
+top 5 guesses for the next word, and the probability it gave the word that really came. The three signals are
+calculated at every such word, giving each text a curve:
+
+| signal | at each noun/verb |
 |---|---|
-| top 5 / top 3 | the 5 / 3 best guesses |
-| likely guesses | guesses with at least 10% of the #1 guess's probability (0 if only one) |
-| top 1 vs real word | the #1 guess and the word that really came |
+| GloVe distance, top 5 guesses | how far apart in meaning the model's 5 best guesses are (GloVe word vectors) |
+| LCA height, likely guesses, at most 3 (10%) | how many WordNet levels the likely guesses climb before they share a category |
+| surprisal per word | -log of the probability the model gave the real word's first token (high = unexpected) |
 
-**12 model-confidence signals: how sure was the model?** Six values from LM-Polygraph, each taken per word and per token. *p* is the model's next-token probability distribution.
+### 2.3 Distance to real writing
+At every word, the last 15 words of the curve are compared with the most similar stretch of 15 words anywhere in
+the 25 real texts (raw values, Euclidean distance), once against the factual cluster and once against the creative
+cluster; the smaller is the **distance to real writing**. Low means "these words read like real writing".
 
-| value | formula |
-|---|---|
-| surprisal | −ln *p*(real token) |
-| max probability | largest *p* |
-| entropy | −Σ *p* ln *p* |
-| self-certainty | mean(ln *p*) + ln V |
-| Rényi divergence | divergence (α = 0.5) of *p* at temperature 2 from uniform |
-| Fisher-Rao distance | distance of *p* at temperature 2 from uniform |
+The **normal ceiling** is the highest distance any real text reaches when it is compared without itself
+(GloVe 0.617, LCA 12.41, surprisal 14.54).
 
-### 2.4 A text becomes a curve
-For each signal, a text's **curve** is its raw values in reading order: one point per word (or token). Nothing is averaged, smoothed or rescaled.
-
-![example curves](results/figures/1_example_curves.png)
-
-### 2.5 Grouping the texts
-- **Distance between two texts: DTW** (dynamic time warping) between their raw curves. The curves are lined up point by point, each point may shift by up to 10% of the curve length, and the distance is √(sum of squared gaps) along the best alignment. Texts of different lengths can be compared this way.
-- **Clustering: k-medoids, 2 clusters.** It tries every pair of texts as the two cluster centres, gives each text to its nearer centre, and keeps the pair with the smallest total distance. Each centre is a real text, not an averaged curve.
-- **Score:** a text is **in the right cluster** if most texts in its cluster are of its own kind.
-- **Text map:** each text drawn as a dot, placed so that distances on the map match the DTW distances as closely as possible (multidimensional scaling). The map is only a picture; the clustering uses the DTW distances directly.
-- **Hierarchical clustering (second method, same DTW distances):** every text starts alone, and the two clusters whose *farthest* pair of texts is closest are joined next (complete linkage, so nothing is averaged). The result is a tree (dendrogram). Cutting it into its last two branches gives a second 2-cluster answer, scored the same way.
-
----
+Because the distance looks back 15 words, a burst can show from its first word until 15 words after it: the
+**burst zone**. It covers 16–36% of a text's words (about a quarter).
 
 ## 3. Results
 
-![all signals](results/figures/2_all_signals.png)
+### The curves
+![LCA](results/burst/figures/bursts_lca_likely_top3_10pct.png)
 
-![GloVe top 5 map](results/figures/3_map_01_glove_top5.png)
+One row per text: the burst text's raw curve (black) over its clean original's (grey; the same up to the burst),
+the burst shaded red, a red dot on each marked word. The same figure for GloVe is
+`results/burst/figures/bursts_glove_top5.png`.
 
-| | k-medoids | tree cut in two |
-|---|---|---|
-| **GloVe distance, top 5 guesses** | **23/25**: factual 10/12, creative 13/13 | 23/25 |
-| GloVe distance, top 3 guesses | 22/25: factual 12/12, creative 10/13 | 22/25 |
-| GloVe distance, likely guesses | 22/25: factual 9/12, creative 13/13 | 20/25 |
-| Qwen-embedding distance, likely guesses | 22/25: factual 9/12, creative 13/13 | 20/25 |
-| surprisal per word | 22/25: factual 11/12, creative 11/13 | 13/25 |
-| **LCA height, likely guesses** | 21/25: factual 8/12, creative 13/13 | **25/25** |
-| entropy per word | 15/25 | 21/25 |
-| median of the 12 guess-meaning signals | 21/25 | |
-| median of the 12 model-confidence signals | 17/25 | |
-| worst (LCA height top 3, surprisal per token) | 14/25 | 14/25, 13/25 |
+Most invented names are not measured themselves (the reader measures nouns and verbs it can tag, and skips words
+that do not start on a token boundary), so a mark sits on the next measured word. Where that word ranks among its
+text's values (1 = highest):
 
-![LCA likely tree](results/figures/4_tree_08_lca_likely.png)
+| text | marked word | lands on | GloVe rank | LCA rank |
+|---|---|---|---|---|
+| Paris (188 words) | Sainte-Marie-des-Fosses, Jandes | accolades | 18 | 3 |
+| | Hautes | neighborhoods | 72 | 3 |
+| Apollo (169 words) | transceivers | cross | 37 | 2 |
+| | propagation | propagation | 124 | 14 |
+| | misconceives | misconceives | 169 | 54 |
+| magic (277) | detective | known | 177 | 168 |
+| fairy (232) | bedrock | bedrock | 37 | 173 |
+| detective (216) | socket | socket | 24 | 9 |
 
-![GloVe top 5 tree](results/figures/4_tree_01_glove_top5.png)
+### Distance to real writing
+![surprisal distance](results/burst/figures/distance_surprisal_per_word.png)
 
-Read a tree from right to left. Texts that join early (near 0) have similar curves; the further left two branches join, the more different they are. Names are coloured by real kind. Trees for the 10 best signals: `results/figures/4_tree_01_*.png` … `4_tree_10_*.png`.
+Surprisal: in every text the distance rises as the burst starts, stays high through it and falls back about 15
+words after it ends. Nowhere else in any text does it come close. It stays below the dashed line, though: some
+human texts are more surprising to Qwen than these bursts.
 
-All 24 signals, with the misplaced texts: `results/tables/clusters.csv`. Text maps for the 10 signals scoring 21/25 or more: `results/figures/3_map_01_*.png` … `3_map_10_*.png`.
+![LCA distance](results/burst/figures/distance_lca_likely_top3_10pct.png)
 
-A black ring marks each cluster's centre text (its medoid), and the two centres of each signal are listed in `clusters.csv`. For GloVe top 5, the creative cluster's centre is Faraday's *Candle*, a factual text: the most typical member of that cluster is a factual text written like a story.
+One line per text: how unlike real writing its last 15 words are, the dashed line the most any real text reaches,
+the burst zone shaded. Apollo climbs to the dashed line inside its burst zone; Paris rises a little late in its
+zone; the other four stay flat. The GloVe version (`distance_glove_top5.png`) is flat everywhere.
 
-On a map, a dot's fill shows its real cluster, which is decided by the DTW distances. Its position only approximates those distances in 2D (for GloVe top 3, map distances correlate 0.72 with the real ones). So a dot can be drawn near the other cluster: *hp1* sits among the factual texts on the GloVe top-3 map but is closer to the creative centre.
+Per text and signal (`results/burst/tables/burst_vs_clean.csv`): the highest distance in the burst zone, anywhere
+else in the burst text, and anywhere in the clean original. Normal ceiling: GloVe 0.617, LCA 12.41, surprisal 14.54.
 
----
+| text | burst | surprisal: zone / elsewhere / clean | GloVe: zone / elsewhere / clean | LCA: zone / elsewhere / clean |
+|---|---|---|---|---|
+| Paris | invented places | **10.55** / 3.79 / 3.82 | 0.276 / 0.294 / 0.294 | **8.31** / 7.62 / 9.11 |
+| Apollo | invented instruments, then a muddle | **12.07** / 5.07 / 5.07 | 0.280 / 0.292 / 0.334 | **12.29** / 7.87 / 8.31 |
+| Vaccines | correct | **7.33** / 4.06 / 4.07 | 0.327 / 0.333 / 0.320 | **7.87** / 7.75 / 7.21 |
+| magic | one slip | **7.27** / 4.68 / 4.71 | 0.388 / 0.414 / 0.482 | 6.48 / 8.37 / 8.94 |
+| fairy | the task changes | **9.77** / 5.73 / 5.73 | 0.317 / 0.378 / 0.378 | 7.62 / 8.25 / 8.19 |
+| detective | stops making sense | **11.61** / 5.03 / 5.04 | 0.279 / 0.421 / 0.365 | 7.55 / 8.19 / 8.06 |
+
+Bold: the text's highest distance is in its burst zone. The zone covers 14–33% of a text's words, so by chance
+about 1.5 of 6 texts per signal would have their peak there.
 
 ## 4. What we can gather
+1. **A hotter burst invents more, but only up to a point.** At 3.0 the factual bursts make up places and
+   instruments; above 3.0 they stop making sense instead of getting more wrong. Vaccines stayed correct at every
+   temperature that stays readable.
+2. **Surprisal finds every burst, but not wrong facts.** In all 6 texts the highest surprisal distance is in the
+   burst zone, 1.5 to 2.8 times anything the clean original reaches. But the correct Vaccines burst and the story
+   bursts rise as clearly as the invented Paris and Apollo facts. The burst was sampled from Qwen itself at 3.0,
+   so its words are, by construction, ones Qwen found unlikely: surprisal sees *hot writing*, true or not. It also
+   needs the text's own earlier words as the baseline, since some human texts are more surprising still (ceiling
+   14.54).
+3. **LCA reacts to the factual bursts, but clearly only in Apollo; GloVe to none.** Apollo comes close to anything
+   real writing reaches (12.29 against 12.41), far above its clean original (8.31). Paris and Vaccines peak in their
+   zone, but Paris stays below its clean original (8.31 against 9.11) and Vaccines is barely above it (7.87 against
+   7.21). None of the 3 stories peak in their zone. GloVe has its peak in the burst zone in none of the 6 texts.
+4. **Around invented facts, the model's guesses scatter.** The words right after the invented Paris streets and
+   the invented Apollo instruments are among the 3 highest LCA values of their text: the model expects something
+   but cannot say what kind of thing (after "propagation": detector, antenna, communication, device, radar).
+5. **Not a hallucination detector yet.** Surprisal says *where* the writing went off, LCA hints *whether* facts
+   were invented, but only Apollo shows both clearly. Single LCA spikes as high as Apollo's also appear in clean
+   text (the clean Apollo reaches 13 at word ~165); what stands out is a stretch that *stays* high. Slips inside
+   stories show on surprisal only, like any other hot stretch.
 
-1. **The hypothesis holds for the best signal.** Using only the GloVe-distance curves of the model's top 5 guesses, clustering puts 23 of 25 texts with their own kind. That includes all 13 creative texts.
-2. **What separates them is the *meaning* of the model's guesses, more than its confidence.** The three best signals are all GloVe guess distances. Guess-meaning signals reach a median of 21/25, confidence signals 17/25.
-3. **In creative texts, the guesses often agree in meaning; in factual texts they rarely do.** The creative curve keeps dipping, where the model's 5 guesses are close in meaning (`sit, walk, march, jump, dance`). The factual curve stays high. In other words, the model often knows *what kind* of word comes next in a story, but not in an encyclopedia.
-4. **Creative texts form one tight group; factual texts are the harder side.** 13 of the 24 signals put at least 12 of the 13 creative texts together, but only 3 signals keep 11 or more of the 12 factual texts together.
-5. **The misplaced texts point to writing style.** The old Gutenberg science books are put with the creative texts most often:
-   - Faraday's *Candle*: in 19 of the 24 signals
-   - *Outline of Science*: 16 of 24
-   - *Origin of Species*: 13 of 24
+Caveats: 6 texts with one burst each (one seed), and only the two factual bursts with invented facts carry the
+LCA result; the reference writing is human, the burst texts are Qwen's.
 
-   These are explanatory, story-like prose. Wikipedia articles almost never are: *vaccine* and *mitochondrion* 2 of 24 each, with *WordNet* (14) the exception. *Alice* is the creative text misplaced most often (10 of 24), and every one of those is a confidence signal: the model finds it unusually predictable.
-
-6. **The tree gives the cleanest split of all, with one signal.** With LCA height on the likely guesses, the tree's two branches are exactly the 12 factual and the 13 creative texts (25/25), where k-medoids gets 21/25. With GloVe top 5, both methods score 23/25 but misplace different texts. k-medoids puts *Candle* and *vaccine* with the creative texts. The tree keeps them with the factual texts but puts *Sherlock* and *hp1* there too. Texts at the border change sides depending on the method. Surprisal per word drops to 13/25 because its tree splits off a small group of 4 texts first. So it groups texts in pairs well, but has no clean two-way split.
-
-**Caveats**
-- 25 texts is a small sample; one text is 4% of the score.
-- The two kinds also differ in source and style: encyclopedia vs. fiction and jokes. Part of what is detected may be *how* a text is written, not whether it is factual.
-
----
+Next to try: use surprisal to find the stretch and LCA within it to judge it; several bursts per text (more seeds), to see whether LCA rising in factual bursts holds up; a rule
+that looks for LCA staying high over several words rather than one peak; comparing each text with clean texts
+written by the same model rather than with human writing.
 
 ## 5. How it was executed in code
-
-| step | file | what it does |
-|---|---|---|
-| settings | `qwen_config.py` | model, folders, number of guesses, DTW window |
-| run the model | `01_run_model.ipynb` → `lca_core.LCAMeter.run` | reads every text once and saves, per text, `results/run/words/<text>.csv` (one row per noun/verb: guesses, their probabilities, confidence values) and `results/run/tokens/<text>.csv` (one row per token: confidence values) |
-| build signals | `analysis/signals.py` | the 24 signals; turns a text's table into its curve |
-| cluster | `analysis/cluster.py` | DTW distances, k-medoids, hierarchical tree, score, text map |
-| figures | `analysis/figures.py` | example curves, all-signals chart, text maps (2D and 3D), trees |
-| results | `02_results.ipynb` | runs signals → clustering → figures; writes `results/tables/clusters.csv` and `results/figures/` |
-
-The snippets below are condensed from the files named; the files have the full versions.
-
-**A guess-meaning value** at one noun/verb (`analysis/signals.py`, `lca_core.py`):
-
-```python
-guesses = word_row["candidates"].split()                 # the model's 5 best guesses, best first
-glove_mean, _glove_max = glove_spread(guesses[:5])        # average cosine distance over every pair
-
-def glove_spread(words):                                  # lca_core.py
-    rows = _glove_rows(words)                             # each word's row in the GloVe table
-    vectors = []
-    for row in rows:
-        vectors.append(E[row])
-    return _pairwise_spread(vectors)                      # mean (and max) of 1 - cosine similarity
-```
-
-**A confidence value** at one token (`lca_core.LCAMeter._token_stats`):
+| file | what it does |
+|---|---|
+| `qwen_config.py` | prompts, `COOL_TEMPERATURE`, `BURST_TEMPERATURE`, `BURST_TOKENS`, `BURST_RANGE`, `MIN_P`, `EVOLVING_SIGNALS`, `EVOLVING_WINDOW`, folders |
+| `analysis/generate.py` | `write_story` (one text at one temperature), `burst_story` (clean text, hot burst, cool again) |
+| `analysis/signals.py` | the signals and each text's curve (shared with notebook 02) |
+| `analysis/cluster.py` | DTW + k-medoids into the factual and creative clusters (shared with notebook 02) |
+| `analysis/evolving.py` | `distance_to_writing`, `evolving_profile`, `normal_ceiling`, `first_row_from_char` |
+| `analysis/figures.py` | `plot_bursts_stacked` (raw curves, burst shaded, wrong words dotted) and `plot_distance_stacked` (distance to real writing, ceiling, burst zone); one row per text |
+| `01_run_model.ipynb` | Qwen reads the 25 real texts |
+| `02_results.ipynb` | clusters the real texts; picks the two signals |
+| `03_hallucination_burst.ipynb` | writes and reads the clean and burst texts, the stacked curve and distance figures, the distance table, the answer |
+| `tests/` | 15 tests for generate, evolving and figures |
 
 ```python
-stats["surprisal"] = -log_probs[rows, true_ids]           # -ln p(real token)
-stats["entropy"] = -(probs * log_probs).sum(dim=-1)       # -sum p ln p
+# analysis/generate.py: one hot stretch inside a clean text
+hot_ids = write_story(model, tokenizer, prompt, hot_temperature, seed=seed + 2000,
+                      story_start_ids=cool_ids[:burst_start], max_new_tokens=burst_tokens, kind=kind, min_p=min_p)
+story_ids = write_story(model, tokenizer, prompt, cool_temperature, seed=seed + 3000, story_start_ids=hot_ids,
+                        max_new_tokens=max(len(cool_ids) - len(hot_ids), 1), kind=kind, min_p=min_p)
 ```
 
-**Clustering one signal** (`analysis/cluster.py`):
-
-```python
-def cluster(curves):
-    table = cdist_dtw(to_time_series_dataset(curves), global_constraint="sakoe_chiba",
-                      sakoe_chiba_radius=dtw_radius(curves))      # DTW distance between every pair of raw curves
-    labels, centres = k_medoids(table)
-    return labels, centres, table
-
-def k_medoids(table):
-    best_cost = None
-    for centre_a, centre_b in combinations(range(len(table)), 2):  # every pair of texts as the two centres
-        nearer_to_b = table[:, centre_b] < table[:, centre_a]
-        cost = np.where(nearer_to_b, table[:, centre_b], table[:, centre_a]).sum()
-        if best_cost is None or cost < best_cost:
-            best_cost = cost
-            best_labels = nearer_to_b.astype(int)
-            best_centres = [centre_a, centre_b]                    # the two centre texts
-    return best_labels, best_centres
-```
-
-**The score** (`analysis/cluster.py`):
-
-```python
-for cluster_label in set(labels):
-    members = labels == cluster_label
-    majority_kind = pd.Series(kinds[members]).mode()[0]        # the cluster is named after its most common kind
-    correct[members] = kinds[members] == majority_kind
-```
-
-To rerun: `01_run_model.ipynb` (only needed for new texts), then `02_results.ipynb`. Earlier analyses are kept in `archive/`.
+The earlier factual-vs-creative write-up and the planted and temperature experiments (the old notebooks 03–06) are in
+`archive/hallucination_planted_and_temperature/`.

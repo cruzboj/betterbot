@@ -1,0 +1,13 @@
+text,signal,burst words,highest in burst zone,highest elsewhere,highest in clean original,normal ceiling,peak in burst zone,above clean original
+factual_burst_paris,"GloVe distance, top 5 guesses",127-151,0.318,0.294,0.294,0.617,True,True
+factual_burst_paris,"LCA height, likely guesses, at most 3 (10%)",127-151,7.348,9.798,9.11,12.41,False,False
+factual_burst_apollo,"GloVe distance, top 5 guesses",82-123,0.253,0.292,0.334,0.617,False,False
+factual_burst_apollo,"LCA height, likely guesses, at most 3 (10%)",82-123,8.0,8.367,8.307,12.41,False,False
+factual_burst_vaccines,"GloVe distance, top 5 guesses",128-161,0.331,0.316,0.32,0.617,True,True
+factual_burst_vaccines,"LCA height, likely guesses, at most 3 (10%)",128-161,7.746,7.616,7.211,12.41,True,True
+creative_burst_magic,"GloVe distance, top 5 guesses",103-129,0.443,0.414,0.482,0.617,True,False
+creative_burst_magic,"LCA height, likely guesses, at most 3 (10%)",103-129,7.746,7.81,8.944,12.41,False,False
+creative_burst_fairy,"GloVe distance, top 5 guesses",90-120,0.386,0.378,0.378,0.617,True,True
+creative_burst_fairy,"LCA height, likely guesses, at most 3 (10%)",90-120,9.165,8.185,8.185,12.41,True,True
+creative_burst_detective,"GloVe distance, top 5 guesses",68-98,0.383,0.395,0.365,0.617,False,True
+creative_burst_detective,"LCA height, likely guesses, at most 3 (10%)",68-98,8.0,8.888,8.062,12.41,False,False

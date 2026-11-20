@@ -1,0 +1,10 @@
+text,word,char,reason
+factual_burst_paris,Sainte-Marie-des-Fosses,2929,no such street or district in Paris
+factual_burst_paris,Jandes,2957,no such street or district in Paris
+factual_burst_paris,Hautes,3025,"no ""Hautes Citées"" neighbourhoods by Haussmann"
+factual_burst_apollo,transceivers,1999,"no ""heat-activated-emission transceivers"" were left by Apollo 11"
+factual_burst_apollo,propagation,2042,"no ""low-gravity cross-channel propagation monitor"""
+factual_burst_apollo,misconceives,2175,topic change: the article turns into a muddle about heroes and school grades
+creative_burst_magic,detective,1801,"Ella is a magic student, not ""the great detective"""
+creative_burst_fairy,bedrock,1389,the king's task changes: filling the wine cellar becomes laying bedrock across his lands
+creative_burst_detective,socket,1571,"a witness speaks ""through his eye socket""; the paragraph stops making sense"

@@ -1,0 +1,43 @@
+text,word,signal,value,rank in text,in top 3 unusual stretches,stretch rank
+creative_gen_detective_switch,enter,surprisal per word (names included),2.528,76 of 313,False,47.0
+creative_gen_detective_switch,stayed,surprisal per word (names included),0.66,187 of 313,False,62.0
+creative_gen_detective_switch,found,surprisal per word (names included),3.842,43 of 313,False,10.0
+creative_gen_detective_switch,enter,"GloVe distance, top 1 vs real word",-0.0,237 of 263,,
+creative_gen_detective_switch,stayed,"GloVe distance, top 1 vs real word",0.0,192 of 263,,
+creative_gen_detective_switch,found,"GloVe distance, top 1 vs real word",0.435,112 of 263,,
+creative_gen_detective_t07,reservation,surprisal per word (names included),5.932,7 of 317,False,35.0
+creative_gen_detective_t07,clean,surprisal per word (names included),0.22,233 of 317,False,235.0
+creative_gen_detective_t07,reservation,"GloVe distance, top 1 vs real word",0.776,46 of 256,,
+creative_gen_detective_t07,clean,"GloVe distance, top 1 vs real word",0.0,169 of 256,,
+creative_gen_detective_t10,lock,surprisal per word (names included),1.95,167 of 253,False,83.0
+creative_gen_detective_t10,index,surprisal per word (names included),13.547,3 of 253,True,1.0
+creative_gen_detective_t10,spouse,surprisal per word (names included),3.443,118 of 253,False,80.0
+creative_gen_detective_t10,lock,"GloVe distance, top 1 vs real word",0.745,106 of 241,,
+creative_gen_detective_t10,index,"GloVe distance, top 1 vs real word",0.976,21 of 241,,
+creative_gen_detective_t10,spouse,"GloVe distance, top 1 vs real word",0.475,157 of 241,,
+creative_gen_fairy_t07,bucket,surprisal per word (names included),0.983,107 of 245,False,54.0
+creative_gen_fairy_t07,grain,surprisal per word (names included),0.466,140 of 245,False,42.0
+creative_gen_fairy_t07,bucket,"GloVe distance, top 1 vs real word",-0.0,176 of 228,,
+creative_gen_fairy_t07,grain,"GloVe distance, top 1 vs real word",0.0,134 of 228,,
+creative_gen_fairy_t10,marry,surprisal per word (names included),5.656,41 of 311,False,40.0
+creative_gen_fairy_t10,riding,surprisal per word (names included),9.667,3 of 311,False,42.0
+creative_gen_fairy_t10,eclipse,surprisal per word (names included),1.03,194 of 311,False,69.0
+creative_gen_fairy_t10,eclipse,surprisal per word (names included),1.344,168 of 311,False,70.0
+creative_gen_fairy_t10,marry,"GloVe distance, top 1 vs real word",0.802,53 of 291,,
+creative_gen_fairy_t10,riding,"GloVe distance, top 1 vs real word",1.003,4 of 291,,
+creative_gen_fairy_t10,eclipse,"GloVe distance, top 1 vs real word",-0.0,273 of 291,,
+creative_gen_fairy_t10,eclipse,"GloVe distance, top 1 vs real word",0.631,123 of 291,,
+creative_gen_magic_switch,seen,surprisal per word (names included),1.653,62 of 210,False,138.0
+creative_gen_magic_switch,seen,"GloVe distance, top 1 vs real word",0.435,65 of 186,,
+creative_gen_magic_t07,woke,surprisal per word (names included),2.054,33 of 232,False,35.0
+creative_gen_magic_t07,woke,"GloVe distance, top 1 vs real word",0.0,69 of 206,,
+creative_gen_magic_t10,horse,surprisal per word (names included),2.428,181 of 293,False,94.0
+creative_gen_magic_t10,marked,surprisal per word (names included),6.829,50 of 293,False,18.0
+creative_gen_magic_t10,loss,surprisal per word (names included),0.65,264 of 293,False,190.0
+creative_gen_magic_t10,excitement,surprisal per word (names included),10.508,10 of 293,False,30.0
+creative_gen_magic_t10,business,surprisal per word (names included),1.401,233 of 293,False,111.0
+creative_gen_magic_t10,horse,"GloVe distance, top 1 vs real word",0.916,29 of 264,,
+creative_gen_magic_t10,marked,"GloVe distance, top 1 vs real word",-0.0,229 of 264,,
+creative_gen_magic_t10,loss,"GloVe distance, top 1 vs real word",-0.0,238 of 264,,
+creative_gen_magic_t10,excitement,"GloVe distance, top 1 vs real word",0.723,117 of 264,,
+creative_gen_magic_t10,business,"GloVe distance, top 1 vs real word",-0.0,263 of 264,,

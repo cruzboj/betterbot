@@ -1,0 +1,22 @@
+text,word,char,reason
+creative_gen_magic_t07,woke,499,"she 'woke up', but the next paragraph says she spent the whole night searching"
+creative_gen_fairy_t07,bucket,1585,the task was to fill a barrel; he fills and brings back a bucket
+creative_gen_fairy_t07,grain,2445,"he found a green shoot, not a grain, yet plucks 'the grain'"
+creative_gen_detective_t07,reservation,559,a business card handed over as 'the reservation for the stolen item' makes no sense
+creative_gen_detective_t07,clean,2457,the manager just said the housekeeper was supposed to clean the room but didn't
+creative_gen_magic_t10,horse,1078,invented: the elected house leader is 'dubbed the house's horse'
+creative_gen_magic_t10,marked,1142,"the elections were held on October 30, then 'the final' elections are on January 20"
+creative_gen_magic_t10,loss,3760,"nonsense: the library's 'weight and pH chemistry' tampered with, 'leading to significant weight loss'"
+creative_gen_magic_t10,excitement,3199,nonsense phrase about the guarding sphinxes
+creative_gen_magic_t10,business,3899,"out of place: a mob-film line in a school story, said to herself"
+creative_gen_fairy_t10,marry,333,"the king marries someone, yet the prize is the princess's hand"
+creative_gen_fairy_t10,riding,3136,Roger arrives on foot in a farm outfit; no horse anywhere
+creative_gen_fairy_t10,eclipse,3407,wrong world fact: a 'moon's bow' is not a solar eclipse
+creative_gen_fairy_t10,eclipse,3691,wrong world fact: a solar eclipse cannot follow a full-moon night (it needs a new moon)
+creative_gen_detective_t10,lock,1985,a key 'indicated the room had no lock'
+creative_gen_detective_t10,index,1138,nonsense: 'the sock index'
+creative_gen_detective_t10,spouse,2688,the reservation listed his wife as a guest a paragraph earlier
+creative_gen_magic_switch,seen,3199,"'she had never seen it before, but she knew where she had seen it before'"
+creative_gen_detective_switch,enter,2706,Maria has just said she did not enter the room this morning
+creative_gen_detective_switch,stayed,3280,the room was Mrs. Eliza Greene's; a couple never stayed there
+creative_gen_detective_switch,found,3706,unsupported: she never went to an antique dealership

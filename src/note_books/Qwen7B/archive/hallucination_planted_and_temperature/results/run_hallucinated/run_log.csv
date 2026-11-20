@@ -1,0 +1,10 @@
+text,measured words,tokens,seconds
+creative_gen_detective_switch,263,1000,291
+creative_gen_detective_t07,256,1000,283
+creative_gen_detective_t10,241,812,265
+creative_gen_fairy_switch,243,818,276
+creative_gen_fairy_t07,229,818,256
+creative_gen_fairy_t10,291,954,324
+creative_gen_magic_switch,186,806,211
+creative_gen_magic_t07,206,825,237
+creative_gen_magic_t10,264,1000,308

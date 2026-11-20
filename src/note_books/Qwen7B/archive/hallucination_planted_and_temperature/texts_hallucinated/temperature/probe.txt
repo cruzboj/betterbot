@@ -1,0 +1,32 @@
+===== temperature 1.3, min_p 0.1 =====
+Paris, often referred to as the “City of Light,” is the capital and most populous city of France. Located in the northern part of the country along the Seine River, Paris has been a major cultural, economic, and political center for centuries. It is renowned for its historic architecture, artistic masterpieces, and cultural landmarks. The city's history dates back to Roman times, and it has played a crucial role in the development of Western civilization.
+
+The city’s urban layout is famously divided into two main parts by the Seine River: the Left Bank (Rive gauche) and the Right Bank (Rive droite). The central area known as the Île de la Cité, an ancient island in the middle of the Seine, is where Notre-Dame Cathedral and other historical structures are located. The city is famous for its numerous parks, such as the Luxembourg Gardens, the Tuileries Garden, and the expansive Bois de Boulogne and Bois de Vincennes. These green spaces offer residents and visitors alike a respite from the bustling city life.
+
+Paris is often considered one of the world's most beautiful cities due to its iconic landmarks. The Eiffel Tower, a wrought-iron lattice tower named
+
+===== temperature 1.5, min_p 0.1 =====
+Paris, often referred to as the City of Light (La Ville Lumière) due to its historical contributions to the Enlightenment, is the capital and the most populous city of France. Known for its rich cultural heritage, artistic influence, and architectural splendor, Paris is one of the most visited cities in the world. The city is built on an island, Île de la Cité, and extends along the Seine river. Its historical development has been shaped by its location, which offered both a defensive advantage and economic opportunities from the river.
+
+One of Paris's most famous landmarks is the Eiffel Tower, a wrought-iron lattice tower designed by Gustave Eiffel for the 1889 World's Fair. Standing at 330 meters (1,083 feet), it has been an iconic symbol of Paris for over a century and serves as the starting point for the popular 24.5 km (15.2 miles) of the Paris Marathon. Another architectural marvel is Notre-Dame Cathedral, a Gothic masterpiece whose construction began in the 12th century. Although severely damaged by a fire in 2019, efforts to restore the cathedral have made it a major cultural and architectural
+
+===== temperature 1.8, min_p 0.1 =====
+Paris, often referred to as the City of Light (La Ville Lumière) due to its historical contributions to the Enlightenment, is the capital and the most populous city of France. Known for its rich cultural heritage, artistic history, and architectural splendor, it is one of the most visited cities in the world. The city, situated on the banks of the Seine River, has been a major influence in science, the arts, and philosophy and continues to attract visitors from around the globe.
+
+Situated approximately 685 square miles in size and spread across a triangular plot of land between the River Seine's curves, Paris's layout is characterized by numerous parks and gardens that add to its enchanting character. The Île de la Cité, often regarded as the historical and political heart of Paris, stands at the city center, hosting the Notre-Dame Cathedral and several governmental buildings. To the west lies the Left Bank and the Right Bank of the Seine, each with its own charm and character. The city extends along the river as far as the Montmartre district and the butte Montmartre.
+
+Paris boasts a thriving culture that thrives on a continuous engagement in art, gastronomy, and history. The Louvre
+
+===== temperature 2.2, min_p 0.1 =====
+Paris, often referred to as the City of Light (La Ville Lumière) due to its numerous historical oil and gas lighting, and more recently as "City of Love," holds an enviable status as one of the most iconic global destinations, blending centuries-old art and culture with modern architecture and innovation. It is the capital and most populous city of France, covering approximately 430 square kilometers. Founded as an impregnable stronghold by a group of Celtic people around the 3rd century BC and established as Lutetia in the early Gallo-Roman era, its past as a strategic fortress continues to resonate through its skyline and city layout.
+
+Nestled on the Île de la Cité, an area formed by two meandering courses of the Seine, Paris has long been a powerful center of European commerce, political power, and innovation. Its enduring prosperity began in 887 when it was given metropolitan status by Louis VII. Paris witnessed rapid economic and demographic growth under Louis XII and François I, the latter fostering its stature as an artistic center where he commissioned masterpieces and palaces.
+
+The 1572 massacre known as the Saint Bartholomew's Day massacre, following a period of political
+
+===== temperature 2.6, min_p 0.1 =====
+Paris, often referred to simply as “La Capitale de la Francie” and popularly known as the “City of Light”, stands as France's heart, holding a significant sway over France’s culture, economy, and politics. Founded by a Celtic people and built in part to hold off Visigoth invasion in the 4th century CE, Paris evolved as an early center of Christianity. Over its history, Paris became a city that stood out both culturally and geopolitically. Serving as the coronation point of French emperors and rulers and a spot of innovation from philosophy and technology, it continues to exert substantial political and economic control of metropolitan France while providing a rich legacy to world tourism.
+
+In terms of infrastructure, Paris encompasses a uniquely sophisticated network of underground tubes and railway systems, forming Europe’s densest mass transit networks with approximately two meters of underground pedestrian corridors crisscrossing the urban centre. Known for world-famous Paris metro system and La Bastille Underground Promenade that lets visitors experience the labyrinth below Chatelet Station and Rue St-Antoine, the underground and its symbols provide insights into France's urban past.
+
+In addition to its structural backbone, the city houses centuries of opulence symbolizing imperial and national

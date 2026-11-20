@@ -20,3 +20,16 @@ see `docs/adr/0002-keep-all-texts.md`).
 
 The first-version results here picked the best of the 12 setups without a chance score or stability tests, so some numbers are
 optimistic. Use `CONCLUSIONS.md`.
+
+## Hallucination experiments before the hot burst
+
+`hallucination_planted_and_temperature/` holds the old notebooks 03–06 with their texts, results, the code as it was then
+(`code/`) and the earlier `CONCLUSIONS.md`:
+- 03–04: hallucinations planted by hand into copies of real texts (e.g. Cyprus → Crete), and Qwen-written stories
+  at a higher temperature, checked word by word.
+- 05–06: whole articles and stories written cool (0.7), hot (2.6) and cool-then-hot, followed with the evolving
+  graph and a normal-ceiling alarm. The hot texts were wrong from the start and ended in word salad; the alarm
+  never fired.
+
+They were replaced by `03_hallucination_burst.ipynb`: a normal text with one short hot stretch.
+`burst_trials/` holds the bursts that stayed correct (40 tokens at 2.2 and at 2.6) and were not used.

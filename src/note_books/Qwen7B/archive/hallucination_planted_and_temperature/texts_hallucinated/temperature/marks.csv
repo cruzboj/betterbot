@@ -1,0 +1,52 @@
+text,word,char,type,reason
+factual_temp_paris_hot,Francie,54,wrong fact,Paris is not called 'La Capitale de la Francie'; Francie is not a word
+factual_temp_paris_hot,Visigoth,263,wrong fact,Paris was not built to hold off a Visigoth invasion in the 4th century
+factual_temp_paris_hot,meters,890,wrong fact,'two meters' of pedestrian corridors under the city
+factual_temp_paris_hot,Promenade,1035,wrong fact,there is no 'La Bastille Underground Promenade'
+factual_temp_paris_hot,Descartes,1651,wrong fact,Notre-Dame is not Descartes' final place of residence
+factual_temp_paris_hot,freeway,1932,wrong fact,a '34-mile circular urban freeway' planned in 1890
+factual_temp_paris_hot,11,2546,wrong fact,'World War 11'
+factual_temp_paris_hot,Fumeuse,2760,wrong fact,no Seurat work 'La Fumeuse' made from wartime smoke
+factual_temp_paris_hot,Paulette,3697,nonsense,an invented Basque street-food story that loses its thread
+factual_temp_paris_switch,Festival,2742,wrong fact,the 'Paris International Film Festival' is not a defining Paris event
+factual_temp_paris_switch,motor-free,3928,wrong fact,Paris avenues are not 'mainly motor-free'
+factual_temp_apollo_hot,only,93,wrong fact,Apollo 11 was not the only crewed Moon landing
+factual_temp_apollo_hot,Luna,422,wrong fact,Project Apollo did not land the Soviet Luna probe
+factual_temp_apollo_hot,Carr,728,wrong fact,Gerald Carr was not chief astronaut or a future NASA administrator
+factual_temp_apollo_hot,shuttle,826,wrong fact,there were no shuttle test trips before Apollo 11
+factual_temp_apollo_hot,Meynier,900,wrong fact,"an invented astronaut, 'Joel Meynier'"
+factual_temp_apollo_hot,trio,1245,wrong fact,"Apollo 11 launched on one Saturn V, not 'a trio'"
+factual_temp_apollo_hot,Kienamie,1706,nonsense,an invented engineer with dates from 1972 and 1990
+factual_temp_apollo_hot,Plow-III,3136,wrong fact,the landing site was never named 'Plow-III'
+factual_temp_apollo_hot,astroböes,4488,nonsense,not a word; the text is word salad from here
+factual_temp_apollo_switch,Nixon,1965,wrong fact,the Moon rocks were not deposited at a 'Nixon Building in Hawaii'
+factual_temp_vaccines_hot,antibiotic,643,wrong fact,an antibiotic is not an antigen
+factual_temp_vaccines_hot,interferon,2303,wrong fact,"interferon is a signalling protein, not an adaptive immune cell"
+factual_temp_vaccines_hot,allergies,3839,wrong fact,MMR is not known for allergies and 'misfires'
+factual_temp_vaccines_hot,millions,4455,nonsense,"'worked for decades or millions years at once', the sentence breaks down"
+factual_temp_vaccines_hot,bio-computer,4967,nonsense,vaccine theory 'honed by bio-computer and tech companies'
+factual_temp_vaccines_switch,Pathogenic,2333,wrong fact,adjuvants are not called 'Pathogenic Modulators'
+factual_temp_vaccines_switch,Reductionist,2700,wrong fact,there is no 'Reductionist Pathology' vaccine approach
+factual_temp_vaccines_switch,unresilient,3863,nonsense,not a word; 'faced unresilient fight'
+creative_temp_magic_switch,bunnies,2423,nonsense,'dust bunnies (metaphoric creatures not in room to start with)'
+creative_temp_magic_switch,astral,3093,topic change,"the story drifts into sleep, dreams and the astral plane"
+creative_temp_magic_switch,unsited,4284,nonsense,word salad with no sentences
+creative_temp_magic_hot,loopy,588,nonsense,'a movement without hands! And loopy.'
+creative_temp_magic_hot,mousse,1104,nonsense,'a face as soft as leather mousse'
+creative_temp_magic_hot,fuscum,1443,nonsense,not a word
+creative_temp_magic_hot,moom,2928,nonsense,'claw the white scratch right moom moo'
+creative_temp_magic_hot,gutster,3142,nonsense,the character's name changes (Gutser to gutster)
+creative_temp_fairy_switch,nather,2564,nonsense,"'nether rot, rot, nather grow less'"
+creative_temp_fairy_switch,victa,3130,nonsense,not a word; the quest ending is word salad
+creative_temp_fairy_switch,miler,3654,nonsense,'both king and miler son'
+creative_temp_fairy_hot,Bursas,1127,nonsense,not a word; the story loses its thread
+creative_temp_fairy_hot,mought,1922,nonsense,not a word
+creative_temp_fairy_hot,mistledoves,2627,nonsense,not a word
+creative_temp_fairy_hot,lichten,3217,nonsense,word salad
+creative_temp_fairy_hot,tohew,4771,nonsense,not a word
+creative_temp_detective_switch,perspiration,2914,nonsense,'box of dried perspiration' in a broken sentence
+creative_temp_detective_switch,Victorian,3752,nonsense,a one-word sentence; the ending does not make sense
+creative_temp_detective_hot,night,236,nonsense,'under the cold night sun' in the afternoon
+creative_temp_detective_hot,murder,3868,topic change,the jewel theft turns into a murder
+creative_temp_detective_hot,rabbits,3730,nonsense,'shims of little men like rabbits'
+creative_temp_detective_hot,gardens,5184,nonsense,word salad ending

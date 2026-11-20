@@ -4,7 +4,8 @@ Two families:
 
     guess meaning     how different the model's guesses for the next noun/verb are in meaning, measured three
                       ways (WordNet LCA height, GloVe distance, Qwen-embedding distance), each on four guess
-                      sets (top 1 vs the real word, top 3, top 5, likely guesses only)
+                      sets (top 1 vs the real word, top 3, top 5, likely guesses only), plus the likely-share
+                      sweep (see SWEEP_SETS)
     model confidence  LM-Polygraph's token uncertainty values (surprisal, entropy, ...), read either at each
                       measured noun/verb or at every token of the text
 
@@ -18,9 +19,12 @@ import numpy as np
 import pandas as pd
 
 
-from qwen_config import EXCLUDED_TEXTS, LIKELY_SHARE, TOKENS_DIR, WORDS_DIR
-from lca_core import (POS, base_lemma, embedding_distance, embedding_spread, glove_distance, glove_spread, kind,
-                      lca, load_token_embeddings)
+from qwen_config import EXCLUDED_TEXTS, LIKELY_SHARE, LIKELY_SHARE_SWEEP, TOKENS_DIR, WORDS_DIR
+import re
+
+import nltk
+from lca_core import (POS, STOP, base_lemma, content_words, embedding_distance, embedding_spread, glove_distance,
+                      glove_spread, kind, lca, load_token_embeddings)
 
 
 @dataclass(frozen=True)
@@ -48,6 +52,16 @@ GUESS_SETS = {
     "likely": ("likely guesses", f"between the guesses with at least {LIKELY_SHARE:.0%} of the #1 guess's "
                                  "probability; 0 when only the #1 guess qualifies"),
 }
+# the likely-share sweep: these guess sets are built once per share in LIKELY_SHARE_SWEEP ("{share}" = e.g. 5%)
+SWEEP_SETS = {
+    "likely": ("likely guesses ({share})", "between the guesses with at least {share} of the #1 guess's probability; "
+                                           "0 when only the #1 guess qualifies"),
+    "likely_top3": ("likely guesses, at most 3 ({share})", "between the likely guesses ({share} rule) among the "
+                                                          "model's 3 best guesses; 0 when only the #1 guess qualifies"),
+    "top1_if_likely": ("top 1 vs real word, only if likely ({share})",
+                       "between the model's #1 guess and the real word, only at words where the real word is a "
+                       "likely guess ({share} rule); other words are left out of the curve"),
+}
 CONFIDENCE_VALUES = {
     "surprisal": ("surprisal", "-log of the probability the model gave the real next token"),
     "max_prob": ("max probability", "probability of the model's #1 guess for the next token"),
@@ -60,6 +74,23 @@ CONFIDENCE_VALUES = {
 }
 
 
+def share_tag(share):
+    """0.05 -> '5pct' (used in signal keys)."""
+    return f"{round(share * 100)}pct"
+
+
+def sweep_set_keys():
+    """[(set key, share)] of every sweep guess set, e.g. ('likely_top3_5pct', 0.05). The plain 'likely' set at
+    LIKELY_SHARE is already one of the four main guess sets, so it is not repeated."""
+    keys = []
+    for set_key in SWEEP_SETS:
+        for share in LIKELY_SHARE_SWEEP:
+            if set_key == "likely" and share == LIKELY_SHARE:
+                continue
+            keys.append((f"{set_key}_{share_tag(share)}", share))
+    return keys
+
+
 def _build_signal_list():
     signals = []
     for measure, (measure_name, measure_how) in MEANING_MEASURES.items():
@@ -67,6 +98,17 @@ def _build_signal_list():
             key = f"{measure}_{guess_set}"
             signals.append(Signal(key=key, name=f"{measure_name}, {set_name}", family="guess meaning",
                                   time_axis="word", column=key, how=f"{measure_how}, {set_how}"))
+    for measure, (measure_name, measure_how) in MEANING_MEASURES.items():
+        for set_key in SWEEP_SETS:
+            for share in LIKELY_SHARE_SWEEP:
+                if set_key == "likely" and share == LIKELY_SHARE:
+                    continue
+                set_name, set_how = SWEEP_SETS[set_key]
+                share_text = f"{share:.0%}"
+                key = f"{measure}_{set_key}_{share_tag(share)}"
+                signals.append(Signal(key=key, name=f"{measure_name}, {set_name.format(share=share_text)}",
+                                      family="guess meaning", time_axis="word", column=key,
+                                      how=f"{measure_how}, {set_how.format(share=share_text)}"))
     for time_axis in ["word", "token"]:
         for column, (value_name, value_how) in CONFIDENCE_VALUES.items():
             if time_axis == "word":
@@ -93,9 +135,9 @@ def real_lemma(word, pos):
     return lemma
 
 
-def likely_guesses(guesses, probabilities):
-    """The guesses whose probability is at least LIKELY_SHARE times the #1 guess's probability (best first)."""
-    cutoff = LIKELY_SHARE * probabilities[0]
+def likely_guesses(guesses, probabilities, share=LIKELY_SHARE):
+    """The guesses whose probability is at least `share` times the #1 guess's probability (best first)."""
+    cutoff = share * probabilities[0]
     kept = []
     for guess, probability in zip(guesses, probabilities):
         if probability >= cutoff:
@@ -115,7 +157,7 @@ def meaning_spread(words, pos, tokenizer, embeddings):
 
 
 def guess_values(word_row, tokenizer, embeddings):
-    """All 12 guess-meaning values (3 measures x 4 guess sets) for one row of a word table."""
+    """All guess-meaning values (3 measures x every guess set, sweep sets included) for one row of a word table."""
     guesses = word_row["candidates"].split()
     probabilities = []
     for probability in str(word_row["candidate_probs"]).split():
@@ -133,19 +175,34 @@ def guess_values(word_row, tokenizer, embeddings):
     values["glove_top1"] = glove
     values["emb_top1"] = embedding_distance(guesses[0], real, tokenizer, embeddings)
 
-    # spreads of three guess sets
+    # spreads of the guess sets
     guess_sets = {"top3": guesses[:3], "top5": guesses[:5], "likely": likely_guesses(guesses, probabilities)}
+    for share in LIKELY_SHARE_SWEEP:
+        likely = likely_guesses(guesses, probabilities, share)
+        if share != LIKELY_SHARE:
+            guess_sets[f"likely_{share_tag(share)}"] = likely
+        guess_sets[f"likely_top3_{share_tag(share)}"] = likely[:3]
     for set_key, words in guess_sets.items():
         height, glove, embedding = meaning_spread(words, pos, tokenizer, embeddings)
         values[f"lca_{set_key}"] = height
         values[f"glove_{set_key}"] = glove
         values[f"emb_{set_key}"] = embedding
     values["likely_count"] = len(guess_sets["likely"])
+
+    # top 1 vs real word, kept only where the real word is itself a likely guess (otherwise missing -> dropped)
+    for share in LIKELY_SHARE_SWEEP:
+        tag = share_tag(share)
+        real_is_likely = real in likely_guesses(guesses, probabilities, share)
+        for measure in MEANING_MEASURES:
+            if real_is_likely:
+                values[f"{measure}_top1_if_likely_{tag}"] = values[f"{measure}_top1"]
+            else:
+                values[f"{measure}_top1_if_likely_{tag}"] = np.nan
     return values
 
 
 def add_guess_signals(word_table, tokenizer, embeddings):
-    """The word table with the 12 guess-meaning columns (and likely_count) added."""
+    """The word table with every guess-meaning column (and likely_count) added."""
     rows = []
     for _index, word_row in word_table.iterrows():
         rows.append(guess_values(word_row, tokenizer, embeddings))
@@ -181,16 +238,54 @@ def kinds_of(names):
     return np.array(kinds)
 
 
-def load_tables(names, model_name):
-    """({name: word table with guess signals}, {name: token table}) for the given texts."""
+def load_tables(names, model_name, words_dir=WORDS_DIR, tokens_dir=TOKENS_DIR):
+    """({name: word table with guess signals}, {name: token table}) for the given texts
+    (by default the real texts' run; the hallucinated texts' run is passed in by notebook 04)."""
     tokenizer, embeddings = load_token_embeddings(model_name)
     word_tables = {}
     token_tables = {}
     for name in names:
-        word_table = pd.read_csv(WORDS_DIR / f"{name}.csv")
+        word_table = pd.read_csv(words_dir / f"{name}.csv")
         word_tables[name] = add_guess_signals(word_table, tokenizer, embeddings)
-        token_tables[name] = pd.read_csv(TOKENS_DIR / f"{name}.csv")
+        token_tables[name] = pd.read_csv(tokens_dir / f"{name}.csv")
     return word_tables, token_tables
+
+
+def name_words(text):
+    """[(char_start, word, 'name')] of the names (proper nouns, e.g. Hermione, London) in `text`, tagged the same
+    way as content_words tags nouns and verbs."""
+    points = []
+    search_from = 0
+    for sentence in nltk.sent_tokenize(text):
+        sentence_start = text.find(sentence, search_from)
+        search_from = sentence_start + len(sentence)
+        positions, words = [], []
+        for match in re.finditer(r"[A-Za-z]+", sentence):
+            positions.append(sentence_start + match.start())
+            words.append(match.group())
+        for i, (word, tag) in enumerate(nltk.pos_tag(words)):
+            if tag.startswith("NNP") and word.lower() not in STOP:
+                points.append((positions[i], word, "name"))
+    return points
+
+
+def words_with_names(text, token_table):
+    """One row per noun, verb AND name of `text`, in reading order, with the model-confidence values (surprisal,
+    max_prob, entropy, ...) of the word's first token, read from the run's token table. Names have no WordNet
+    entry, so they get no guess-meaning values; only these confidence values."""
+    token_ends = token_table["char_end"].to_numpy()
+    token_starts = token_table["char_start"].to_numpy()
+    points = sorted(content_words(text) + name_words(text))
+    rows = []
+    for char, word, pos in points:
+        t = int(np.searchsorted(token_ends, char, side="right"))   # the token holding the word's first letter
+        if t >= len(token_table) or text[token_starts[t]:char].strip():
+            continue                                               # word doesn't start at a token boundary
+        row = {"char": char, "word": word, "pos": pos}
+        for column in ["surprisal", "max_prob", "entropy"]:
+            row[column] = token_table[column].iloc[t]
+        rows.append(row)
+    return pd.DataFrame(rows)
 
 
 def curve(table, column):
@@ -198,6 +293,22 @@ def curve(table, column):
     (e.g. a word GloVe doesn't know)."""
     values = table[column].to_numpy(dtype=float)
     return values[~np.isnan(values)]
+
+
+def curve_with_rows(table, column):
+    """Like curve(), but also returns which table row each kept value came from (so a known word, e.g. a
+    planted hallucination, can be found on the curve)."""
+    values = table[column].to_numpy(dtype=float)
+    kept = ~np.isnan(values)
+    return values[kept], np.flatnonzero(kept)
+
+
+def signal_by_key(key):
+    """The Signal with this key."""
+    for signal in SIGNALS:
+        if signal.key == key:
+            return signal
+    raise KeyError(key)
 
 
 def curves_of(signal, names, word_tables, token_tables):

@@ -16,6 +16,23 @@ _Avoid_: informative, non-fiction, wiki text
 A text written to tell a story or entertain: fiction and jokes.
 _Avoid_: fiction, narrative, imaginative
 
+**Hallucination**:
+A claim inside a text that contradicts the text itself (a character renamed, a subject swapped) or the real-world facts it relies on (the capital of France is London). Inventing things is creative; contradicting what the text holds true is a hallucination.
+_Avoid_: error, mistake, lie, confabulation
+
+**Hallucinated text**:
+A factual or creative text containing at least one hallucination. It keeps its kind; being hallucinated is not a third kind.
+_Avoid_: hallucination text, false text, corrupted text
+
+**Clean original**:
+A text the model writes at its normal, low temperature; the text a burst copy is compared with.
+_Avoid_: source, baseline, reference text, cool text
+
+**Hot burst**:
+A few sentences written at a high temperature inside a copy of a clean original, which goes back to normal
+temperature afterwards; up to the burst the copy is its clean original word for word.
+_Avoid_: switch, hot text, injection
+
 ## Measuring
 
 **Signal**:
@@ -47,3 +64,20 @@ _Avoid_: correct, accuracy, sorted correctly
 **Text map**:
 A 2D picture where each text is a dot and close dots have similar curves.
 _Avoid_: embedding plot, scatter, projection
+
+**Evolving graph**:
+A text's curve drawn word by word as it is read, together with how far the last few words are from real writing of each kind at that moment.
+_Avoid_: live graph, streaming plot, running chart
+
+**Distance to real writing**:
+At one word, how unlike the last few words of a curve are to the most similar stretch anywhere in real texts of one kind; low means "reads like that kind of writing".
+_Avoid_: anomaly score, error, similarity
+
+**Normal ceiling**:
+The highest distance to real writing that any real text reaches when compared without itself; anything above it has not been seen in real writing.
+_Avoid_: threshold, cutoff, limit
+
+**Burst zone**:
+The words from the start of a hot burst until one window of words after it: where the burst can show in the
+distance to real writing.
+_Avoid_: hallucination region, window

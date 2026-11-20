@@ -1,0 +1,65 @@
+text,planted,type,is a name,signal,rank in own curve,in top 3 unusual stretches,stretch rank,gap at word,rank of |gap| in text,largest |gap| at,largest |gap|,words on curve
+creative_gut_grimm_planted,died → married,relation,False,surprisal per word (names included),5,False,7.0,4.1047534942626935,4.0,+0 words,4.1047534942626935,210.0
+creative_gut_grimm_planted,Hans → Peter,entity,True,surprisal per word (names included),39,False,27.0,1.564080715179443,15.0,+0 words,1.564080715179443,210.0
+creative_gut_grimm_planted,beer → milk,entity,False,surprisal per word (names included),25,False,12.0,3.5162177085876465,7.0,+0 words,3.5162177085876465,210.0
+creative_gut_grimm_planted,masons → dragons,invented,False,surprisal per word (names included),1,True,1.0,5.27706241607666,3.0,+0 words,5.27706241607666,210.0
+creative_gut_grimm_planted,died → married,relation,False,"GloVe distance, top 1 vs real word",54,,,0.04914480447769165,21.0,+1 words,0.06844305992126465,183.0
+creative_gut_grimm_planted,Hans → Peter,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_gut_grimm_planted,beer → milk,entity,False,"GloVe distance, top 1 vs real word",77,,,-0.13698002696037292,14.0,+5 words,0.1583298146724701,183.0
+creative_gut_grimm_planted,masons → dragons,invented,False,"GloVe distance, top 1 vs real word",18,,,-0.020418621599674225,24.0,+3 words,0.3560035154223442,183.0
+creative_gut_oz_planted,Oz → Glinda,entity,True,surprisal per word (names included),14,False,23.0,3.2319231033325195,4.0,+0 words,3.2319231033325195,184.0
+creative_gut_oz_planted,elephant → mouse,entity,False,surprisal per word (names included),1,True,1.0,3.8311262130737305,3.0,+0 words,3.8311262130737305,184.0
+creative_gut_oz_planted,tin → flesh,entity,False,surprisal per word (names included),not on the curve,,,,,,,
+creative_gut_oz_planted,kill → marry,relation,False,surprisal per word (names included),2,True,3.0,5.5730133056640625,1.0,+0 words,5.5730133056640625,184.0
+creative_gut_oz_planted,Oz → Glinda,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_gut_oz_planted,elephant → mouse,entity,False,"GloVe distance, top 1 vs real word",35,,,0.1283569037914276,14.0,+1 words,0.43086256831884384,128.0
+creative_gut_oz_planted,tin → flesh,entity,False,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_gut_oz_planted,kill → marry,relation,False,"GloVe distance, top 1 vs real word",36,,,0.15172016620635986,13.0,+2 words,0.31728994846343994,128.0
+creative_gut_sherlock_planted,Holmes → Watson,entity,True,surprisal per word (names included),100,False,38.0,-0.9166364669799805,9.0,+0 words,0.9166364669799805,178.0
+creative_gut_sherlock_planted,head → foot,entity,False,surprisal per word (names included),12,False,8.0,4.5646071434021,1.0,+0 words,4.5646071434021,178.0
+creative_gut_sherlock_planted,perspired → froze,relation,False,surprisal per word (names included),not on the curve,,,,,,,
+creative_gut_sherlock_planted,goose → turkey,entity,False,surprisal per word (names included),28,False,25.0,0.10767364501953125,87.0,+1 words,1.4246932268142696,178.0
+creative_gut_sherlock_planted,Holmes → Watson,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_gut_sherlock_planted,head → foot,entity,False,"GloVe distance, top 1 vs real word",72,,,-0.2266169637441635,5.0,+1 words,0.3017028719186783,171.0
+creative_gut_sherlock_planted,perspired → froze,relation,False,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_gut_sherlock_planted,goose → turkey,entity,False,"GloVe distance, top 1 vs real word",47,,,-0.10749609768390656,14.0,+3 words,0.2626385986804962,171.0
+creative_hp3_planted,kick → kiss,relation,False,surprisal per word (names included),2,True,4.0,3.2957773208618164,2.0,+0 words,3.2957773208618164,252.0
+creative_hp3_planted,rats → dragons,entity,False,surprisal per word (names included),6,False,16.0,1.8634395599365234,6.0,+0 words,1.8634395599365234,252.0
+creative_hp3_planted,Hermione → Ron,entity,True,surprisal per word (names included),150,False,24.0,0.8261489868164065,16.0,+3 words,1.8426990509033203,252.0
+creative_hp3_planted,cat → owl,entity,False,surprisal per word (names included),22,False,45.0,-0.20008277893066406,43.0,+0 words,0.20008277893066406,252.0
+creative_hp3_planted,kick → kiss,relation,False,"GloVe distance, top 1 vs real word",35,,,-0.20064883679151535,4.0,+0 words,0.20064883679151535,173.0
+creative_hp3_planted,rats → dragons,entity,False,"GloVe distance, top 1 vs real word",72,,,-0.03817790746688843,20.0,+4 words,0.24621576815843582,173.0
+creative_hp3_planted,Hermione → Ron,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_hp3_planted,cat → owl,entity,False,"GloVe distance, top 1 vs real word",8,,,0.046553801745176315,17.0,+0 words,0.046553801745176315,173.0
+creative_hp6_planted,James → Arthur,entity,True,surprisal per word (names included),35,False,31.0,1.882472038269042,5.0,+0 words,1.882472038269042,229.0
+creative_hp6_planted,eggnog → tea,entity,False,surprisal per word (names included),not on the curve,,,,,,,
+creative_hp6_planted,bit → cured,relation,False,surprisal per word (names included),26,False,110.0,5.767817497253418,1.0,+0 words,5.767817497253418,229.0
+creative_hp6_planted,moon → sun,entity,False,surprisal per word (names included),1,True,1.0,5.685062408447266,2.0,+0 words,5.685062408447266,229.0
+creative_hp6_planted,James → Arthur,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_hp6_planted,eggnog → tea,entity,False,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+creative_hp6_planted,bit → cured,relation,False,"GloVe distance, top 1 vs real word",30,,,0.1005878895521164,14.0,+0 words,0.1005878895521164,180.0
+creative_hp6_planted,moon → sun,entity,False,"GloVe distance, top 1 vs real word",115,,,-0.14286479353904724,11.0,+5 words,0.242361381649971,180.0
+factual_wiki_copper_planted,metal → gas,entity,False,surprisal per word (names included),2,True,4.0,8.454134941101074,2.0,+0 words,8.454134941101074,260.0
+factual_wiki_copper_planted,bronze → glass,entity,False,surprisal per word (names included),1,False,5.0,10.442046165466309,1.0,+0 words,10.442046165466309,260.0
+factual_wiki_copper_planted,Cyprus → Crete,entity,True,surprisal per word (names included),24,False,37.0,-0.9753665924072266,17.0,+0 words,0.9753665924072266,260.0
+factual_wiki_copper_planted,absorb → emit,relation,False,surprisal per word (names included),42,False,23.0,0.6990447044372563,22.0,+0 words,0.6990447044372563,260.0
+factual_wiki_copper_planted,metal → gas,entity,False,"GloVe distance, top 1 vs real word",48,,,0.15045547485351562,8.0,+0 words,0.15045547485351562,243.0
+factual_wiki_copper_planted,bronze → glass,entity,False,"GloVe distance, top 1 vs real word",49,,,0.7339948415756226,1.0,+0 words,0.7339948415756226,243.0
+factual_wiki_copper_planted,Cyprus → Crete,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+factual_wiki_copper_planted,absorb → emit,relation,False,"GloVe distance, top 1 vs real word",20,,,0.23261668533086777,3.0,+0 words,0.23261668533086777,243.0
+factual_wiki_vaccine_planted,smallpox → cancer,entity,False,surprisal per word (names included),1,True,1.0,9.744993209838869,1.0,+0 words,9.744993209838869,274.0
+factual_wiki_vaccine_planted,cow → horse,entity,False,surprisal per word (names included),2,False,30.0,9.696424007415771,2.0,+0 words,9.696424007415771,274.0
+factual_wiki_vaccine_planted,destroys → protects,relation,False,surprisal per word (names included),3,False,28.0,6.448905944824217,3.0,+0 words,6.448905944824217,274.0
+factual_wiki_vaccine_planted,Nigeria → Canada,entity,True,surprisal per word (names included),4,True,4.0,4.739747047424316,6.0,+0 words,4.739747047424316,274.0
+factual_wiki_vaccine_planted,smallpox → cancer,entity,False,"GloVe distance, top 1 vs real word",89,,,-0.18829676508903503,9.0,+3 words,0.4261131286621094,240.0
+factual_wiki_vaccine_planted,cow → horse,entity,False,"GloVe distance, top 1 vs real word",68,,,0.5790704488754272,1.0,+0 words,0.5790704488754272,240.0
+factual_wiki_vaccine_planted,destroys → protects,relation,False,"GloVe distance, top 1 vs real word",64,,,-0.11323225498199463,14.0,+0 words,0.11323225498199463,240.0
+factual_wiki_vaccine_planted,Nigeria → Canada,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+factual_wiki_volcano_planted,lava → ice,entity,False,surprisal per word (names included),2,True,3.0,11.86643362045288,1.0,+0 words,11.86643362045288,261.0
+factual_wiki_volcano_planted,North → South,entity,True,surprisal per word (names included),17,False,44.0,5.876747131347656,3.0,+0 words,5.876747131347656,261.0
+factual_wiki_volcano_planted,cool → heat,relation,False,surprisal per word (names included),3,True,1.0,7.392182350158691,2.0,+0 words,7.392182350158691,261.0
+factual_wiki_volcano_planted,fire → wine,entity,False,surprisal per word (names included),6,False,7.0,4.724673271179197,4.0,+0 words,4.724673271179197,261.0
+factual_wiki_volcano_planted,lava → ice,entity,False,"GloVe distance, top 1 vs real word",50,,,0.0015628635883331299,17.0,+2 words,0.41634707152843475,223.0
+factual_wiki_volcano_planted,North → South,entity,True,"GloVe distance, top 1 vs real word",not on the curve,,,,,,,
+factual_wiki_volcano_planted,cool → heat,relation,False,"GloVe distance, top 1 vs real word",91,,,-0.06440725922584534,14.0,+2 words,0.7204630672931671,223.0
+factual_wiki_volcano_planted,fire → wine,entity,False,"GloVe distance, top 1 vs real word",27,,,0.22355467081069946,8.0,+0 words,0.22355467081069946,223.0

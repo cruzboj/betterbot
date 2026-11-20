@@ -1,0 +1,4 @@
+distance,top 1 vs real,top 3,top 5,likely 5%,likely 10%,likely 20%,likely_top3 5%,likely_top3 10%,likely_top3 20%,top1_if_likely 5%,top1_if_likely 10%,top1_if_likely 20%
+LCA height,20,14,16,21,21,21,20,23,21,20,18,18
+GloVe distance,21,22,23,22,22,21,22,22,22,18,20,18
+Qwen-embedding distance,21,18,16,22,22,22,22,22,22,18,18,15

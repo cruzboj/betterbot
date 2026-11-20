@@ -1,0 +1,143 @@
+text,made as,word,signal,word on curve,distance to nearest writing,above ceiling,rank in own text
+creative_temp_detective_hot,hot,night,"GloVe distance, top 5 guesses",11,too early,,
+creative_temp_detective_hot,hot,murder,"GloVe distance, top 5 guesses",220,0.247,False,198 of 311
+creative_temp_detective_hot,hot,rabbits,"GloVe distance, top 5 guesses",210,0.205,False,273 of 311
+creative_temp_detective_hot,hot,gardens,"GloVe distance, top 5 guesses",307,0.208,False,270 of 311
+creative_temp_detective_hot,hot,night,"LCA height, likely guesses, at most 3 (10%)",11,too early,,
+creative_temp_detective_hot,hot,murder,"LCA height, likely guesses, at most 3 (10%)",220,5.831,False,265 of 311
+creative_temp_detective_hot,hot,rabbits,"LCA height, likely guesses, at most 3 (10%)",210,7.416,False,82 of 311
+creative_temp_detective_hot,hot,gardens,"LCA height, likely guesses, at most 3 (10%)",307,8.888,False,18 of 311
+creative_temp_detective_switch,switch,perspiration,"GloVe distance, top 5 guesses",162,0.213,False,158 of 237
+creative_temp_detective_switch,switch,Victorian,"GloVe distance, top 5 guesses",217,0.179,False,208 of 237
+creative_temp_detective_switch,switch,perspiration,"LCA height, likely guesses, at most 3 (10%)",162,7.937,False,25 of 237
+creative_temp_detective_switch,switch,Victorian,"LCA height, likely guesses, at most 3 (10%)",217,5.657,False,171 of 237
+creative_temp_fairy_hot,hot,Bursas,"GloVe distance, top 5 guesses",75,0.167,False,314 of 341
+creative_temp_fairy_hot,hot,mought,"GloVe distance, top 5 guesses",134,0.218,False,184 of 341
+creative_temp_fairy_hot,hot,mistledoves,"GloVe distance, top 5 guesses",184,0.236,False,141 of 341
+creative_temp_fairy_hot,hot,lichten,"GloVe distance, top 5 guesses",225,0.204,False,222 of 341
+creative_temp_fairy_hot,hot,Bursas,"LCA height, likely guesses, at most 3 (10%)",75,6.557,False,166 of 341
+creative_temp_fairy_hot,hot,mought,"LCA height, likely guesses, at most 3 (10%)",134,7.616,False,46 of 341
+creative_temp_fairy_hot,hot,mistledoves,"LCA height, likely guesses, at most 3 (10%)",184,6.245,False,212 of 341
+creative_temp_fairy_hot,hot,lichten,"LCA height, likely guesses, at most 3 (10%)",225,7.81,False,30 of 341
+creative_temp_fairy_switch,switch,nather,"GloVe distance, top 5 guesses",168,0.19,False,205 of 240
+creative_temp_fairy_switch,switch,victa,"GloVe distance, top 5 guesses",204,0.248,False,80 of 240
+creative_temp_fairy_switch,switch,miler,"GloVe distance, top 5 guesses",239,0.285,False,42 of 240
+creative_temp_fairy_switch,switch,nather,"LCA height, likely guesses, at most 3 (10%)",168,6.928,False,88 of 240
+creative_temp_fairy_switch,switch,victa,"LCA height, likely guesses, at most 3 (10%)",204,6.164,False,159 of 240
+creative_temp_fairy_switch,switch,miler,"LCA height, likely guesses, at most 3 (10%)",239,5.196,False,206 of 240
+creative_temp_magic_hot,hot,loopy,"GloVe distance, top 5 guesses",36,0.272,False,114 of 245
+creative_temp_magic_hot,hot,mousse,"GloVe distance, top 5 guesses",68,0.306,False,83 of 245
+creative_temp_magic_hot,hot,fuscum,"GloVe distance, top 5 guesses",90,0.247,False,155 of 245
+creative_temp_magic_hot,hot,moom,"GloVe distance, top 5 guesses",170,0.367,False,23 of 245
+creative_temp_magic_hot,hot,gutster,"GloVe distance, top 5 guesses",182,0.314,False,72 of 245
+creative_temp_magic_hot,hot,loopy,"LCA height, likely guesses, at most 3 (10%)",36,5.477,False,212 of 245
+creative_temp_magic_hot,hot,mousse,"LCA height, likely guesses, at most 3 (10%)",68,7.483,False,65 of 245
+creative_temp_magic_hot,hot,fuscum,"LCA height, likely guesses, at most 3 (10%)",90,7.211,False,77 of 245
+creative_temp_magic_hot,hot,moom,"LCA height, likely guesses, at most 3 (10%)",170,9.695,False,6 of 245
+creative_temp_magic_hot,hot,gutster,"LCA height, likely guesses, at most 3 (10%)",182,7.071,False,88 of 245
+creative_temp_magic_switch,switch,bunnies,"GloVe distance, top 5 guesses",151,0.292,False,116 of 324
+creative_temp_magic_switch,switch,astral,"GloVe distance, top 5 guesses",190,0.193,False,286 of 324
+creative_temp_magic_switch,switch,unsited,"GloVe distance, top 5 guesses",261,0.259,False,183 of 324
+creative_temp_magic_switch,switch,bunnies,"LCA height, likely guesses, at most 3 (10%)",151,7.28,False,74 of 324
+creative_temp_magic_switch,switch,astral,"LCA height, likely guesses, at most 3 (10%)",190,5.0,False,293 of 324
+creative_temp_magic_switch,switch,unsited,"LCA height, likely guesses, at most 3 (10%)",261,6.708,False,118 of 324
+factual_temp_apollo_hot,hot,only,"GloVe distance, top 5 guesses",4,too early,,
+factual_temp_apollo_hot,hot,Luna,"GloVe distance, top 5 guesses",17,0.2,False,150 of 300
+factual_temp_apollo_hot,hot,Carr,"GloVe distance, top 5 guesses",25,0.175,False,248 of 300
+factual_temp_apollo_hot,hot,shuttle,"GloVe distance, top 5 guesses",27,0.189,False,198 of 300
+factual_temp_apollo_hot,hot,Meynier,"GloVe distance, top 5 guesses",32,0.227,False,55 of 300
+factual_temp_apollo_hot,hot,trio,"GloVe distance, top 5 guesses",46,0.227,False,53 of 300
+factual_temp_apollo_hot,hot,Kienamie,"GloVe distance, top 5 guesses",67,0.184,False,220 of 300
+factual_temp_apollo_hot,hot,Plow-III,"GloVe distance, top 5 guesses",147,0.175,False,247 of 300
+factual_temp_apollo_hot,hot,astroböes,"GloVe distance, top 5 guesses",231,0.231,False,43 of 300
+factual_temp_apollo_hot,hot,only,"LCA height, likely guesses, at most 3 (10%)",4,too early,,
+factual_temp_apollo_hot,hot,Luna,"LCA height, likely guesses, at most 3 (10%)",17,6.633,False,255 of 300
+factual_temp_apollo_hot,hot,Carr,"LCA height, likely guesses, at most 3 (10%)",25,7.81,False,147 of 300
+factual_temp_apollo_hot,hot,shuttle,"LCA height, likely guesses, at most 3 (10%)",27,8.485,False,65 of 300
+factual_temp_apollo_hot,hot,Meynier,"LCA height, likely guesses, at most 3 (10%)",32,8.246,False,99 of 300
+factual_temp_apollo_hot,hot,trio,"LCA height, likely guesses, at most 3 (10%)",46,6.633,False,256 of 300
+factual_temp_apollo_hot,hot,Kienamie,"LCA height, likely guesses, at most 3 (10%)",67,7.141,False,210 of 300
+factual_temp_apollo_hot,hot,Plow-III,"LCA height, likely guesses, at most 3 (10%)",147,6.782,False,244 of 300
+factual_temp_apollo_hot,hot,astroböes,"LCA height, likely guesses, at most 3 (10%)",231,8.307,False,95 of 300
+factual_temp_apollo_switch,switch,Nixon,"GloVe distance, top 5 guesses",96,0.19,False,101 of 139
+factual_temp_apollo_switch,switch,Nixon,"LCA height, likely guesses, at most 3 (10%)",96,6.0,False,68 of 139
+factual_temp_paris_hot,hot,Francie,"GloVe distance, top 5 guesses",2,too early,,
+factual_temp_paris_hot,hot,Visigoth,"GloVe distance, top 5 guesses",15,0.223,False,83 of 226
+factual_temp_paris_hot,hot,meters,"GloVe distance, top 5 guesses",50,0.26,False,21 of 226
+factual_temp_paris_hot,hot,Promenade,"GloVe distance, top 5 guesses",58,0.261,False,19 of 226
+factual_temp_paris_hot,hot,Descartes,"GloVe distance, top 5 guesses",87,0.155,False,206 of 226
+factual_temp_paris_hot,hot,freeway,"GloVe distance, top 5 guesses",98,0.188,False,179 of 226
+factual_temp_paris_hot,hot,11,"GloVe distance, top 5 guesses",127,0.234,False,53 of 226
+factual_temp_paris_hot,hot,Fumeuse,"GloVe distance, top 5 guesses",139,0.243,False,42 of 226
+factual_temp_paris_hot,hot,Paulette,"GloVe distance, top 5 guesses",186,0.155,False,205 of 226
+factual_temp_paris_hot,hot,Francie,"LCA height, likely guesses, at most 3 (10%)",2,too early,,
+factual_temp_paris_hot,hot,Visigoth,"LCA height, likely guesses, at most 3 (10%)",15,5.657,False,181 of 226
+factual_temp_paris_hot,hot,meters,"LCA height, likely guesses, at most 3 (10%)",50,7.141,False,85 of 226
+factual_temp_paris_hot,hot,Promenade,"LCA height, likely guesses, at most 3 (10%)",58,7.616,False,46 of 226
+factual_temp_paris_hot,hot,Descartes,"LCA height, likely guesses, at most 3 (10%)",87,7.348,False,66 of 226
+factual_temp_paris_hot,hot,freeway,"LCA height, likely guesses, at most 3 (10%)",98,8.307,False,15 of 226
+factual_temp_paris_hot,hot,11,"LCA height, likely guesses, at most 3 (10%)",127,5.916,False,167 of 226
+factual_temp_paris_hot,hot,Fumeuse,"LCA height, likely guesses, at most 3 (10%)",139,5.657,False,184 of 226
+factual_temp_paris_hot,hot,Paulette,"LCA height, likely guesses, at most 3 (10%)",186,7.81,False,40 of 226
+factual_temp_paris_switch,switch,Festival,"GloVe distance, top 5 guesses",129,0.188,False,163 of 205
+factual_temp_paris_switch,switch,motor-free,"GloVe distance, top 5 guesses",186,0.285,False,11 of 205
+factual_temp_paris_switch,switch,Festival,"LCA height, likely guesses, at most 3 (10%)",129,4.472,False,175 of 205
+factual_temp_paris_switch,switch,motor-free,"LCA height, likely guesses, at most 3 (10%)",186,7.071,False,23 of 205
+factual_temp_vaccines_hot,hot,antibiotic,"GloVe distance, top 5 guesses",39,0.162,False,248 of 279
+factual_temp_vaccines_hot,hot,interferon,"GloVe distance, top 5 guesses",128,0.219,False,130 of 279
+factual_temp_vaccines_hot,hot,allergies,"GloVe distance, top 5 guesses",206,0.159,False,255 of 279
+factual_temp_vaccines_hot,hot,millions,"GloVe distance, top 5 guesses",240,0.201,False,177 of 279
+factual_temp_vaccines_hot,hot,bio-computer,"GloVe distance, top 5 guesses",269,0.246,False,90 of 279
+factual_temp_vaccines_hot,hot,antibiotic,"LCA height, likely guesses, at most 3 (10%)",39,7.483,False,44 of 279
+factual_temp_vaccines_hot,hot,interferon,"LCA height, likely guesses, at most 3 (10%)",128,7.071,False,61 of 279
+factual_temp_vaccines_hot,hot,allergies,"LCA height, likely guesses, at most 3 (10%)",206,9.274,False,7 of 279
+factual_temp_vaccines_hot,hot,millions,"LCA height, likely guesses, at most 3 (10%)",240,6.403,False,110 of 279
+factual_temp_vaccines_hot,hot,bio-computer,"LCA height, likely guesses, at most 3 (10%)",269,7.416,False,46 of 279
+factual_temp_vaccines_switch,switch,Pathogenic,"GloVe distance, top 5 guesses",148,0.191,False,194 of 245
+factual_temp_vaccines_switch,switch,Reductionist,"GloVe distance, top 5 guesses",171,0.258,False,73 of 245
+factual_temp_vaccines_switch,switch,unresilient,"GloVe distance, top 5 guesses",238,0.312,False,17 of 245
+factual_temp_vaccines_switch,switch,Pathogenic,"LCA height, likely guesses, at most 3 (10%)",148,3.873,False,211 of 245
+factual_temp_vaccines_switch,switch,Reductionist,"LCA height, likely guesses, at most 3 (10%)",171,5.099,False,154 of 245
+factual_temp_vaccines_switch,switch,unresilient,"LCA height, likely guesses, at most 3 (10%)",238,10.488,False,1 of 245
+creative_gut_grimm_planted,planted,married,"GloVe distance, top 5 guesses",28,0.299,False,67 of 183
+creative_gut_grimm_planted,planted,milk,"GloVe distance, top 5 guesses",89,0.293,False,75 of 183
+creative_gut_grimm_planted,planted,dragons,"GloVe distance, top 5 guesses",117,0.252,False,143 of 183
+creative_gut_grimm_planted,planted,married,"LCA height, likely guesses, at most 3 (10%)",28,5.292,False,127 of 183
+creative_gut_grimm_planted,planted,milk,"LCA height, likely guesses, at most 3 (10%)",89,6.083,False,54 of 183
+creative_gut_grimm_planted,planted,dragons,"LCA height, likely guesses, at most 3 (10%)",117,5.292,False,131 of 183
+creative_gut_oz_planted,planted,mouse,"GloVe distance, top 5 guesses",56,0.323,False,44 of 128
+creative_gut_oz_planted,planted,marry,"GloVe distance, top 5 guesses",99,0.329,False,38 of 128
+creative_gut_oz_planted,planted,mouse,"LCA height, likely guesses, at most 3 (10%)",56,4.899,False,80 of 128
+creative_gut_oz_planted,planted,marry,"LCA height, likely guesses, at most 3 (10%)",99,5.196,False,62 of 128
+creative_gut_sherlock_planted,planted,foot,"GloVe distance, top 5 guesses",22,0.333,False,21 of 171
+creative_gut_sherlock_planted,planted,turkey,"GloVe distance, top 5 guesses",143,0.355,False,12 of 171
+creative_gut_sherlock_planted,planted,foot,"LCA height, likely guesses, at most 3 (10%)",22,6.633,False,58 of 171
+creative_gut_sherlock_planted,planted,turkey,"LCA height, likely guesses, at most 3 (10%)",143,6.633,False,61 of 171
+creative_hp3_planted,planted,kiss,"GloVe distance, top 5 guesses",22,0.318,False,72 of 173
+creative_hp3_planted,planted,dragons,"GloVe distance, top 5 guesses",92,0.362,False,31 of 173
+creative_hp3_planted,planted,owl,"GloVe distance, top 5 guesses",129,0.27,False,110 of 173
+creative_hp3_planted,planted,kiss,"LCA height, likely guesses, at most 3 (10%)",22,4.69,False,142 of 173
+creative_hp3_planted,planted,dragons,"LCA height, likely guesses, at most 3 (10%)",92,5.477,False,102 of 173
+creative_hp3_planted,planted,owl,"LCA height, likely guesses, at most 3 (10%)",129,5.0,False,131 of 173
+creative_hp6_planted,planted,cured,"GloVe distance, top 5 guesses",135,0.344,False,70 of 180
+creative_hp6_planted,planted,sun,"GloVe distance, top 5 guesses",153,0.414,False,19 of 180
+creative_hp6_planted,planted,cured,"LCA height, likely guesses, at most 3 (10%)",135,5.292,False,138 of 180
+creative_hp6_planted,planted,sun,"LCA height, likely guesses, at most 3 (10%)",153,5.196,False,146 of 180
+factual_wiki_copper_planted,planted,gas,"GloVe distance, top 5 guesses",3,too early,,
+factual_wiki_copper_planted,planted,glass,"GloVe distance, top 5 guesses",61,0.241,False,95 of 244
+factual_wiki_copper_planted,planted,emit,"GloVe distance, top 5 guesses",209,0.19,False,207 of 244
+factual_wiki_copper_planted,planted,gas,"LCA height, likely guesses, at most 3 (10%)",3,too early,,
+factual_wiki_copper_planted,planted,glass,"LCA height, likely guesses, at most 3 (10%)",61,4.0,False,187 of 244
+factual_wiki_copper_planted,planted,emit,"LCA height, likely guesses, at most 3 (10%)",209,5.568,False,55 of 244
+factual_wiki_vaccine_planted,planted,cancer,"GloVe distance, top 5 guesses",66,0.259,False,86 of 240
+factual_wiki_vaccine_planted,planted,horse,"GloVe distance, top 5 guesses",101,0.323,False,8 of 240
+factual_wiki_vaccine_planted,planted,protects,"GloVe distance, top 5 guesses",140,0.267,False,76 of 240
+factual_wiki_vaccine_planted,planted,cancer,"LCA height, likely guesses, at most 3 (10%)",66,4.359,False,208 of 240
+factual_wiki_vaccine_planted,planted,horse,"LCA height, likely guesses, at most 3 (10%)",101,7.0,False,88 of 240
+factual_wiki_vaccine_planted,planted,protects,"LCA height, likely guesses, at most 3 (10%)",140,6.083,False,132 of 240
+factual_wiki_volcano_planted,planted,ice,"GloVe distance, top 5 guesses",7,too early,,
+factual_wiki_volcano_planted,planted,heat,"GloVe distance, top 5 guesses",102,0.228,False,86 of 224
+factual_wiki_volcano_planted,planted,wine,"GloVe distance, top 5 guesses",148,0.21,False,133 of 224
+factual_wiki_volcano_planted,planted,ice,"LCA height, likely guesses, at most 3 (10%)",7,too early,,
+factual_wiki_volcano_planted,planted,heat,"LCA height, likely guesses, at most 3 (10%)",102,6.557,False,61 of 224
+factual_wiki_volcano_planted,planted,wine,"LCA height, likely guesses, at most 3 (10%)",148,5.568,False,155 of 224

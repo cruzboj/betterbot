@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from analysis.cluster import in_right_cluster
-from qwen_config import FIGURES_DIR
+from qwen_config import EVOLVING_WINDOW, FIGURES_DIR
 
 KIND_COLORS = {"factual": "#2a78d6", "creative": "#eb6834"}
 FAMILY_COLORS = {"guess meaning": "#6250d6", "model confidence": "#1baf7a"}
@@ -31,7 +31,7 @@ def save(fig, file_name, tries=3):
     path = FIGURES_DIR / file_name
     for attempt in range(tries):
         try:
-            fig.savefig(path, dpi=110, bbox_inches="tight")
+            fig.savefig(path, dpi=220, bbox_inches="tight")     # sharp enough for full-slide use
             return path
         except OSError:
             if attempt == tries - 1:
@@ -231,3 +231,83 @@ def save_html(fig, file_name):
     path = folder / file_name
     fig.write_html(path, include_plotlyjs="cdn")
     return path
+
+
+# ------------------------------------------------------------------------------------------
+# figure 6: one hot burst inside a clean text (notebook 03)
+# ------------------------------------------------------------------------------------------
+HALLUCINATION_COLOR = "#c0392b"
+
+
+def save_to(fig, folder, file_name, tries=3):
+    """Save a figure into another folder than results/figures (e.g. the burst results), with the same
+    OneDrive retry as save()."""
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / file_name
+    for attempt in range(tries):
+        try:
+            fig.savefig(path, dpi=220, bbox_inches="tight")
+            return path
+        except OSError:
+            if attempt == tries - 1:
+                raise
+            path.unlink(missing_ok=True)
+
+
+def plot_bursts_stacked(signal_name, texts):
+    """One row per text: its raw curve (black) over its clean original's (grey; the same up to the burst), the hot
+    burst shaded red, and a red dot on each word marked as a wrong fact. texts: [{"name", "values", "clean_values",
+    "burst": (first, last) curve position or None, "marks": [(curve position, label), ...]}, ...]."""
+    fig, axes = plt.subplots(len(texts), 1, figsize=(13, 1.9 * len(texts) + 0.9), squeeze=False)
+    axes = axes[:, 0]
+    for ax, text in zip(axes, texts):
+        clean, values = np.asarray(text["clean_values"]), np.asarray(text["values"])
+        ax.plot(np.arange(1, len(clean) + 1), clean, color="#c9c7c0", lw=0.9, label="clean original")
+        ax.plot(np.arange(1, len(values) + 1), values, color=INK, lw=0.9, label="with a hot burst")
+        if text["burst"] is not None:
+            first, last = text["burst"]
+            ax.axvspan(first + 0.5, last + 1.5, color=HALLUCINATION_COLOR, alpha=0.15, lw=0, label="hot burst")
+        if text["marks"]:
+            positions = [position for position, _label in text["marks"]]
+            ax.scatter(np.asarray(positions) + 1, values[positions], s=28, color=HALLUCINATION_COLOR, zorder=5,
+                       label="wrong fact")
+            for number, (position, label) in enumerate(text["marks"]):
+                ax.annotate(label, (position + 1, values[position]), xytext=(4, 4 + 10 * (number % 3)),
+                            textcoords="offset points",
+                            fontsize=7, color=HALLUCINATION_COLOR)
+        ax.set_title(text["name"].replace("_", " "), loc="left", fontsize=9, color=INK_SOFT)
+        clean_axes(ax, grid_axis="y")
+    axes[0].legend(frameon=False, fontsize=8, loc="upper right", ncol=4, bbox_to_anchor=(1, 1.45))
+    axes[-1].set_xlabel("measured word (noun/verb) in reading order", color=INK_SOFT)
+    fig.suptitle(f"{signal_name}: the curve with a hot burst (red) over its clean original (grey)",
+                 x=0.01, ha="left", fontsize=11, color=INK)
+    fig.tight_layout()
+    return fig
+
+
+def plot_distance_stacked(signal_name, texts, ceiling):
+    """One row per text, one line each: the burst text's distance to the nearest real writing at every word (each
+    point covers the last EVOLVING_WINDOW words), the highest distance any real text reaches (dashed), and the burst
+    zone shaded (the burst plus the words whose look-back still covers it).
+    texts: [{"name", "distance": array per word, "burst": (first, last) curve position or None}, ...]."""
+    fig, axes = plt.subplots(len(texts), 1, figsize=(13, 1.7 * len(texts) + 0.9), squeeze=False)
+    axes = axes[:, 0]
+    top = ceiling * 1.08
+    for ax, text in zip(axes, texts):
+        distance = np.asarray(text["distance"], dtype=float)
+        ax.plot(np.arange(1, len(distance) + 1), distance, color=INK, lw=1.1, label="distance to real writing")
+        ax.axhline(ceiling, color=INK_SOFT, lw=1.0, ls="--", label="highest any real text reaches")
+        if text["burst"] is not None:
+            first, last = text["burst"]
+            zone_end = min(last + EVOLVING_WINDOW - 1, len(distance) - 1)
+            ax.axvspan(first + 0.5, zone_end + 1.5, color=HALLUCINATION_COLOR, alpha=0.15, lw=0,
+                       label=f"burst zone (burst + {EVOLVING_WINDOW - 1} words)")
+        ax.set_ylim(0, top)
+        ax.set_title(text["name"].replace("_", " "), loc="left", fontsize=9, color=INK_SOFT)
+        clean_axes(ax, grid_axis="y")
+    axes[0].legend(frameon=False, fontsize=8, loc="upper right", ncol=3, bbox_to_anchor=(1, 1.5))
+    axes[-1].set_xlabel("measured word (noun/verb) in reading order", color=INK_SOFT)
+    fig.suptitle(f"{signal_name}: how unlike real writing the last {EVOLVING_WINDOW} words are",
+                 x=0.01, ha="left", fontsize=11, color=INK)
+    fig.tight_layout()
+    return fig

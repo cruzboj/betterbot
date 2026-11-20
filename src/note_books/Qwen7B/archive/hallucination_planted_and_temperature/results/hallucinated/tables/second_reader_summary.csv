@@ -1,0 +1,5 @@
+hallucinations,reader,count,rank 1-3,rank 1-10,in top 3 stretch
+planted,Qwen,29,12,16,10
+planted,OLMo-2-1124-7B-Instruct,29,12,20,11
+found in generated stories,Qwen,21,2,4,1
+found in generated stories,OLMo-2-1124-7B-Instruct,21,2,3,1

@@ -1,0 +1,51 @@
+text,word,made as,Qwen rank,OLMo-2-1124-7B-Instruct rank,words on curve,Qwen: top 3 stretch,OLMo-2-1124-7B-Instruct: top 3 stretch
+creative_gut_grimm_planted,married,planted,5,7,210,False,True
+creative_gut_grimm_planted,Peter,planted,39,2,210,False,False
+creative_gut_grimm_planted,milk,planted,25,8,210,False,False
+creative_gut_grimm_planted,dragons,planted,1,1,210,True,False
+creative_gut_oz_planted,Glinda,planted,14,3,184,False,True
+creative_gut_oz_planted,mouse,planted,1,1,184,True,True
+creative_gut_oz_planted,marry,planted,2,2,184,True,True
+creative_gut_sherlock_planted,Watson,planted,100,125,178,False,False
+creative_gut_sherlock_planted,foot,planted,12,7,178,False,False
+creative_gut_sherlock_planted,turkey,planted,28,26,178,False,True
+creative_hp3_planted,kiss,planted,2,5,252,True,True
+creative_hp3_planted,dragons,planted,6,29,252,False,False
+creative_hp3_planted,Ron,planted,150,101,252,False,False
+creative_hp3_planted,owl,planted,22,20,252,False,False
+creative_hp6_planted,Arthur,planted,35,25,229,False,False
+creative_hp6_planted,cured,planted,26,21,229,False,False
+creative_hp6_planted,sun,planted,1,2,229,True,True
+factual_wiki_copper_planted,gas,planted,2,1,260,True,False
+factual_wiki_copper_planted,glass,planted,1,2,260,False,False
+factual_wiki_copper_planted,Crete,planted,24,6,260,False,True
+factual_wiki_copper_planted,emit,planted,42,65,260,False,False
+factual_wiki_vaccine_planted,cancer,planted,1,1,274,True,True
+factual_wiki_vaccine_planted,horse,planted,2,2,274,False,False
+factual_wiki_vaccine_planted,protects,planted,3,6,274,False,False
+factual_wiki_vaccine_planted,Canada,planted,4,5,274,True,False
+factual_wiki_volcano_planted,ice,planted,2,2,261,True,True
+factual_wiki_volcano_planted,South,planted,17,4,261,False,False
+factual_wiki_volcano_planted,heat,planted,3,13,261,True,False
+factual_wiki_volcano_planted,wine,planted,6,1,261,False,True
+creative_gen_magic_t07,woke,found in temperature 0.7,33,150,232,False,False
+creative_gen_fairy_t07,bucket,found in temperature 0.7,107,120,245,False,False
+creative_gen_fairy_t07,grain,found in temperature 0.7,140,146,245,False,False
+creative_gen_detective_t07,reservation,found in temperature 0.7,7,8,317,False,False
+creative_gen_detective_t07,clean,found in temperature 0.7,233,97,317,False,False
+creative_gen_magic_t10,horse,found in temperature 1.0,181,88,293,False,False
+creative_gen_magic_t10,marked,found in temperature 1.0,50,50,293,False,False
+creative_gen_magic_t10,loss,found in temperature 1.0,264,170,293,False,False
+creative_gen_magic_t10,excitement,found in temperature 1.0,10,18,293,False,False
+creative_gen_magic_t10,business,found in temperature 1.0,233,207,293,False,False
+creative_gen_fairy_t10,marry,found in temperature 1.0,41,55,311,False,False
+creative_gen_fairy_t10,riding,found in temperature 1.0,3,3,311,False,False
+creative_gen_fairy_t10,eclipse,found in temperature 1.0,194,217,311,False,False
+creative_gen_fairy_t10,eclipse,found in temperature 1.0,168,210,311,False,False
+creative_gen_detective_t10,lock,found in temperature 1.0,167,106,253,False,False
+creative_gen_detective_t10,index,found in temperature 1.0,3,3,253,True,True
+creative_gen_detective_t10,spouse,found in temperature 1.0,118,104,253,False,False
+creative_gen_magic_switch,seen,found in switch 0.7 → 1.0,62,21,210,False,False
+creative_gen_detective_switch,enter,found in switch 0.7 → 1.0,76,112,313,False,False
+creative_gen_detective_switch,stayed,found in switch 0.7 → 1.0,187,148,313,False,False
+creative_gen_detective_switch,found,found in switch 0.7 → 1.0,43,83,313,False,False

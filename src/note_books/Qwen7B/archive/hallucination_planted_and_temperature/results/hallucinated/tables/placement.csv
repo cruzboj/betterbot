@@ -1,0 +1,18 @@
+text,kind,made as,lands in,DTW to creative centre,DTW to factual centre,clean original lands in
+creative_gen_detective_switch,creative,switch 0.7 → 1.0,creative cluster,1.24,1.29,
+creative_gen_detective_t07,creative,temperature 0.7,creative cluster,1.27,1.29,
+creative_gen_detective_t10,creative,temperature 1.0,factual cluster,0.97,0.95,
+creative_gen_fairy_switch,creative,switch 0.7 → 1.0,factual cluster,1.08,1.02,
+creative_gen_fairy_t07,creative,temperature 0.7,factual cluster,1.01,0.97,
+creative_gen_fairy_t10,creative,temperature 1.0,creative cluster,1.13,1.23,
+creative_gen_magic_switch,creative,switch 0.7 → 1.0,creative cluster,1.12,1.21,
+creative_gen_magic_t07,creative,temperature 0.7,creative cluster,1.11,1.17,
+creative_gen_magic_t10,creative,temperature 1.0,creative cluster,1.08,1.19,
+creative_gut_grimm_planted,creative,planted,creative cluster,1.07,1.14,creative cluster
+creative_gut_oz_planted,creative,planted,creative cluster,1.1,1.23,creative cluster
+creative_gut_sherlock_planted,creative,planted,creative cluster,0.98,1.05,creative cluster
+creative_hp3_planted,creative,planted,creative cluster,1.05,1.21,creative cluster
+creative_hp6_planted,creative,planted,creative cluster,1.2,1.32,creative cluster
+factual_wiki_copper_planted,factual,planted,factual cluster,1.06,0.95,factual cluster
+factual_wiki_vaccine_planted,factual,planted,creative cluster,0.97,1.07,creative cluster
+factual_wiki_volcano_planted,factual,planted,factual cluster,1.12,0.87,factual cluster

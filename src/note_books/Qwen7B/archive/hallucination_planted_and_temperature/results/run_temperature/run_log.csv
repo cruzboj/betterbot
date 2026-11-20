@@ -1,0 +1,19 @@
+text,measured words,tokens,seconds
+creative_temp_detective_cool,239,1000,483
+creative_temp_detective_hot,311,999,371
+creative_temp_detective_switch,237,759,278
+creative_temp_fairy_cool,228,751,307
+creative_temp_fairy_hot,341,998,507
+creative_temp_fairy_switch,240,750,340
+creative_temp_magic_cool,256,1000,330
+creative_temp_magic_hot,245,928,294
+creative_temp_magic_switch,324,1000,407
+factual_temp_apollo_cool,171,644,231
+factual_temp_apollo_hot,300,1000,366
+factual_temp_apollo_switch,139,541,158
+factual_temp_paris_cool,190,853,213
+factual_temp_paris_hot,226,848,259
+factual_temp_paris_switch,205,853,231
+factual_temp_vaccines_cool,261,739,298
+factual_temp_vaccines_hot,279,908,321
+factual_temp_vaccines_switch,245,739,273

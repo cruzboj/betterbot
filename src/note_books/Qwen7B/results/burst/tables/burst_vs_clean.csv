@@ -1,0 +1,19 @@
+text,signal,burst words,highest in burst zone,highest elsewhere,highest in clean original,normal ceiling,peak in burst zone,above clean original
+factual_burst_paris,"GloVe distance, top 5 guesses",127-163,0.276,0.294,0.294,0.617,False,False
+factual_burst_paris,"LCA height, likely guesses, at most 3 (10%)",127-163,8.307,7.616,9.11,12.41,True,False
+factual_burst_paris,surprisal per word,127-163,10.545,3.789,3.821,14.544,True,True
+factual_burst_apollo,"GloVe distance, top 5 guesses",82-118,0.28,0.292,0.334,0.617,False,False
+factual_burst_apollo,"LCA height, likely guesses, at most 3 (10%)",82-118,12.288,7.874,8.307,12.41,True,True
+factual_burst_apollo,surprisal per word,82-118,12.066,5.068,5.068,14.544,True,True
+factual_burst_vaccines,"GloVe distance, top 5 guesses",128-166,0.327,0.333,0.32,0.617,False,True
+factual_burst_vaccines,"LCA height, likely guesses, at most 3 (10%)",128-166,7.874,7.746,7.211,12.41,True,True
+factual_burst_vaccines,surprisal per word,128-166,7.331,4.063,4.065,14.544,True,True
+creative_burst_magic,"GloVe distance, top 5 guesses",103-124,0.388,0.414,0.482,0.617,False,False
+creative_burst_magic,"LCA height, likely guesses, at most 3 (10%)",103-124,6.481,8.367,8.944,12.41,False,False
+creative_burst_magic,surprisal per word,103-124,7.268,4.676,4.707,14.544,True,True
+creative_burst_fairy,"GloVe distance, top 5 guesses",90-130,0.317,0.378,0.378,0.617,False,False
+creative_burst_fairy,"LCA height, likely guesses, at most 3 (10%)",90-130,7.616,8.246,8.185,12.41,False,False
+creative_burst_fairy,surprisal per word,90-130,9.768,5.729,5.729,14.544,True,True
+creative_burst_detective,"GloVe distance, top 5 guesses",68-104,0.279,0.421,0.365,0.617,False,False
+creative_burst_detective,"LCA height, likely guesses, at most 3 (10%)",68-104,7.55,8.185,8.062,12.41,False,False
+creative_burst_detective,surprisal per word,68-104,11.605,5.031,5.038,14.544,True,True

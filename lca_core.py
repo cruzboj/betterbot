@@ -658,13 +658,15 @@ class LCAMeter:
                 cands[lemma] = prob
         return cands
 
-    def run(self, text, k=5, top_n=300, use_adj=False, max_senses=2, complete_words=True, weighted=False):
+    def run(self, text, k=5, top_n=300, use_adj=False, max_senses=2, complete_words=True, weighted=False,
+            tokens_only=False):
         """One row per measurement point: word_idx, char, word, pos, lca_height, lca, candidates,
         cand_mass, actual_word_prob, the token uncertainty values at that word (TOKEN_STAT_COLUMNS)
         (+ lca_weighted if weighted=True).
 
         Also sets self.last_tokens: one row per token of the text (token_idx, token, char_start,
-        char_end and TOKEN_STAT_COLUMNS), i.e. the full per-token time series."""
+        char_end and TOKEN_STAT_COLUMNS), i.e. the full per-token time series.
+        tokens_only=True: only that single pass (seconds); no guesses per word, returns None."""
         encoding = self.tok(text, return_offsets_mapping=True, add_special_tokens=False)
         ids = encoding["input_ids"]
         offsets = encoding["offset_mapping"]  # (char start, char end) of each token
@@ -685,6 +687,8 @@ class LCAMeter:
                 token_row[name] = token_stats[name][j].item()
             token_rows.append(token_row)
         self.last_tokens = pd.DataFrame(token_rows)
+        if tokens_only:
+            return None
 
         rows = []
         for idx, (char_start, word, pos) in enumerate(content_words(text, use_adj)):

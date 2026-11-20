@@ -22,3 +22,4 @@ networkx~=3.7
 lm_polygraph~=0.7.0
 spacy~=3.8.18
 tslearn
+stumpy
