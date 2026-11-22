@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 
-from qwen_config import EXCLUDED_TEXTS, LIKELY_SHARE, LIKELY_SHARE_SWEEP, TOKENS_DIR, WORDS_DIR
+from config.qwen_config import EXCLUDED_TEXTS, LIKELY_SHARE, LIKELY_SHARE_SWEEP, TOKENS_DIR, WORDS_DIR
 import re
 
 import nltk
@@ -222,7 +222,7 @@ def all_text_names():
 
 
 def dataset_names():
-    """The texts used for the results: every text except those in EXCLUDED_TEXTS (qwen_config.py)."""
+    """The texts used for the results: every text except those in EXCLUDED_TEXTS (config/qwen_config.py)."""
     kept = []
     for name in all_text_names():
         if name not in EXCLUDED_TEXTS:

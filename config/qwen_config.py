@@ -7,8 +7,8 @@ from pathlib import Path
 # ------------------------------------------------------------------------------------------
 # folders
 # ------------------------------------------------------------------------------------------
-HERE = Path(__file__).resolve().parent          # the Qwen7B folder
-REPO_ROOT = HERE.parents[2]                     # the folder holding lca_core.py
+REPO_ROOT = Path(__file__).resolve().parents[1]  # the folder holding lca_core.py (this file is in config/)
+HERE = REPO_ROOT / "src" / "note_books" / "Qwen7B"  # the Qwen7B folder
 TEXTS_DIR = HERE / "texts"                      # one .txt per text; the name starts with its kind
 RUN_DIR = HERE / "results" / "run"              # what notebook 01 saves (model output per text)
 WORDS_DIR = RUN_DIR / "words"                   # one row per measured noun/verb

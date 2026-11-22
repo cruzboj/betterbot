@@ -1,4 +1,4 @@
-# make this folder's qwen_config.py and analysis/ importable when pytest runs from Qwen7B
+# make analysis/ (and through it config/qwen_config.py) importable when pytest runs from Qwen7B
 import sys
 from pathlib import Path
 

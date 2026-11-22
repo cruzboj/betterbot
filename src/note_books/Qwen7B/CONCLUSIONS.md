@@ -205,7 +205,7 @@ written by the same model rather than with human writing.
 ## 5. How it was executed in code
 | file | what it does |
 |---|---|
-| `qwen_config.py` | prompts, `COOL_TEMPERATURE`, `BURST_TEMPERATURE`, `BURST_TOKENS`, `BURST_RANGE`, `MIN_P`, `EVOLVING_SIGNALS`, `EVOLVING_WINDOW`, folders |
+| `config/qwen_config.py` | prompts, `COOL_TEMPERATURE`, `BURST_TEMPERATURE`, `BURST_TOKENS`, `BURST_RANGE`, `MIN_P`, `EVOLVING_SIGNALS`, `EVOLVING_WINDOW`, folders |
 | `analysis/generate.py` | `write_story` (one text at one temperature), `burst_story` (clean text, hot burst, cool again) |
 | `analysis/signals.py` | the signals and each text's curve (shared with notebook 02) |
 | `analysis/cluster.py` | DTW + k-medoids into the factual and creative clusters (shared with notebook 02) |

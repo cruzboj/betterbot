@@ -19,7 +19,7 @@ from sklearn.manifold import MDS
 from tslearn.metrics import cdist_dtw
 from tslearn.utils import to_time_series_dataset
 
-from qwen_config import DTW_WINDOW_SHARE, RANDOM_SEED
+from config.qwen_config import DTW_WINDOW_SHARE, RANDOM_SEED
 
 
 def dtw_radius(curves):

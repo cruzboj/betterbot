@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from analysis.cluster import in_right_cluster
-from qwen_config import EVOLVING_WINDOW, FIGURES_DIR
+from config.qwen_config import EVOLVING_WINDOW, FIGURES_DIR
 
 KIND_COLORS = {"factual": "#2a78d6", "creative": "#eb6834"}
 FAMILY_COLORS = {"guess meaning": "#6250d6", "model confidence": "#1baf7a"}
