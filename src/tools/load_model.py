@@ -1,9 +1,9 @@
 import sys
 import torch
 import torch.nn.functional as F
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM , BertTokenizer, BertModel
 
-def load_model(model_name = "Qwen/Qwen2.5-7B-Instruct", load_in_4bit=False):
+def load_model(model_name = "Qwen/Qwen2.5-7B-Instruct", load_in_4bit=False, with_bert=False):
     """Load a model and its tokenizer onto the GPU.
 
     load_in_4bit=False: bfloat16 weights (the 7B model needs ~15 GB of GPU memory).
@@ -35,6 +35,12 @@ def load_model(model_name = "Qwen/Qwen2.5-7B-Instruct", load_in_4bit=False):
             device_map="cuda:0"
         )
 
+    if with_bert:
+        bert_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+        bert_model = BertModel.from_pretrained("bert-base-uncased").to("cuda:0")
+        bert_model.eval()
+        return tokenizer, model, bert_tokenizer, bert_model
+    
     return tokenizer, model
 
 def check_system():
