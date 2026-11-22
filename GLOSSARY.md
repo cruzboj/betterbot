@@ -81,3 +81,30 @@ _Avoid_: threshold, cutoff, limit
 The words from the start of a hot burst until one window of words after it: where the burst can show in the
 distance to real writing.
 _Avoid_: hallucination region, window
+
+**Reference texts**:
+The 25 real (human-written) texts, each labelled with its kind; the only texts a classifier learns from.
+Machine-written texts are only labelled, never learnt from.
+_Avoid_: training set (when it could include generated text), real data
+
+**Nearest neighbour (1-NN)**:
+Labelling a text with the kind of the single reference text whose curve is most similar to its curve.
+_Avoid_: KNN (when only one neighbour is meant), matching
+
+**Leave-one-out**:
+Scoring a classifier on the reference texts by labelling each one from the other 24, never from itself.
+_Avoid_: accuracy (without saying how it was measured), cross-validation
+
+**Spectrum**:
+How much of each wave speed a curve holds, from slow (long trends) to fast (word-to-word jitter).
+_Avoid_: frequencies, FFT
+
+**Fast share**:
+The part of a spectrum's energy that sits in the faster half of the wave speeds; low means the curve moves mostly
+in long rises and falls.
+_Avoid_: noise level, jitter score
+
+**Classifier**:
+Gives a text a kind after learning from the reference texts and their kinds; unlike a classification, it is told
+the kinds of the texts it learns from.
+_Avoid_: clustering, classification (that is the unlabelled grouping)

@@ -72,3 +72,27 @@ BURST_TABLES_DIR = HERE / "results" / "burst" / "tables"
 # each real word was to the model), compared with real writing word by word
 EVOLVING_SIGNALS = ["glove_top5", "lca_likely_top3_10pct", "surprisal_per_word"]
 EVOLVING_WINDOW = 15                    # the last 15 measured words are compared with real writing
+
+# ------------------------------------------------------------------------------------------
+# notebook 04: a classifier learnt only from the 25 real texts (machine-written texts are only labelled)
+# ------------------------------------------------------------------------------------------
+WINDOWS_TO_TRY = [5, 10, 15, 20]        # window sizes (words) for labelling the pieces of a burst text
+CLASSIFY_FIGURES_DIR = HERE / "results" / "classify" / "figures"
+CLASSIFY_TABLES_DIR = HERE / "results" / "classify" / "tables"
+
+# ------------------------------------------------------------------------------------------
+# notebook 05: curves as waves (Fourier); the stretch length is analysis.fourier.STRETCH_LENGTH (256)
+# ------------------------------------------------------------------------------------------
+FOURIER_WINDOWS = [16, 32]              # window sizes (words) for finding where a flagged text changes rhythm
+FOURIER_FIGURES_DIR = HERE / "results" / "fourier" / "figures"
+FOURIER_TABLES_DIR = HERE / "results" / "fourier" / "tables"
+
+# ------------------------------------------------------------------------------------------
+# notebook 06: hallucinations written by hand into new real texts (never read before; sources in sources.csv)
+# ------------------------------------------------------------------------------------------
+MANUAL_DIR = HERE / "texts_hallucinated" / "manual_hallucinations"   # {name}_manual.txt + original/{name}.txt
+MANUAL_RUN_DIR = HERE / "results" / "run_manual"                     # what Qwen measured reading them
+MANUAL_WORDS_DIR = MANUAL_RUN_DIR / "words"
+MANUAL_TOKENS_DIR = MANUAL_RUN_DIR / "tokens"
+MANUAL_FIGURES_DIR = HERE / "results" / "manual" / "figures"
+MANUAL_TABLES_DIR = HERE / "results" / "manual" / "tables"

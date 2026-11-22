@@ -15,6 +15,10 @@ there, and can the curve, followed word by word, point at the hallucination?
 | clean texts | 3 encyclopedia articles (Paris, Apollo 11, vaccines), 3 stories (magic school, fairy tale, detective) | Qwen2.5-7B-Instruct at temperature 0.7 |
 | burst texts | one per clean text | the clean text, one hot stretch, then normal again |
 
+Follow-ups from the 16/11 meeting (notebooks 04–05): a **classifier** learnt only from the 25 human texts, used on
+Qwen's whole texts and on the pieces of each burst text at windows of 5–20 words; and the curves as **waves**
+(Fourier): whole texts stretched to one length, then short windows to find where.
+
 ## 2. How the data was collected and calculated
 
 ### 2.1 The hot burst
@@ -58,6 +62,22 @@ The **normal ceiling** is the highest distance any real text reaches when it is 
 
 Because the distance looks back 15 words, a burst can show from its first word until 15 words after it: the
 **burst zone**. It covers 16–36% of a text's words (about a quarter).
+
+### 2.4 The classifier (notebook 04)
+**1-NN with DTW**: a curve gets the kind of the single human text whose curve is closest (the DTW of notebook 02).
+It learns only from the 25 human texts; Qwen's texts are only labelled. It is scored by **leave-one-out**: each
+human text labelled from the other 24. A piece of a burst text (before, hot part, after) is too short to compare
+whole, so it is labelled word by word: are the last `window` words closer to the factual cluster's writing or the
+creative cluster's (the distance of 2.3)? The share of words nearer the creative cluster is compared with the same
+words of the clean original.
+
+### 2.5 Curves as waves (notebook 05)
+A curve is rewritten as a sum of waves; its **spectrum** says how much of each speed it holds, from slow (long
+trends) to fast (word-to-word jitter). Every curve is stretched to 256 points so spectra line up; the 0-speed term
+(the sum of the values) is left out. The **fast share** is the part of the energy in the faster half of the speeds.
+Classifiers on rhythm: 1-NN on spectra, and **BOSSVS** and **WEASEL** (`pyts`, fixed settings), which turn short
+windows of the curve into Fourier "words" and learn which words each kind uses. To find *where*, the spectral
+energy of 16- and 32-word windows along the text (by Parseval's theorem: how much the curve swings in the window).
 
 ## 3. Results
 
@@ -111,6 +131,40 @@ else in the burst text, and anywhere in the clean original. Normal ceiling: GloV
 Bold: the text's highest distance is in its burst zone. The zone covers 14–33% of a text's words, so by chance
 about 1.5 of 6 texts per signal would have their peak there.
 
+### The classifier (notebook 04)
+Each human text labelled from the other 24 (`results/classify/tables/leave_one_out.csv`): best 22 of 25 (GloVe
+top 1, surprisal per word, GloVe likely 5%); surprisal 22, LCA 20, GloVe top 5 20.
+
+Qwen's whole texts, labelled with the kind they were written as (of 6):
+
+| signal | clean texts | burst texts |
+|---|---|---|
+| GloVe top 5 | 4 | 3 |
+| LCA likely top 3 (10%) | 1 | 1 |
+| surprisal | 3 (all called creative) | 3 |
+
+![pieces](results/classify/figures/burst_pieces.png)
+
+Share of words nearer the creative cluster: the hot part of each burst text (red) and the same words of its clean
+original (grey). On surprisal with a 10-word window every hot part is above every clean original (0.26–0.93
+against 0.06–0.23) and above its own text before the burst (0.19–0.28); at 15–20 words the two overlap. GloVe and
+LCA do not separate them at any window.
+
+### Rhythm (notebook 05)
+Each human text labelled from the other 24 (`results/fourier/tables/human_texts.csv`), best signal per method:
+BOSSVS 23 of 25 (LCA top 3), 1-NN on spectra 21, spectra clustered 21, WEASEL 15; 1-NN DTW 22. On Qwen's clean
+texts BOSSVS gives the written kind 5 of 6 times on LCA (DTW: 1 of 6), 1 on GloVe, 3 on surprisal.
+
+![fast share](results/fourier/figures/fast_share.png)
+
+The surprisal fast share drops in all 6 burst texts (Paris 0.23 → 0.05, detective 0.38 → 0.06); LCA in 5 of 6,
+by less; GloVe in 4 of 6, in both directions.
+
+![where](results/fourier/figures/where_surprisal.png)
+
+Spectral energy of 32-word windows of the surprisal curve: the highest window is inside the burst in 6 of 6 texts
+(16 words: 5 of 6), 1.8 to 9 times the clean original's highest. On LCA and GloVe: at most 1 of 6.
+
 ## 4. What we can gather
 1. **A hotter burst invents more, but only up to a point.** At 3.0 the factual bursts make up places and
    instruments; above 3.0 they stop making sense instead of getting more wrong. Vaccines stayed correct at every
@@ -132,6 +186,14 @@ about 1.5 of 6 texts per signal would have their peak there.
    were invented, but only Apollo shows both clearly. Single LCA spikes as high as Apollo's also appear in clean
    text (the clean Apollo reaches 13 at word ~165); what stands out is a stretch that *stays* high. Slips inside
    stories show on surprisal only, like any other hot stretch.
+6. **A classifier learnt from human writing works on human writing, not on Qwen's.** 22 of 25 human texts get
+   their own kind with 1-NN DTW, 23 with BOSSVS on LCA; but Qwen's clean texts get the kind they were written as
+   barely more often than by chance (DTW), except BOSSVS on LCA (5 of 6). Qwen does not write like the human texts
+   of the same kind, so whole-text labels say little about whether a Qwen text hallucinates.
+7. **What locates a burst is a change against the text's own earlier words, on surprisal.** Word by word, the hot
+   part reads like human creative writing (10-word windows), unlike the same words of the clean text. Over the
+   whole text, the burst lowers the fast share in all 6 texts (it adds one long rise and fall), and 32-word windows
+   then find it in 6 of 6. The window-energy step is close to a moving spread of the curve (Parseval).
 
 Caveats: 6 texts with one burst each (one seed), and only the two factual bursts with invented facts carry the
 LCA result; the reference writing is human, the burst texts are Qwen's.
@@ -152,7 +214,11 @@ written by the same model rather than with human writing.
 | `01_run_model.ipynb` | Qwen reads the 25 real texts |
 | `02_results.ipynb` | clusters the real texts; picks the two signals |
 | `03_hallucination_burst.ipynb` | writes and reads the clean and burst texts, the stacked curve and distance figures, the distance table, the answer |
-| `tests/` | 15 tests for generate, evolving and figures |
+| `analysis/classify.py` | `dtw_to_references`, `nearest_neighbour`, `leave_one_out`, `cluster_kinds`, `nearer_centre`, `nearer_cluster_per_word`, `share_creative` |
+| `analysis/fourier.py` | `stretch`, `spectrum`, `fast_share`, `window_energy`, `bossvs_leave_one_out`, `weasel_leave_one_out`, `bossvs_labels` |
+| `04_classify.ipynb` | 1-NN DTW leave-one-out on the human texts; Qwen's whole texts; the burst pieces at windows 5–20 |
+| `05_fourier.ipynb` | spectra: clustering and 3 classifiers on the human texts; the fast share of Qwen's texts; where, with windows |
+| `tests/` | 33 tests for generate, evolving, classify, fourier and figures |
 
 ```python
 # analysis/generate.py: one hot stretch inside a clean text
