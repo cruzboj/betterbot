@@ -1,0 +1,49 @@
+signal,name,family,texts,spectra clustered,1-NN on spectra,BOSSVS,WEASEL,1-NN DTW (notebook 04)
+lca_top1,"LCA height, top 1 vs real word",guess meaning,25,19,15,12,13,20
+lca_top3,"LCA height, top 3 guesses",guess meaning,25,19,15,23,9,17
+lca_top5,"LCA height, top 5 guesses",guess meaning,25,15,20,23,9,17
+lca_likely,"LCA height, likely guesses",guess meaning,25,16,18,17,14,20
+glove_top1,"GloVe distance, top 1 vs real word",guess meaning,25,20,16,17,5,22
+glove_top3,"GloVe distance, top 3 guesses",guess meaning,25,17,17,22,11,19
+glove_top5,"GloVe distance, top 5 guesses",guess meaning,25,19,19,21,11,20
+glove_likely,"GloVe distance, likely guesses",guess meaning,25,17,14,18,13,20
+emb_top1,"Qwen-embedding distance, top 1 vs real word",guess meaning,25,15,15,19,11,16
+emb_top3,"Qwen-embedding distance, top 3 guesses",guess meaning,25,17,17,19,7,15
+emb_top5,"Qwen-embedding distance, top 5 guesses",guess meaning,25,13,20,20,14,18
+emb_likely,"Qwen-embedding distance, likely guesses",guess meaning,25,16,13,20,12,20
+lca_likely_5pct,"LCA height, likely guesses (5%)",guess meaning,25,17,12,16,13,21
+lca_likely_20pct,"LCA height, likely guesses (20%)",guess meaning,25,14,17,17,7,19
+lca_likely_top3_5pct,"LCA height, likely guesses, at most 3 (5%)",guess meaning,25,13,16,17,15,21
+lca_likely_top3_10pct,"LCA height, likely guesses, at most 3 (10%)",guess meaning,25,13,21,17,12,20
+lca_likely_top3_20pct,"LCA height, likely guesses, at most 3 (20%)",guess meaning,25,16,18,16,11,20
+lca_top1_if_likely_5pct,"LCA height, top 1 vs real word, only if likely (5%)",guess meaning,25,19,16,15,14,9
+lca_top1_if_likely_10pct,"LCA height, top 1 vs real word, only if likely (10%)",guess meaning,25,15,19,11,14,10
+lca_top1_if_likely_20pct,"LCA height, top 1 vs real word, only if likely (20%)",guess meaning,25,16,15,15,15,8
+glove_likely_5pct,"GloVe distance, likely guesses (5%)",guess meaning,25,18,15,18,13,22
+glove_likely_20pct,"GloVe distance, likely guesses (20%)",guess meaning,25,13,14,18,13,18
+glove_likely_top3_5pct,"GloVe distance, likely guesses, at most 3 (5%)",guess meaning,25,18,15,17,8,22
+glove_likely_top3_10pct,"GloVe distance, likely guesses, at most 3 (10%)",guess meaning,25,16,15,17,10,20
+glove_likely_top3_20pct,"GloVe distance, likely guesses, at most 3 (20%)",guess meaning,25,14,16,18,9,19
+glove_top1_if_likely_5pct,"GloVe distance, top 1 vs real word, only if likely (5%)",guess meaning,25,13,13,17,10,11
+glove_top1_if_likely_10pct,"GloVe distance, top 1 vs real word, only if likely (10%)",guess meaning,25,19,18,13,12,9
+glove_top1_if_likely_20pct,"GloVe distance, top 1 vs real word, only if likely (20%)",guess meaning,25,19,15,16,15,9
+emb_likely_5pct,"Qwen-embedding distance, likely guesses (5%)",guess meaning,25,15,16,22,9,18
+emb_likely_20pct,"Qwen-embedding distance, likely guesses (20%)",guess meaning,25,16,17,21,13,17
+emb_likely_top3_5pct,"Qwen-embedding distance, likely guesses, at most 3 (5%)",guess meaning,25,16,15,22,15,18
+emb_likely_top3_10pct,"Qwen-embedding distance, likely guesses, at most 3 (10%)",guess meaning,25,17,12,21,14,20
+emb_likely_top3_20pct,"Qwen-embedding distance, likely guesses, at most 3 (20%)",guess meaning,25,15,17,21,6,17
+emb_top1_if_likely_5pct,"Qwen-embedding distance, top 1 vs real word, only if likely (5%)",guess meaning,25,20,17,17,15,10
+emb_top1_if_likely_10pct,"Qwen-embedding distance, top 1 vs real word, only if likely (10%)",guess meaning,25,15,19,13,11,10
+emb_top1_if_likely_20pct,"Qwen-embedding distance, top 1 vs real word, only if likely (20%)",guess meaning,25,21,18,18,13,12
+surprisal_per_word,surprisal per word,model confidence,25,16,15,20,12,22
+max_prob_per_word,max probability per word,model confidence,25,14,12,21,12,20
+entropy_per_word,entropy per word,model confidence,25,13,15,21,13,17
+self_certainty_per_word,self-certainty per word,model confidence,25,19,13,20,10,17
+renyi_per_word,Rényi divergence per word,model confidence,25,15,16,19,9,18
+fisher_rao_per_word,Fisher-Rao distance per word,model confidence,25,13,15,17,5,16
+surprisal_per_token,surprisal per token,model confidence,25,13,11,19,7,12
+max_prob_per_token,max probability per token,model confidence,25,14,19,22,2,14
+entropy_per_token,entropy per token,model confidence,25,13,11,21,9,12
+self_certainty_per_token,self-certainty per token,model confidence,25,13,12,20,3,15
+renyi_per_token,Rényi divergence per token,model confidence,25,16,14,18,8,12
+fisher_rao_per_token,Fisher-Rao distance per token,model confidence,25,13,15,19,6,15

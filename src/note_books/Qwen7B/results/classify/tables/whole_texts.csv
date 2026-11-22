@@ -1,0 +1,37 @@
+signal,text,written as,1-NN kind,nearest real text,nearer cluster centre
+"GloVe distance, top 5 guesses",factual_clean_paris,factual,factual,factual_gut_candle,creative
+"GloVe distance, top 5 guesses",factual_clean_apollo,factual,factual,factual_wiki_wordnet,factual
+"GloVe distance, top 5 guesses",factual_clean_vaccines,factual,factual,factual_wiki_photosynthesis,creative
+"GloVe distance, top 5 guesses",creative_clean_magic,creative,creative,creative_gut_sherlock,creative
+"GloVe distance, top 5 guesses",creative_clean_fairy,creative,factual,factual_wiki_photosynthesis,factual
+"GloVe distance, top 5 guesses",creative_clean_detective,creative,factual,factual_wiki_wordnet,factual
+"GloVe distance, top 5 guesses",factual_burst_paris,factual,factual,factual_gut_candle,creative
+"GloVe distance, top 5 guesses",factual_burst_apollo,factual,factual,factual_wiki_photosynthesis,factual
+"GloVe distance, top 5 guesses",factual_burst_vaccines,factual,factual,factual_wiki_photosynthesis,creative
+"GloVe distance, top 5 guesses",creative_burst_magic,creative,factual,factual_wiki_photosynthesis,creative
+"GloVe distance, top 5 guesses",creative_burst_fairy,creative,factual,factual_wiki_photosynthesis,factual
+"GloVe distance, top 5 guesses",creative_burst_detective,creative,factual,factual_wiki_mitochondrion,factual
+"LCA height, likely guesses, at most 3 (10%)",factual_clean_paris,factual,creative,creative_jokes_2,creative
+"LCA height, likely guesses, at most 3 (10%)",factual_clean_apollo,factual,creative,creative_gut_oz,creative
+"LCA height, likely guesses, at most 3 (10%)",factual_clean_vaccines,factual,factual,factual_wiki_copper,creative
+"LCA height, likely guesses, at most 3 (10%)",creative_clean_magic,creative,factual,factual_gut_candle,factual
+"LCA height, likely guesses, at most 3 (10%)",creative_clean_fairy,creative,factual,factual_gut_relativity,factual
+"LCA height, likely guesses, at most 3 (10%)",creative_clean_detective,creative,factual,factual_wiki_black_hole,creative
+"LCA height, likely guesses, at most 3 (10%)",factual_burst_paris,factual,creative,creative_gut_oz,creative
+"LCA height, likely guesses, at most 3 (10%)",factual_burst_apollo,factual,creative,creative_hp5,creative
+"LCA height, likely guesses, at most 3 (10%)",factual_burst_vaccines,factual,creative,creative_hp3,creative
+"LCA height, likely guesses, at most 3 (10%)",creative_burst_magic,creative,factual,factual_gut_candle,factual
+"LCA height, likely guesses, at most 3 (10%)",creative_burst_fairy,creative,factual,factual_gut_relativity,factual
+"LCA height, likely guesses, at most 3 (10%)",creative_burst_detective,creative,creative,creative_hp5,creative
+surprisal per word,factual_clean_paris,factual,creative,creative_gut_alice,factual
+surprisal per word,factual_clean_apollo,factual,creative,creative_gut_alice,factual
+surprisal per word,factual_clean_vaccines,factual,creative,creative_gut_alice,creative
+surprisal per word,creative_clean_magic,creative,creative,creative_gut_alice,factual
+surprisal per word,creative_clean_fairy,creative,creative,creative_gut_alice,factual
+surprisal per word,creative_clean_detective,creative,creative,creative_gut_alice,factual
+surprisal per word,factual_burst_paris,factual,creative,creative_gut_alice,creative
+surprisal per word,factual_burst_apollo,factual,creative,creative_gut_alice,creative
+surprisal per word,factual_burst_vaccines,factual,creative,creative_gut_alice,creative
+surprisal per word,creative_burst_magic,creative,creative,creative_gut_alice,factual
+surprisal per word,creative_burst_fairy,creative,creative,creative_gut_alice,creative
+surprisal per word,creative_burst_detective,creative,creative,creative_gut_oz,creative

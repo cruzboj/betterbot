@@ -1,0 +1,19 @@
+signal,text,"BOSSVS, clean","BOSSVS, burst","to nearest real spectrum, clean","to nearest real spectrum, burst","fast share, clean","fast share, burst",fast share drops
+"GloVe distance, top 5 guesses",factual_paris,creative,creative,7.609993929524943,7.509648896358482,0.14834944798125665,0.17935249387248908,False
+"GloVe distance, top 5 guesses",factual_apollo,creative,factual,8.073649220355735,7.902135225635399,0.15686785066671619,0.1447180228240331,True
+"GloVe distance, top 5 guesses",factual_vaccines,creative,creative,7.71185323111405,8.479184231396815,0.292016650359298,0.16077552124900382,True
+"GloVe distance, top 5 guesses",creative_magic,creative,factual,14.603081970929962,8.993390042678001,0.48461086009773957,0.3300754879723847,True
+"GloVe distance, top 5 guesses",creative_fairy,factual,factual,9.419994400645571,9.020102287838958,0.28708304585402444,0.35585609327887624,False
+"GloVe distance, top 5 guesses",creative_detective,factual,factual,8.343310693993057,8.31972785144247,0.2699191015098289,0.22917317428663062,True
+"LCA height, likely guesses, at most 3 (10%)",factual_paris,factual,factual,223.742838668351,219.8314246342515,0.14365752685163818,0.14174492587297052,True
+"LCA height, likely guesses, at most 3 (10%)",factual_apollo,factual,factual,226.1035467108039,260.6932788429934,0.17016652743070843,0.12107892801176527,True
+"LCA height, likely guesses, at most 3 (10%)",factual_vaccines,factual,factual,216.38524419786418,217.61810575499348,0.34949244484014164,0.28731319414497475,True
+"LCA height, likely guesses, at most 3 (10%)",creative_magic,creative,creative,274.88538771628123,218.74474529796532,0.4956689830254668,0.3647627512003235,True
+"LCA height, likely guesses, at most 3 (10%)",creative_fairy,creative,creative,216.01333450136067,202.76693612613198,0.3245481962118013,0.324668249625036,False
+"LCA height, likely guesses, at most 3 (10%)",creative_detective,factual,creative,187.8867151638473,214.94416814186647,0.28314261995912465,0.18589830353202177,True
+surprisal per word,factual_paris,factual,factual,191.83020896612825,249.77543172164312,0.2254255172528826,0.04481751266949271,True
+surprisal per word,factual_apollo,factual,creative,160.08181705174505,290.83528840946684,0.10914375069142243,0.03776504130453611,True
+surprisal per word,factual_vaccines,factual,factual,192.50490518735185,167.78602233638134,0.3670794054818719,0.19799254161496846,True
+surprisal per word,creative_magic,factual,factual,200.76274058294587,172.92863483046438,0.48615047485469176,0.32312292306038237,True
+surprisal per word,creative_fairy,factual,factual,151.97088724143322,230.35365001762895,0.25422754122593105,0.12480076821805733,True
+surprisal per word,creative_detective,factual,factual,177.54008934898033,276.92258203618866,0.3800881918308782,0.0592656513637757,True

@@ -1,0 +1,37 @@
+signal,window,text,burst words,highest energy at word,inside the burst,"highest, burst text","highest, clean original"
+"GloVe distance, top 5 guesses",16,factual_burst_paris,127-163,56,False,1.8377953747757552,1.8377953747757552
+"GloVe distance, top 5 guesses",16,factual_burst_apollo,82-118,34,False,1.4334604443624865,1.9557199768090914
+"GloVe distance, top 5 guesses",16,factual_burst_vaccines,128-166,132,True,1.633903859621947,1.6983734484856414
+"GloVe distance, top 5 guesses",16,creative_burst_magic,103-124,184,False,3.0405909900948362,4.776492253480642
+"GloVe distance, top 5 guesses",16,creative_burst_fairy,90-130,33,False,2.8346322083769087,2.8346322083769087
+"GloVe distance, top 5 guesses",16,creative_burst_detective,68-104,198,False,3.3067196327367885,2.7095880651648288
+"GloVe distance, top 5 guesses",32,factual_burst_paris,127-163,65,False,6.067084928881144,6.067084928881144
+"GloVe distance, top 5 guesses",32,factual_burst_apollo,82-118,27,False,5.028294124653646,5.485524895662545
+"GloVe distance, top 5 guesses",32,factual_burst_vaccines,128-166,207,False,5.315646385734553,5.119369402144788
+"GloVe distance, top 5 guesses",32,creative_burst_magic,103-124,244,False,9.450978838131274,16.417159587518988
+"GloVe distance, top 5 guesses",32,creative_burst_fairy,90-130,172,False,8.077098874417436,8.23746855044122
+"GloVe distance, top 5 guesses",32,creative_burst_detective,68-104,193,False,8.89160235350859,8.000480919115097
+"LCA height, likely guesses, at most 3 (10%)",16,factual_burst_paris,127-163,31,False,1264.0,1820.0
+"LCA height, likely guesses, at most 3 (10%)",16,factual_burst_apollo,82-118,85,True,2316.0,1696.0000000000002
+"LCA height, likely guesses, at most 3 (10%)",16,factual_burst_vaccines,128-166,219,False,1512.0,1412.0
+"LCA height, likely guesses, at most 3 (10%)",16,creative_burst_magic,103-124,209,False,1360.0,1640.0
+"LCA height, likely guesses, at most 3 (10%)",16,creative_burst_fairy,90-130,162,False,1319.9999999999995,1382.0
+"LCA height, likely guesses, at most 3 (10%)",16,creative_burst_detective,68-104,157,False,1179.9999999999998,1328.0
+"LCA height, likely guesses, at most 3 (10%)",32,factual_burst_paris,127-163,138,True,4368.0,5704.0
+"LCA height, likely guesses, at most 3 (10%)",32,factual_burst_apollo,82-118,81,False,6576.0,5616.0
+"LCA height, likely guesses, at most 3 (10%)",32,factual_burst_vaccines,128-166,211,False,4356.0,3764.0
+"LCA height, likely guesses, at most 3 (10%)",32,creative_burst_magic,103-124,147,False,4224.0,4708.0
+"LCA height, likely guesses, at most 3 (10%)",32,creative_burst_fairy,90-130,158,False,4520.0,4452.000000000001
+"LCA height, likely guesses, at most 3 (10%)",32,creative_burst_detective,68-104,163,False,4034.0,4448.0
+surprisal per word,16,factual_burst_paris,127-163,134,True,1198.4881896880122,203.9424919330278
+surprisal per word,16,factual_burst_apollo,82-118,89,True,1630.5231251340613,361.1116980995555
+surprisal per word,16,factual_burst_vaccines,128-166,151,True,1302.6923126851473,526.4130479393643
+surprisal per word,16,creative_burst_magic,103-124,111,True,1015.5494428353336,435.97422680820927
+surprisal per word,16,creative_burst_fairy,90-130,89,False,1218.5705648463413,867.3266233142773
+surprisal per word,16,creative_burst_detective,68-104,70,True,1356.9842132687713,741.3919303390132
+surprisal per word,32,factual_burst_paris,127-163,134,True,4958.104991597858,535.756190590356
+surprisal per word,32,factual_burst_apollo,82-118,93,True,5094.143389846226,917.8654916941863
+surprisal per word,32,factual_burst_vaccines,128-166,151,True,3472.0045009519154,1182.4258040116567
+surprisal per word,32,creative_burst_magic,103-124,108,True,3231.5073539173027,1222.8404186879957
+surprisal per word,32,creative_burst_fairy,90-130,94,True,4626.943613329825,2538.8422689723748
+surprisal per word,32,creative_burst_detective,68-104,70,True,4713.160264131073,1648.366248711715

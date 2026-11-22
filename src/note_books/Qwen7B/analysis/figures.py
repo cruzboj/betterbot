@@ -69,11 +69,34 @@ def plot_example_curves(signal_name, examples):
     return fig
 
 
+def plot_lca_curve(heights, title="LCA height"):
+    """One text's LCA heights, one value per measured word, drawn as they are. A word WordNet doesn't know
+    (None / NaN) leaves a gap instead of a fake 0."""
+    values = []
+    for height in heights:
+        if height is None:
+            values.append(np.nan)
+        else:
+            values.append(float(height))
+    positions = np.arange(1, len(values) + 1)
+    fig, ax = plt.subplots(figsize=(12, 2.6))
+    ax.plot(positions, values, color=FAMILY_COLORS["guess meaning"], lw=1.2)
+    ax.set_title(title, loc="left", fontsize=10, color=INK)
+    ax.set_xlim(1, max(len(values), 2))
+    ax.yaxis.set_major_locator(plt.MaxNLocator(integer=True))          # heights are whole WordNet levels
+    ax.set_xlabel("measured word (noun/verb) in reading order", color=INK_SOFT)
+    ax.set_ylabel("LCA height", color=INK_SOFT)
+    clean_axes(ax, grid_axis="y")
+    fig.tight_layout()
+    return fig
+
+
 # ------------------------------------------------------------------------------------------
 # figure 2: every signal in one chart
 # ------------------------------------------------------------------------------------------
-def plot_summary(results):
-    """One bar per signal: texts in their own kind's cluster (of 25). Colour = signal family."""
+def plot_summary(results, title=None, xlabel=None):
+    """One bar per signal: texts in their own kind's cluster (of 25), or any other count of texts got right
+    (`title` and `xlabel` then say what was counted). Colour = signal family."""
     ordered = results.sort_values("correct")
     fig, ax = plt.subplots(figsize=(10, 0.3 * len(ordered) + 1.6))
     for row, (_index, result) in enumerate(ordered.iterrows()):
@@ -85,14 +108,16 @@ def plot_summary(results):
     ax.text(texts / 2, len(ordered) - 0.2, " half (coin flip)", fontsize=8, color=INK_SOFT, va="bottom")
     ax.set_yticks(range(len(ordered)), ordered["name"], fontsize=9)
     ax.set_xlim(0, texts + 2)
-    ax.set_xlabel(f"texts in the cluster of their own kind (out of {texts})", color=INK_SOFT)
+    ax.set_xlabel(xlabel or f"texts in the cluster of their own kind (out of {texts})", color=INK_SOFT)
     handles = []
     for family, color in FAMILY_COLORS.items():
         handles.append(plt.Rectangle((0, 0), 1, 1, color=color, label=family))
     ax.legend(handles=handles, frameon=False, loc="lower right", fontsize=9)
     best = ordered.iloc[-1]
-    ax.set_title(f"How well each signal groups the texts by kind. Best: {best['name']} "
-                 f"({best['correct']}/{best['texts']})", loc="left", fontsize=11, color=INK)
+    if title is None:
+        title = (f"How well each signal groups the texts by kind. Best: {best['name']} "
+                 f"({best['correct']}/{best['texts']})")
+    ax.set_title(title, loc="left", fontsize=11, color=INK)
     clean_axes(ax)
     fig.tight_layout()
     return fig
@@ -309,5 +334,92 @@ def plot_distance_stacked(signal_name, texts, ceiling):
     axes[-1].set_xlabel("measured word (noun/verb) in reading order", color=INK_SOFT)
     fig.suptitle(f"{signal_name}: how unlike real writing the last {EVOLVING_WINDOW} words are",
                  x=0.01, ha="left", fontsize=11, color=INK)
+    fig.tight_layout()
+    return fig
+
+
+# ------------------------------------------------------------------------------------------
+# notebook 04: which cluster the hot part of a burst text reads like
+# ------------------------------------------------------------------------------------------
+def plot_piece_shares(shares):
+    """One panel per signal. For each window size: one dot per text for the hot part of its burst text (red) and
+    for the same words of its clean original (grey); the height is the share of those words whose last `window`
+    words are closer to the creative cluster than to the factual one."""
+    signals = list(dict.fromkeys(shares["signal"]))
+    fig, axes = plt.subplots(1, len(signals), figsize=(4.2 * len(signals), 3.8), sharey=True, squeeze=False)
+    axes = axes[0]
+    for ax, signal_name in zip(axes, signals):
+        rows = shares[shares["signal"] == signal_name]
+        windows = sorted(set(rows["window"]))
+        positions = {window: index for index, window in enumerate(windows)}
+        x = rows["window"].map(positions).to_numpy(dtype=float)
+        ax.scatter(x - 0.12, rows["same words in clean original"], s=28, color="#a8a6a0",
+                   label="same words, clean original", zorder=3)
+        ax.scatter(x + 0.12, rows["hot part"], s=28, color=HALLUCINATION_COLOR, label="hot part of the burst text",
+                   zorder=3)
+        ax.axhline(0.5, color=INK_SOFT, lw=0.8, ls="--")
+        ax.set_xticks(range(len(windows)), [str(window) for window in windows])
+        ax.set_xlabel("window (words)", color=INK_SOFT)
+        ax.set_ylim(-0.03, 1.03)
+        ax.set_title(signal_name, loc="left", fontsize=10, color=INK)
+        clean_axes(ax, grid_axis="y")
+    axes[0].set_ylabel("share of words nearer the creative cluster", color=INK_SOFT)
+    axes[-1].legend(frameon=False, fontsize=8.5, loc="lower right")
+    fig.suptitle("Which kind of human writing the hot part reads like, at each window size", x=0.01, ha="left",
+                 fontsize=12, color=INK)
+    fig.tight_layout()
+    return fig
+
+
+# ------------------------------------------------------------------------------------------
+# notebook 05: curves as waves
+# ------------------------------------------------------------------------------------------
+def plot_curve_and_spectrum(signal_name, examples):
+    """examples: [(label, curve, spectrum, colour), ...]. One row per example: its curve (left) and the size of each
+    wave speed in it (right), same axes on every row."""
+    fig, axes = plt.subplots(len(examples), 2, figsize=(12, 2.4 * len(examples)), sharey="col", squeeze=False,
+                             gridspec_kw={"width_ratios": [1.6, 1]})
+    for row, (label, curve, spectrum_values, color) in enumerate(examples):
+        curve_ax, spectrum_ax = axes[row]
+        curve_ax.plot(np.arange(1, len(curve) + 1), curve, color=color, lw=1.1)
+        curve_ax.set_title(f"{label}: the curve", loc="left", fontsize=10, color=INK)
+        spectrum_ax.plot(np.arange(1, len(spectrum_values) + 1), spectrum_values, color=color, lw=1.1)
+        spectrum_ax.set_title(f"{label}: its spectrum", loc="left", fontsize=10, color=INK)
+        clean_axes(curve_ax, grid_axis="y")
+        clean_axes(spectrum_ax, grid_axis="y")
+    axes[-1][0].set_xlabel("measured word in reading order", color=INK_SOFT)
+    axes[-1][1].set_xlabel("waves over the whole (stretched) text: slow ← → fast", color=INK_SOFT)
+    fig.suptitle(f"{signal_name}: a curve and how much of each wave speed it holds", x=0.01, ha="left",
+                 fontsize=12, color=INK)
+    fig.tight_layout()
+    return fig
+
+
+def plot_fast_share(shares, real_ranges):
+    """One panel per signal, one row per text: the share of spectrum energy in the fast half for the clean original
+    (grey) and the burst text (red), joined by a line; the shaded band is the range the 25 real texts cover."""
+    signals = list(dict.fromkeys(shares["signal"]))
+    texts = list(dict.fromkeys(shares["text"]))
+    fig, axes = plt.subplots(1, len(signals), figsize=(4.4 * len(signals), 0.42 * len(texts) + 1.8), sharey=True,
+                             squeeze=False)
+    axes = axes[0]
+    for ax, signal_name in zip(axes, signals):
+        rows = shares[shares["signal"] == signal_name].set_index("text").loc[texts]
+        y = np.arange(len(texts))
+        low, high = real_ranges[signal_name]
+        ax.axvspan(low, high, color=GRID, alpha=0.6, lw=0, label="range of the 25 real texts")
+        for position, (_text, row) in zip(y, rows.iterrows()):
+            ax.plot([row["fast share, clean"], row["fast share, burst"]], [position, position], color="#d6d4ce",
+                    lw=1.5, zorder=2)
+        ax.scatter(rows["fast share, clean"], y, s=34, color="#a8a6a0", label="clean original", zorder=3)
+        ax.scatter(rows["fast share, burst"], y, s=34, color=HALLUCINATION_COLOR, label="with a hot burst", zorder=3)
+        ax.set_yticks(y, [short_name(text) for text in texts], fontsize=9)
+        ax.set_xlim(0, 0.7)
+        ax.set_xlabel("share of energy in the fast waves", color=INK_SOFT)
+        ax.set_title(signal_name, loc="left", fontsize=10, color=INK)
+        clean_axes(ax, grid_axis="x")
+    axes[0].invert_yaxis()
+    axes[-1].legend(frameon=False, fontsize=8.5, loc="lower right")
+    fig.suptitle("Does a hot burst change the rhythm of the whole text?", x=0.01, ha="left", fontsize=12, color=INK)
     fig.tight_layout()
     return fig

@@ -51,6 +51,33 @@ def write_story(model, tokenizer, prompt, temperature, seed, story_start_ids=Non
     return story_ids
 
 
+def write_story_streaming(model, tokenizer, prompt, temperature, seed, story_start_ids=None,
+                          max_new_tokens=GENERATION_MAX_TOKENS, kind="creative", min_p=0.0):
+    """Same as write_story (same settings, same seed -> same text), but prints the text while Qwen writes it:
+    first the given `story_start_ids`, if any, then each new piece as soon as it is drawn."""
+    from transformers import TextStreamer
+
+    request = story_request(tokenizer, prompt, model.device, kind)
+    if story_start_ids is None:
+        story_start_ids = []
+    if story_start_ids:
+        print(tokenizer.decode(story_start_ids, skip_special_tokens=True), end="", flush=True)
+    start = torch.tensor([story_start_ids], dtype=request.dtype, device=model.device)
+    inputs = torch.cat([request, start], dim=1)
+    streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)   # skip_prompt: not the request
+    torch.manual_seed(seed)
+    output = model.generate(inputs, attention_mask=torch.ones_like(inputs), do_sample=True, temperature=temperature,
+                            top_k=0, top_p=1.0, min_p=min_p, repetition_penalty=1.0, max_new_tokens=max_new_tokens,
+                            pad_token_id=tokenizer.eos_token_id, streamer=streamer)
+    new_ids = output[0, request.shape[1]:].tolist()
+    special = set(tokenizer.all_special_ids)
+    story_ids = []
+    for token_id in new_ids:
+        if token_id not in special:
+            story_ids.append(token_id)
+    return story_ids
+
+
 def draw_burst_start(story_length, rng):
     """A random token position within BURST_RANGE of the story's length."""
     low = int(BURST_RANGE[0] * story_length)

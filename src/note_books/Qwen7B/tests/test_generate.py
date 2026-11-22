@@ -38,6 +38,42 @@ class _FakeModel:
         return torch.cat([inputs, new], dim=1)
 
 
+class _FakeStreamingModel(_FakeModel):
+    """Like _FakeModel, but hands the prompt and then each new token to the streamer, as transformers' generate does."""
+
+    def generate(self, inputs, temperature, max_new_tokens, streamer=None, **kwargs):
+        import torch
+        output = super().generate(inputs, temperature, max_new_tokens)
+        if streamer is not None:
+            streamer.put(inputs)
+            for token in output[0, inputs.shape[1]:]:
+                streamer.put(token.reshape(1))
+            streamer.end()
+        return output
+
+
+class _FakeDecodingTokenizer(_FakeTokenizer):
+    def decode(self, ids, **kwargs):
+        return "".join(f"w{i} " for i in ids if i not in self.all_special_ids)
+
+
+def test_streaming_story_prints_the_text_while_writing_and_returns_the_same_ids(capsys):
+    from analysis.generate import write_story, write_story_streaming
+    ids = write_story_streaming(_FakeStreamingModel(), _FakeDecodingTokenizer(), "x", temperature=0.5, seed=0,
+                                max_new_tokens=3)
+    assert ids == write_story(_FakeModel(), _FakeDecodingTokenizer(), "x", temperature=0.5, seed=0, max_new_tokens=3)
+    printed = capsys.readouterr().out
+    assert "w5 w5 w5" in printed and "w7" not in printed       # the new text only, not the request
+
+
+def test_streaming_story_prints_the_given_start_before_continuing(capsys):
+    from analysis.generate import write_story_streaming
+    ids = write_story_streaming(_FakeStreamingModel(), _FakeDecodingTokenizer(), "x", temperature=0.5, seed=0,
+                                story_start_ids=[3, 3], max_new_tokens=2)
+    assert ids == [3, 3, 5, 5]
+    assert "w3 w3 w5 w5" in capsys.readouterr().out
+
+
 def test_burst_story_is_cool_then_hot_then_cool_again():
     from analysis.generate import burst_story
     cool_ids = [1] * 20
