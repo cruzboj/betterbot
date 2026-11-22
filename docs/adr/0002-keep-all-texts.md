@@ -6,4 +6,4 @@ All 25 texts are used, including *Alice in Wonderland*, even though the confiden
 
 Excluding memorised texts was considered. A one-off verbatim test (the model continues 5 passages per text by itself) found no memorised text. *Alice* matched 15% and so did the Wikipedia article on copper; every other text matched 2–11%. *Alice* is predictable (famous, simple prose), not memorised. Removing it would only remove a text that is hard for some signals, so it stays.
 
-The test was then removed from the pipeline as not needed for the results. Its code and scores are in `src/note_books/Qwen7B/archive/`. `EXCLUDED_TEXTS` in `qwen_config.py` can still leave a text out by name.
+The test was then removed from the pipeline as not needed for the results. Its code and scores are in `src/note_books/Qwen7B/archive/`. `EXCLUDED_TEXTS` in `config/qwen_config.py` can still leave a text out by name.

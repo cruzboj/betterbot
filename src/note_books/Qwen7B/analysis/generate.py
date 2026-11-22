@@ -7,7 +7,7 @@ sentences. The cool and hot parts of a text use the same min_p, so temperature i
 """
 import torch
 
-from qwen_config import BURST_RANGE, GENERATION_MAX_TOKENS, STORY_WORDS
+from config.qwen_config import BURST_RANGE, GENERATION_MAX_TOKENS, STORY_WORDS
 
 
 def request_text(kind, prompt):
