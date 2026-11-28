@@ -1,0 +1,5 @@
+rank,measurement,correct,texts,factual correct,creative correct,wrong cluster,centre texts
+1,"GloVe distance, top 5 guesses",23,25,10/12,13/13,"factual_gut_candle, factual_wiki_vaccine","factual_gut_candle, factual_gut_outline_science"
+1,"LCA height, likely guesses, at most 3 (10%)",23,25,10/12,13/13,"factual_wiki_black_hole, factual_wiki_copper","creative_gut_oz, factual_wiki_volcano"
+3,BERT mean cosine,22,25,11/12,11/13,"creative_hp4, creative_jokes_for_all_occasions, factual_gut_candle","creative_gut_alice, factual_gut_relativity"
+3,surprisal per word,22,25,11/12,11/13,"creative_hp4, creative_jokes_for_all_occasions, factual_gut_outline_science","creative_jokes_2, factual_gut_origin_species"
